@@ -110,6 +110,10 @@ p {
   background: #c6d48c;
 }
 
+.t-text-orange a {
+  color: #fd7d54;
+}
+
 .t-floated-menu {
   width: 100%;
   height: 100%;
