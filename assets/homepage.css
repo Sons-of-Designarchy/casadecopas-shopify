@@ -89,6 +89,11 @@ p {
   background: #fd7d54;
 }
 
+.t-welcome .t-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .t-about {
   background: #000 url("images/about-bg.png") no-repeat;
   background-size: auto 100%;
