@@ -43,6 +43,7 @@ h1, .h0, .h1 {
 
 p {
   font-size: 20px !important;
+  line-height: 120%;
 }
 
 .t-text-orange {
@@ -221,6 +222,7 @@ bottom: 2rem;
 
   p {
     font-size: 60px !important;
+    line-height: 120%;
   }
 }
 
