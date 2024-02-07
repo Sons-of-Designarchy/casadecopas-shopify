@@ -93,6 +93,11 @@ p {
   margin: 0 auto;
 }
 
+.t-text-3xl {
+  font-size: 32px;
+  color: #fff;
+}
+
 .t-about {
   background: #000 url("images/about-bg.png") no-repeat;
   background-size: auto 100%;
