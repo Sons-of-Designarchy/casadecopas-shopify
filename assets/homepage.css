@@ -313,3 +313,7 @@ bottom: 2rem;
 .footer__copyright {
   display: none;
 }
+
+.product__title h1 {
+  text-align: left;
+}
