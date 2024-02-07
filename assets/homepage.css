@@ -15,6 +15,7 @@ body, h2, h3, h4, h5 .h2, .h3, .h4, .h5 {
 
 h1, .h0, .h1 {
   font-family: "t-Carola", serif!important;
+  text-align: center;
 }
 
 .t-display-xl {
@@ -27,6 +28,7 @@ h1, .h0, .h1 {
 .t-h2 {
   font-size: 50px !important;
   line-height: 50px;
+  text-align: center;
 }
 
 .t-display {
