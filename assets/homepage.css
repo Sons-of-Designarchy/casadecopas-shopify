@@ -10,11 +10,11 @@
 
 html,
 body {
-  font-family: "t-Dahlia", serif;
+  font-family: "t-Dahlia", serif!important;
 }
 
 h1 {
-  font-family: "t-Carola", serif;
+  font-family: "t-Carola", serif!important;
 }
 
 .t-display-xl {
