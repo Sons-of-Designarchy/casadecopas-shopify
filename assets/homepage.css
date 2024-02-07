@@ -65,6 +65,10 @@ p {
   position: relative;
 }
 
+.t-section img {
+  max-width: 100%;
+}
+
 .t-hero-content {
   position: relative;
   z-index: 1;
