@@ -1,1 +1,199 @@
-{"sections":{"image_banner_VE68WP":{"type":"image-banner","blocks":{"heading_KrdUHe":{"type":"heading","settings":{"heading":"THE WOUND HEALS IN SERVICE","heading_size":"h1"}},"text_YYXyGY":{"type":"text","disabled":true,"settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"buttons_DmbWhQ":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_KrdUHe","text_YYXyGY","buttons_DmbWhQ"],"settings":{"image":"shopify:\/\/shop_images\/header.jpg","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-2","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"rich_text":{"type":"rich-text","blocks":{"heading":{"type":"heading","settings":{"heading":"ANDY WARHOL X CASA DE COPAS","heading_size":"h2"}}},"block_order":["heading"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"scheme-1","full_width":true,"padding_top":100,"padding_bottom":0}},"featured-collection":{"type":"featured-collection","settings":{"title":"","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":9,"columns_desktop":2,"full_width":false,"show_view_all":false,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"arch","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":0,"padding_bottom":68}},"rich_text_mnEmVb":{"type":"rich-text","blocks":{"heading_VYtVpQ":{"type":"heading","settings":{"heading":"Casa de Copas is the first interdisciplinary & community-first recording space focused on the creation of holistic music and creative projects in Mexico City.","heading_size":"h1"}},"button_9zinqG":{"type":"button","settings":{"button_label":"Button label","button_link":"","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_VYtVpQ","button_9zinqG"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-3","full_width":true,"padding_top":100,"padding_bottom":100}},"rich_text_gDyw8f":{"type":"rich-text","blocks":{"caption_TjeeeU":{"type":"caption","settings":{"caption":"MERCH DROP 1","text_style":"caption-with-letter-spacing","text_size":"medium"}},"heading_jfLkA3":{"type":"heading","settings":{"heading":"CASA DEUS COPAS","heading_size":"h2"}}},"block_order":["caption_TjeeeU","heading_jfLkA3"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"scheme-1","full_width":true,"padding_top":100,"padding_bottom":0}},"featured_collection_NVEctb":{"type":"featured-collection","settings":{"title":"","heading_size":"h0","description":"","show_description":false,"description_style":"uppercase","collection":"all","products_to_show":9,"columns_desktop":2,"full_width":true,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"arch","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":68}}},"order":["image_banner_VE68WP","rich_text","featured-collection","rich_text_mnEmVb","rich_text_gDyw8f","featured_collection_NVEctb"]}
+{
+  "sections": {
+    "1661808968f90ffkeofkeo": {
+      "type": "banner-comunidad",
+      "settings": {
+      }
+    },
+    "image_banner_VE68WP": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_KrdUHe": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE WOUND HEALS IN SERVICE",
+            "heading_size": "h1"
+          }
+        },
+        "text_YYXyGY": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_DmbWhQ": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading_KrdUHe", "text_YYXyGY", "buttons_DmbWhQ"],
+      "settings": {
+        "image": "shopify://shop_images/header.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "ANDY WARHOL X CASA DE COPAS",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": ["heading"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 9,
+        "columns_desktop": 2,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "arch",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    },
+    "rich_text_mnEmVb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VYtVpQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Casa de Copas is the first interdisciplinary & community-first recording space focused on the creation of holistic music and creative projects in Mexico City.",
+            "heading_size": "h1"
+          }
+        },
+        "button_9zinqG": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading_VYtVpQ", "button_9zinqG"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_gDyw8f": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_TjeeeU": {
+          "type": "caption",
+          "settings": {
+            "caption": "MERCH DROP 1",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_jfLkA3": {
+          "type": "heading",
+          "settings": { "heading": "CASA DEUS COPAS", "heading_size": "h2" }
+        }
+      },
+      "block_order": ["caption_TjeeeU", "heading_jfLkA3"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_NVEctb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h0",
+        "description": "",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "all",
+        "products_to_show": 9,
+        "columns_desktop": 2,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "arch",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "1661808968f90ffkeofkeo",
+    "image_banner_VE68WP",
+    "rich_text",
+    "featured-collection",
+    "rich_text_mnEmVb",
+    "rich_text_gDyw8f",
+    "featured_collection_NVEctb"
+  ]
+}
