@@ -236,7 +236,7 @@ bottom: 2rem;
 
 /* Mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
   .t-section .t-container {
     padding: 1rem;
