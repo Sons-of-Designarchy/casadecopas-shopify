@@ -18,6 +18,10 @@ h1, .h0, .h1 {
   text-align: center;
 }
 
+.homepage .header-wrapper {
+  background: #D9C8B8;
+}
+
 .t-display-xl {
   font-size: 120px !important;
   line-height: 100px;
@@ -34,7 +38,9 @@ h1, .h0, .h1 {
 .t-display {
   font-size: 90px !important;
   word-wrap: break-word;
+  margin: 0;
 }
+
 
 p {
   font-size: 20px !important;
