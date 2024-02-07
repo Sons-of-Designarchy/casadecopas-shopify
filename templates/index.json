@@ -132,32 +132,6 @@
         "padding_bottom": 100
       }
     },
-    "rich_text_gDyw8f": {
-      "type": "rich-text",
-      "blocks": {
-        "caption_TjeeeU": {
-          "type": "caption",
-          "settings": {
-            "caption": "MERCH DROP 1",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_jfLkA3": {
-          "type": "heading",
-          "settings": { "heading": "CASA DEUS COPAS", "heading_size": "h2" }
-        }
-      },
-      "block_order": ["caption_TjeeeU", "heading_jfLkA3"],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection_NVEctb": {
       "type": "featured-collection",
       "settings": {
@@ -193,7 +167,6 @@
     "rich_text",
     "featured-collection",
     "rich_text_mnEmVb",
-    "rich_text_gDyw8f",
     "featured_collection_NVEctb"
   ]
 }
