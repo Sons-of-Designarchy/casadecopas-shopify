@@ -9,11 +9,11 @@
 }
 
 html,
-body {
+body, h2, h3, h4, h5 .h2, .h3, .h4, .h5 {
   font-family: "t-Dahlia", serif!important;
 }
 
-h1 {
+h1, .h0, .h1 {
   font-family: "t-Carola", serif!important;
 }
 
