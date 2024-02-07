@@ -236,7 +236,7 @@ bottom: 2rem;
 
 /* Mobile */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
 
   .t-section .t-container {
     padding: 1rem;
@@ -316,4 +316,26 @@ bottom: 2rem;
 
 .product__title h1 {
   text-align: left;
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .t-parsifal {
+    top: -10rem;
+    left: 0rem;
+  }
+
+  .t-deer {
+    right: 0rem;
+    top: 3rem;
+  }
+
+  .t-human {
+    left: 0rem;
+    bottom: 5rem;
+  }
+
+  .t-sun {
+    right: 0rem;
+    bottom: 5rem;
+  }
 }
