@@ -1,11 +1,10 @@
-
 @font-face {
-  font-family: "Dahlia";
+  font-family: "t-Dahlia";
   src: url("fonts/dahlia.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Carola";
+  font-family: "t-Carola";
   src: url("fonts/carola.otf") format("opentype");
 }
 
@@ -277,83 +276,4 @@ bottom: 2rem;
     background-position: bottom right;
     justify-content: flex-start;
   }
-}
-
-.t-container {
-  max-width: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.t-hero {
-  position: relative;
-}
-
-.t-hero-content {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.t-section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.t-text-center {
-  text-align: center;
-}
-
-.t-display {
-  font-size: 6rem;
-}
-
-.t-text-orange {
-  color: #f6993f;
-}
-
-.t-welcome {
-  background-color: #edf2f7;
-}
-
-.t-welcome-footer {
-  margin-top: 2rem;
-}
-
-.t-welcome-floated {
-  position: relative;
-  margin-top: -4rem;
-  margin-bottom: -4rem;
-}
-
-.t-about {
-  background-color: #f7fafc;
-}
-
-/* .t-w-3/4 {
-  width: 75%;
-} */
-
-.t-mt-10 {
-  margin-top: 2.5rem;
-}
-
-.t-text-3xl {
-  font-size: 1.875rem;
-}
-
-.t-footer {
-  background-color: #edf2f7;
-}
-
-.t-my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.t-mt-10 {
-  margin-top: 2.5rem;
-}
-
-.t-display-xl {
-  font-size: 2.25rem;
 }
