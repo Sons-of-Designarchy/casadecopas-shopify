@@ -1,11 +1,11 @@
 @font-face {
   font-family: "t-Dahlia";
-  src: url('{{ 'dahlia.otf' | asset_url }}') format('truetype');
+  src: url("https://cdn.shopify.com/s/files/1/0637/4699/8410/files/dahlia.otf?v=1707335260") format("opentype");
 }
 
 @font-face {
   font-family: "t-Carola";
-  src: url('{{ 'carola.otf' | asset_url }}') format('truetype');
+  src: url("https://cdn.shopify.com/s/files/1/0637/4699/8410/files/carola.otf?v=1707335260") format("opentype");
 }
 
 html,
