@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Dahlia";
   src: url("fonts/dahlia.otf") format("opentype");
@@ -10,14 +11,14 @@
 
 html,
 body {
-  font-family: "Dahlia", serif;
+  font-family: "t-Dahlia", serif;
 }
 
 h1 {
-  font-family: "Carola", serif;
+  font-family: "t-Carola", serif;
 }
 
-.display-xl {
+.t-display-xl {
   font-size: 120px !important;
   line-height: 100px;
   word-wrap: break-word;
@@ -28,7 +29,7 @@ h2 {
   line-height: 50px;
 }
 
-.display {
+.t-display {
   font-size: 90px !important;
   word-wrap: break-word;
 }
@@ -37,11 +38,11 @@ p {
   font-size: 20px !important;
 }
 
-.text-orange {
+.t-text-orange {
   color: #fd6854;
 }
 
-.section {
+.t-section {
   background: #fff;
   padding: 5rem 0;
   min-height: 100vh;
@@ -51,17 +52,17 @@ p {
   overflow: hidden;
 }
 
-.hero {
+.t-hero {
   background: #d9c8b8;
   position: relative;
 }
 
-.hero-content {
+.t-hero-content {
   position: relative;
   z-index: 1;
 }
 
-.hero-bg {
+.t-hero-bg {
   position: absolute;
   mix-blend-mode: color-dodge;
   right: 0;
@@ -72,22 +73,22 @@ p {
   margin: -1.5rem 0 0.5rem;
 }
 
-.welcome {
+.t-welcome {
   background: #fd7d54;
 }
 
-.about {
+.t-about {
   background: #000 url("images/about-bg.png") no-repeat;
   background-size: auto 100%;
   background-position: top right;
   color: #ffff;
 }
 
-.footer {
+.t-footer {
   background: #c6d48c;
 }
 
-.floated-menu {
+.t-floated-menu {
   width: 100%;
   height: 100%;
   opacity: 0.8;
@@ -101,76 +102,76 @@ p {
   z-index: 2;
 }
 
-.floated {
+.t-floated {
   position: absolute;
 }
 
-.cup {
+.t-cup {
   right: 2rem;
 }
 
-.dogs {
+.t-dogs {
   bottom: 1rem;
   left: 1rem;
 }
 
-.house {
+.t-house {
   bottom: 5rem;
   right: 2rem;
 }
 
-.welcome-floated {
+.t-welcome-floated {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.welcome-floated img {
+.t-welcome-floated img {
   box-shadow: 0 30px 30px rgba(0,0,0,.15);
   position: absolute; 
 }
 
-.welcome-footer {
+.t-welcome-footer {
   margin-top: 8rem;
 }
 
-.parsifal {
+.t-parsifal {
   top: -10rem;
   left: 10rem;
 }
 
-.deer {
+.t-deer {
   top: 3rem;
   right: 10rem;
 }
 
-.sun {
+.t-sun {
   bottom: 20rem;
   right: 10rem;
 }
 
-.human {
+.t-human {
   bottom: 20rem;
   left: 10rem;
 }
 
-.heart {
+.t-heart {
   left: 5rem;
   top: 3rem;
 }
 
-.cup-phrase {
+.t-cup-phrase {
   right: 2rem;
   top: 2rem;
 }
 
-.geometric {
+.t-geometric {
   right: 2rem;
   bottom: 2rem;
 }
 
-.gold {
+.t-gold {
 left: 10rem;
 bottom: 2rem;
 }
@@ -182,12 +183,12 @@ bottom: 2rem;
 /* Desktop */
 
 @media (min-width: 769px) {
-  .display {
+  .t-display {
     font-size: 250px !important;
     line-height: 230px;
   }
 
-  .display-xl {
+  .t-display-xl {
     font-size: 280px !important;
     line-height: 250px;
   }
@@ -206,74 +207,153 @@ bottom: 2rem;
 
 @media (max-width: 768px) {
 
-  .section .container {
+  .t-section .t-container {
     padding: 1rem;
   }
 
-  .hero img {
+  .t-hero img {
     max-width: none;
     width: 800px;
     margin-left: -300px;
   }
 
-  .welcome h2 {
+  .t-welcome h2 {
     padding: 0 3rem;
   }
 
-  .cup {
+  .t-cup {
     right: 1rem;
   }
 
-  .dogs {
+  .t-dogs {
     bottom: 1rem;
     left: 1rem;
   }
 
-  .house {
+  .t-house {
     bottom: 1rem;
     right: 1rem;
   }
 
-  .welcome-floated img {
+  .t-welcome-floated img {
     max-height: 120px;
     width: auto;
   }
 
-  .parsifal {
+  .t-parsifal {
     top: -10rem;
     left: 2rem;
   }
 
-  .deer {
+  .t-deer {
     right: 0rem;
     top: 3rem;
   }
 
-  .human {
+  .t-human {
     left: 0rem;
     bottom: 5rem;
   }
 
-  .sun {
+  .t-sun {
     right: 0rem;
     bottom: 5rem;
   }
 
-  .gold {
+  .t-gold {
     left: 0;
   }
 
-  .heart {
+  .t-heart {
     left: 1rem;
   }
 
-  .geometric {
+  .t-geometric {
     bottom: -3rem;
   }
 
-  .about {
+  .t-about {
     background-size: 300px auto;
     background-position: bottom right;
     justify-content: flex-start;
   }
+}
+
+.t-container {
+  max-width: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.t-hero {
+  position: relative;
+}
+
+.t-hero-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.t-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.t-text-center {
+  text-align: center;
+}
+
+.t-display {
+  font-size: 6rem;
+}
+
+.t-text-orange {
+  color: #f6993f;
+}
+
+.t-welcome {
+  background-color: #edf2f7;
+}
+
+.t-welcome-footer {
+  margin-top: 2rem;
+}
+
+.t-welcome-floated {
+  position: relative;
+  margin-top: -4rem;
+  margin-bottom: -4rem;
+}
+
+.t-about {
+  background-color: #f7fafc;
+}
+
+/* .t-w-3/4 {
+  width: 75%;
+} */
+
+.t-mt-10 {
+  margin-top: 2.5rem;
+}
+
+.t-text-3xl {
+  font-size: 1.875rem;
+}
+
+.t-footer {
+  background-color: #edf2f7;
+}
+
+.t-my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.t-mt-10 {
+  margin-top: 2.5rem;
+}
+
+.t-display-xl {
+  font-size: 2.25rem;
 }
