@@ -23,7 +23,7 @@ h1 {
   word-wrap: break-word;
 }
 
-h2 {
+.t-h2 {
   font-size: 50px !important;
   line-height: 50px;
 }
@@ -192,7 +192,7 @@ bottom: 2rem;
     line-height: 250px;
   }
 
-  h2 {
+  .t-h2 {
     font-size: 100px !important;
     line-height: 100px;
   }

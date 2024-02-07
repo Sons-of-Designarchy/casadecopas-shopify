@@ -1,7 +1,7 @@
 {
   "sections": {
     "1661808968f90ffkeofkeo": {
-      "type": "homepage",
+      "type": "home-top",
       "settings": {
       }
     },
@@ -90,12 +90,18 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1661808968f90ffkeofkeu": {
+      "type": "home-bottom",
+      "settings": {
+      }
     }
   },
   "order": [
     "1661808968f90ffkeofkeo",
     "rich_text",
     "rich_text_mnEmVb",
-    "featured_collection_cTyBCf"
+    "featured_collection_cTyBCf",
+    "1661808968f90ffkeofkeu"
   ]
 }
