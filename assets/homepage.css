@@ -1,11 +1,11 @@
 @font-face {
   font-family: "t-Dahlia";
-  src: url("fonts/dahlia.otf") format("opentype");
+  src: url("{{ 'dahlia.otf' | asset_url }}") format("opentype");
 }
 
 @font-face {
   font-family: "t-Carola";
-  src: url("fonts/carola.otf") format("opentype");
+  src: url("{{ 'carola.otf' | asset_url }}") format("opentype");
 }
 
 html,

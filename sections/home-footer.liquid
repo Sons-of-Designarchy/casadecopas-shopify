@@ -1,13 +1,12 @@
-
 <div id="service" class="t-service t-section t-text-center">
   <div class="t-container mx-auto">
     <h1 class="t-display-xl">The wound heals in service</h1>
   </div>
   <div class="t-welcome-floated">
-    <img width="188px" src="images/phrase-floated/heart.jpg" class="t-heart" />
-    <img width="196px" src="images/phrase-floated/cup.jpg" class="t-cup-phrase" />
-    <img width="242px" src="images/phrase-floated/gold-frame.jpg" class="t-gold" />
-    <img width="151px" src="images/phrase-floated/3d.jpg" class="t-geometric" />
+    <img width="188px" src="{{ 'heart.jpg' | asset_url }}" class="t-heart" />
+    <img width="196px" src="{{ 'cup.jpg' | asset_url }}" class="t-cup-phrase" />
+    <img width="242px" src="{{ 'gold-frame.jpg' | asset_url }}" class="t-gold" />
+    <img width="151px" src="{{ '3d.jpg' | asset_url }}" class="t-geometric" />
   </div>
 </div>
 
@@ -28,7 +27,7 @@
 <div id="footer" class="t-footer t-section t-text-center t-text-orange">
   <div class="t-container mx-auto t-text-center">
     <h1 class="t-display-xl">THE HOUSE FOR CREATIVITY</h1>
-    <img src="images/footer-sun.jpg" class="t-my-5" />
+    <img src="{{ 'footer-sun.jpg' | asset_url }}" class="t-my-5" />
     <p>CASA DE COPAS EST. 2024</p>
     <div class="t-mt-10">
       <a class="t-text-3xl" href="https://www.instagram.com/casadecopasmx/">Follow us on Instagram -></a>
