@@ -318,7 +318,7 @@ bottom: 2rem;
   text-align: left;
 }
 
-@media (min-width: 769px) and (max-width: 1100px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .t-parsifal {
     top: -10rem;
     left: 0rem;
