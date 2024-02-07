@@ -38,7 +38,7 @@
         "description_style": "body",
         "collection": "frontpage",
         "products_to_show": 25,
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -52,8 +52,8 @@
         "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 100
       }
     },
     "1661808968f90ffkeofkeu": {
