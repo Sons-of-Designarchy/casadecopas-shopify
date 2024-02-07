@@ -89,6 +89,10 @@ p {
 }
 
 .t-container {
+  max-width: 1300px;
+}
+
+.t-section .t-container {
   max-width: 1000px;
   margin: 0 auto;
 }
