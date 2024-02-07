@@ -21,6 +21,7 @@ h1 {
   font-size: 120px !important;
   line-height: 100px;
   word-wrap: break-word;
+  text-align: center;
 }
 
 .t-h2 {
