@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Dahlia";
+  src: url("fonts/dahlia.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Carola";
+  src: url("fonts/carola.otf") format("opentype");
+}
+
+html,
+body {
+  font-family: "Dahlia", serif;
+}
+
+h1 {
+  font-family: "Carola", serif;
+}
+
+.display-xl {
+  font-size: 120px !important;
+  line-height: 100px;
+  word-wrap: break-word;
+}
+
+h2 {
+  font-size: 50px !important;
+  line-height: 50px;
+}
+
+.display {
+  font-size: 90px !important;
+  word-wrap: break-word;
+}
+
+p {
+  font-size: 20px !important;
+}
+
+.text-orange {
+  color: #fd6854;
+}
+
+.section {
+  background: #fff;
+  padding: 5rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero {
+  background: #d9c8b8;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  right: 0;
+  top: 0;
+}
+
+.hero img {
+  margin: -1.5rem 0 0.5rem;
+}
+
+.welcome {
+  background: #fd7d54;
+}
+
+.about {
+  background: #000 url("images/about-bg.png") no-repeat;
+  background-size: auto 100%;
+  background-position: top right;
+  color: #ffff;
+}
+
+.footer {
+  background: #c6d48c;
+}
+
+.floated-menu {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  position: fixed;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.floated {
+  position: absolute;
+}
+
+.cup {
+  right: 2rem;
+}
+
+.dogs {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.house {
+  bottom: 5rem;
+  right: 2rem;
+}
+
+.welcome-floated {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.welcome-floated img {
+  box-shadow: 0 30px 30px rgba(0,0,0,.15);
+  position: absolute; 
+}
+
+.welcome-footer {
+  margin-top: 8rem;
+}
+
+.parsifal {
+  top: -10rem;
+  left: 10rem;
+}
+
+.deer {
+  top: 3rem;
+  right: 10rem;
+}
+
+.sun {
+  bottom: 20rem;
+  right: 10rem;
+}
+
+.human {
+  bottom: 20rem;
+  left: 10rem;
+}
+
+.heart {
+  left: 5rem;
+  top: 3rem;
+}
+
+.cup-phrase {
+  right: 2rem;
+  top: 2rem;
+}
+
+.geometric {
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.gold {
+left: 10rem;
+bottom: 2rem;
+}
+
+.footer img {
+  display: inline-block;
+}
+
+/* Desktop */
+
+@media (min-width: 769px) {
+  .display {
+    font-size: 250px !important;
+    line-height: 230px;
+  }
+
+  .display-xl {
+    font-size: 280px !important;
+    line-height: 250px;
+  }
+
+  h2 {
+    font-size: 100px !important;
+    line-height: 100px;
+  }
+
+  p {
+    font-size: 60px !important;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .section .container {
+    padding: 1rem;
+  }
+
+  .hero img {
+    max-width: none;
+    width: 800px;
+    margin-left: -300px;
+  }
+
+  .welcome h2 {
+    padding: 0 3rem;
+  }
+
+  .cup {
+    right: 1rem;
+  }
+
+  .dogs {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .house {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .welcome-floated img {
+    max-height: 120px;
+    width: auto;
+  }
+
+  .parsifal {
+    top: -10rem;
+    left: 2rem;
+  }
+
+  .deer {
+    right: 0rem;
+    top: 3rem;
+  }
+
+  .human {
+    left: 0rem;
+    bottom: 5rem;
+  }
+
+  .sun {
+    right: 0rem;
+    bottom: 5rem;
+  }
+
+  .gold {
+    left: 0;
+  }
+
+  .heart {
+    left: 1rem;
+  }
+
+  .geometric {
+    bottom: -3rem;
+  }
+
+  .about {
+    background-size: 300px auto;
+    background-position: bottom right;
+    justify-content: flex-start;
+  }
+}
