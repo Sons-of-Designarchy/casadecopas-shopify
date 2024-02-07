@@ -41,7 +41,6 @@ h1, .h0, .h1 {
   margin: 0;
 }
 
-
 p {
   font-size: 20px !important;
 }
@@ -89,7 +88,7 @@ p {
   background: #fd7d54;
 }
 
-.t-welcome .t-container {
+.t-container {
   max-width: 1000px;
   margin: 0 auto;
 }
