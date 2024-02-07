@@ -88,15 +88,10 @@ p {
   background: #fd7d54;
 }
 
-.t-container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-/* .t-section .t-container {
+.t-about .t-container, .t-welcome .t-container {
   max-width: 1000px;
   margin: 0 auto;
-} */
+}
 
 .t-text-3xl {
   font-size: 32px;
