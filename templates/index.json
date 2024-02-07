@@ -28,41 +28,6 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_mnEmVb": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_VYtVpQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Casa de Copas is the first interdisciplinary & community-first recording space focused on the creation of holistic music and creative projects in Mexico City.",
-            "heading_size": "h1"
-          }
-        },
-        "button_9zinqG": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_VYtVpQ",
-        "button_9zinqG"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "featured_collection_cTyBCf": {
       "type": "featured-collection",
       "settings": {
@@ -100,7 +65,6 @@
   "order": [
     "1661808968f90ffkeofkeo",
     "rich_text",
-    "rich_text_mnEmVb",
     "featured_collection_cTyBCf",
     "1661808968f90ffkeofkeu"
   ]
