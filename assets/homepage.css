@@ -110,7 +110,11 @@ p {
   background: #c6d48c;
 }
 
-.t-text-orange a {
+.t-text-center {
+  text-align:  center;
+}
+
+.t-text-orange a, .t-text-orange .t-display-xl {
   color: #fd7d54;
 }
 
