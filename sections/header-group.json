@@ -39,7 +39,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "h1 {color: black;}"
+
       ],
       "settings": {
         "logo_position": "middle-center",
