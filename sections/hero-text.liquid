@@ -1,8 +1,8 @@
 {%- style -%}
 .section {
  border: solid 2px red;
- height: 100%;
- background: {{section.settings.color_scheme}};
+ height: 10px;
+ background-color: {{section.settings.color_scheme}};
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
