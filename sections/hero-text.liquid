@@ -2,7 +2,7 @@
 .section {
  border: solid 2px red;
  height: 100%;
- background: inherit;
+ background: {{section.settings.color_scheme}};
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
