@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-about-us",
+      "type": "about-intro",
       "settings": {
       }
     }
