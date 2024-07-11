@@ -2,7 +2,6 @@
 .section {
  background-color: {{section.settings.color_scheme.settings.background}};
  border: solid 1px transparent;
- overflow: hidden;
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -12,6 +11,7 @@
  .section img {
   position: absolute;
   inset: 0;
+  right: 0;
   mix-blend-mode: exclusion;
   opacity: 0.3;
  }
