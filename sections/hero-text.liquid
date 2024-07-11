@@ -1,0 +1,45 @@
+{%- style -%}
+.section {
+ background-color: {{section.settings.color_scheme.settings.background}};
+ border: solid 1px transparent;
+}
+ .section-{{ section.id }}-padding {
+   padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+   padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+ }
+
+ @media screen and (min-width: 750px) {
+   .section-{{ section.id }}-padding {
+     padding-top: {{ section.settings.padding_top }}px;
+     padding-bottom: {{ section.settings.padding_bottom }}px;
+   }
+ }
+{%- endstyle -%}
+
+<div id="hero" class="page-width section-{{ section.id }} t-text-center">
+  <div class="t-container color-{{ section.settings.color_scheme }}">
+    <h2 class="t-h2">{{section.settings.subheading}}</h2>
+</div>
+</div>
+
+{% schema %}
+ {
+   "name": "Hero (Text Only)",
+   "tag": "section",
+   "class": "section",
+   "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Header",
+      "default": "Our studio gear is second to none with the only large format APIs in Mexico. Our in-house engineers have worked together for 15 years and boast an armful of Grammys between them"
+    },
+    {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "scheme-3"
+        }
+  ]
+ }
+{% endschema %}

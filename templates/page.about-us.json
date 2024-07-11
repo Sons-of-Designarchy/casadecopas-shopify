@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "header": {
+      "type": "hero-text"
+    }
+  },
+  "order": ["header"]
+}
