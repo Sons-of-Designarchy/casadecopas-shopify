@@ -1,10 +1,10 @@
-{% assign backgroundImage = section.settings.image | image_url %}
+{% assign background = section.settings.image | image_url %}
 
 {%- style -%}
 .section {
  background-color: {{section.settings.color_scheme.settings.background}};
  border: solid 1px transparent;
- background: url('{{backgroundImage}}');
+ background: url('{{background}}');
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
