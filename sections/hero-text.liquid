@@ -1,3 +1,5 @@
+{% assign backgroundImage = section.settings.background_image | img_url: 'master' %}
+
 {%- style -%}
 .section {
  background-color: {{section.settings.color_scheme.settings.background}};
