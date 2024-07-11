@@ -19,7 +19,7 @@
   opacity: 0.3;
 
   @media screen and (min-width: 750px) {
-   max-width: 50%;
+   max-width: 40%;
   }
  }
 
@@ -33,7 +33,7 @@
 
 <div id="hero" class="page-width section-{{ section.id }} t-text-center">
  {% if section.settings.image %}
-  <img src="{{ section.settings.image | image_url }}" height="100%" width="80%" alt="background image">
+  <img src="{{ section.settings.image | image_url }}" height="100%" width="90%" alt="background image">
 {% endif %}
   <div class="t-container color-{{ section.settings.color_scheme }}">
     <h2 class="t-h2">{{section.settings.subheading}}</h2>
