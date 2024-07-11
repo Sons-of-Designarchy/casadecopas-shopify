@@ -18,7 +18,7 @@
 
 <div id="hero" class="page-width section-{{ section.id }} t-text-center">
  {% if section.settings.image %}
-  <img src="{{ section.settings.image | image_url: 'master' }}" height="100px" width="100%" alt="Image">
+  <img src="{{ section.settings.image }}" height="100px" width="100%" alt="Image">
 {% endif %}
   <div class="t-container color-{{ section.settings.color_scheme }}">
     <h2 class="t-h2">{{section.settings.subheading}}</h2>
