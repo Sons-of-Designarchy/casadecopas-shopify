@@ -1,14 +1,18 @@
-{% assign background = section.settings.image | image_url %}
-
 {%- style -%}
 .section {
- /* background-color: {{section.settings.color_scheme.settings.background}}; */
+ background-color: {{section.settings.color_scheme.settings.background}};
  border: solid 1px transparent;
- background: url('{{background}}') lightgray -74.447px 42.779px / 100% 99.685% no-repeat;
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+ }
+
+ .section img {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: exclusion;
+  opacity: 0.3;
  }
 
  @media screen and (min-width: 750px) {
@@ -20,9 +24,9 @@
 {%- endstyle -%}
 
 <div id="hero" class="page-width section-{{ section.id }} t-text-center">
- {% comment %} {% if section.settings.image %}
+ {% if section.settings.image %}
   <img src="{{ section.settings.image | image_url }}" height="100%" width="100%" alt="background image">
-{% endif %} {% endcomment %}
+{% endif %}
   <div class="t-container color-{{ section.settings.color_scheme }}">
     <h2 class="t-h2">{{section.settings.subheading}}</h2>
 </div>
