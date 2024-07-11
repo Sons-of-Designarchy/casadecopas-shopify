@@ -9,13 +9,13 @@
 */
 {
   "sections": {
-    "main": {
+    "header": {
       "type": "about-intro",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "header"
   ]
 }
