@@ -2,11 +2,25 @@
 .section {
  background-color: {{section.settings.color_scheme.settings.background}};
  border: solid 1px transparent;
+ position: relative;
+
+ height: 100%;
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
  }
+
+ .section img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media screen and (min-width: 750px) {
+   max-width: 40%;
+  }
+ }
+
 
  @media screen and (min-width: 750px) {
    .section-{{ section.id }}-padding {
@@ -17,6 +31,9 @@
 {%- endstyle -%}
 
 <div id="hero" class="page-width section-{{ section.id }} t-text-center">
+ {% if section.settings.image %}
+  <img class="background-overlay" src="{{ section.settings.image | image_url }}" height="100%" width="90%" alt="background image">
+{% endif %}
   <div class="t-container color-{{ section.settings.color_scheme }}">
     <h2 class="t-h2">{{section.settings.subheading}}</h2>
 </div>
@@ -39,7 +56,13 @@
           "id": "color_scheme",
           "label": "t:sections.all.colors.label",
           "default": "scheme-3"
-        }
+        },
+        {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "Select an image for this section"
+    }
   ]
  }
 {% endschema %}
