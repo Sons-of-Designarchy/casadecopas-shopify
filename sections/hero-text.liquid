@@ -2,11 +2,15 @@
 .section {
  background-color: {{section.settings.color_scheme.settings.background}};
  border: solid 1px transparent;
- font-weight: 800 !important;
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+ }
+
+ h1 {
+  color: red;
+  font-weigth: 600;
  }
 
  @media screen and (min-width: 750px) {
