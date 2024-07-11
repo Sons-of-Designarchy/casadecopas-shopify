@@ -10,7 +10,7 @@
 {
   "sections": {
     "header": {
-      "type": "about-intro",
+      "type": "header-text",
       "settings": {
       }
     }
