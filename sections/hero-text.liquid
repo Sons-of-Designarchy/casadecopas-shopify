@@ -2,7 +2,6 @@
 .section {
  background-color: {{section.settings.color_scheme.settings.background}};
  border: solid 1px transparent;
- background: url("{{section.settings.image | image_url}}");
 }
  .section-{{ section.id }}-padding {
    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
