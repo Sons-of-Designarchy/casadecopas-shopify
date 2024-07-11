@@ -10,9 +10,8 @@
 {
   "sections": {
     "header": {
-      "type": "header-text",
+      "type": "hero-text",
       "settings": {
-        "subheading": "Our studio gear is second to none with the only large format APIs in Mexico. Our in-house engineers have worked together for 15 years and boast an armful of Grammys between them"
       }
     }
   },
