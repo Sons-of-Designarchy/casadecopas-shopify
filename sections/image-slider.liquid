@@ -1,5 +1,12 @@
-
-
+{%- style -%}
+ .section {
+  background-color: {{section.settings.color_scheme.settings.background}};
+  border: solid 1px transparent;
+  position: relative;
+ 
+  height: 100%;
+ }
+{% endstyle %}
 
 <div id="sliders" class="image-slider__main color-{{ section.settings.color_scheme }}" >
   <h2>{{ section.settings.header }}</h2>
