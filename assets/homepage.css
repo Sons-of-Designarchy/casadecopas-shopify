@@ -243,7 +243,7 @@ h1,
     line-height: 100px;
   }
 
-  p {
+  .t-about p {
     font-size: 60px !important;
     line-height: 120%;
   }
