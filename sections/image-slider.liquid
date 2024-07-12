@@ -1,9 +1,11 @@
 {%- style -%}
-.section-{{section.id}} { font-family: var(--font-body-family) !important; }
+.section-{{section.id}} { 
+ font-family: var(--font-body-family) !important; 
+ }
 {% endstyle %}
 
 <div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}" >
-  <h2>{{ section.settings.title }}</h2>
+  <h4>{{ section.settings.title }}</h4>
   <p>{{ section.settings.description }}</p>
 
   <div class="image-slider__slider">
