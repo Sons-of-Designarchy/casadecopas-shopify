@@ -1,0 +1,42 @@
+{%  schema  %} 
+{
+  "name": "Image Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Header"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Default description text."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_slider",
+      "name": "Image Slider",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image 3"
+        }
+      ]
+    }
+]
+}
+{% endschema %}
