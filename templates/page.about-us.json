@@ -20,6 +20,8 @@
     "sliders": {
       "type": "image-slider",
       "settings": {
+        "title": "API Boards",
+        "description": "32 Channel \n16 Channel \nSumming mixing board",
         "color_scheme": "scheme-4"
       }
     }
