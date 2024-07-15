@@ -1,5 +1,12 @@
 <div class="subheader-icon section">
   <h2>{{ settings.section_title }}</h2>
+  {% if section.settings.image %}
+    <img
+      src="{{ section.settings.image | image_url }}"
+      height="100%"
+      width="90%"
+      alt="background image">
+  {% endif %}
 </div>
 
 {% schema %}
