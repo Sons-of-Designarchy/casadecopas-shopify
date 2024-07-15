@@ -34,3 +34,8 @@
   height: 3rem;
   width: 3rem;
 }
+
+.image-slider__slider button svg {
+  height: 3rem;
+  width: 3rem;
+}
