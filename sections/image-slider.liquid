@@ -49,9 +49,6 @@
       <button class="image-slider__forw">
         <p>Forw</p>
       </button>
-      <button class="image-slider__back">
-        <p>Back</p>
-      </button>
       {% for block in section.blocks %}
         {% if block.type == 'image_slider' %}
           <img
@@ -92,7 +89,6 @@
    let sliderImages = document.getElementsByClassName('slide');
    let slideMainBox = document.querySelector('.slide__main');
    let forwardBtn = document.querySelector('.image-slider__forw');
-   let backwardBtn = document.querySelector('.image-slider__back');
 
    let active = 0;
 
