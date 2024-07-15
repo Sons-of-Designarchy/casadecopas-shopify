@@ -23,6 +23,14 @@
  .focus {
   transform: scale(2);
  }
+
+ .hidden {
+  display: none;
+ }
+
+ .block {
+  display: block;
+ }
 {% endstyle %}
 
 <div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}" >
@@ -65,8 +73,11 @@
 
  const addFocus = (active) => {
   slideMainBox.src = sliderImages[0].children[active].src;
+  sliderImages[0].children[active].classList.add('hidden');
  };
- const removeFocus = (active) => sliderImages[0].children[active].classList.remove('focus');
+ const removeFocus = (active) => {
+  sliderImages[0].children[active].classList.add('focus')
+ };
 
  // initialize focus on first image
   addFocus(0);
