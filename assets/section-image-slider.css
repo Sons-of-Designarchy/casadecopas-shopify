@@ -1,3 +1,7 @@
+.image-slider__main p:first-of-type {
+  font-weight: 800;
+}
+
 .slide {
   display: grid;
   grid-template-columns: repeat(3, 15rem);
