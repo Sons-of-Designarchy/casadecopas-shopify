@@ -47,6 +47,6 @@
 }
 
 .image-slider__slider button:hover {
- background-color: rgba(var(--color-foreground), 0.5);
+ background-color: rgba(var(--color-foreground), 0.1);
  cursor: pointer:
 }
