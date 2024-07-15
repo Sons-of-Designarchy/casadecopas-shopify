@@ -113,11 +113,10 @@
    // initialize focus on first image
   addFocus(0);
 
-   forwardBtn?.addEventListener('click', () => {
-  if (active <= sliderImages[0].children.length) {
+  forwardBtn?.addEventListener('click', () => {
   removeFocus(active);
   addFocus(active);
-   }})
+   })
 </script>
 
 {% schema %}
