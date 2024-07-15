@@ -83,6 +83,7 @@
     slideMainBox.classList.remove('fade-in');
     setTimeout(() => {
      slideMainBox.src = sliderImages[0].children[active].src;
+     slideMainBox.classList.add('fade-in');
      sliderImages[0].children[active].classList.add('hidden');
     }, 0)
    
