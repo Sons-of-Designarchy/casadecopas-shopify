@@ -3,23 +3,24 @@
 {%- style -%}
   .section-{{ section.id }} {
     display: grid;
-
     padding: 2rem;
   }
 
   .section-{{ section.id }}
   section {
     display: grid;
-    grid-template-columns: 20% 20% 1fr;
+    grid-template-columns: 1fr;
 
     border-top: 1px solid{{section.settings.color_scheme.settings.text}};
-    max-width: var(--page-width);
+    max-width: calc(var(--page-width) - 15rem);
     width: 100%;
 
     margin: auto;
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: 20% 20% 1fr;
+    };
   }
-
-
 {% endstyle %}
 
 <div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">

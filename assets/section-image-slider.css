@@ -22,8 +22,12 @@
 .image-slider__slider {
   display: flex;
   flex-direction: column;
-  align-items: end;
+
   overflow: hidden;
+
+  @media screen and (min-width: 750px) {
+    align-items: end;
+  }
 }
 
 .image-slider__slider button {
@@ -39,14 +43,15 @@
   width: fit-content;
 
   border-radius: 1000px;
+  align-self: end;
 }
 
 .image-slider__slider svg {
- height: 4rem;
- width: 4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .image-slider__slider button:hover {
- background-color: rgba(var(--color-foreground), 0.3);
- cursor: pointer:
+  background-color: rgba(var(--color-foreground), 0.3);
+  cursor: pointer;
 }
