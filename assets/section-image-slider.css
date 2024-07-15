@@ -22,8 +22,12 @@
 .image-slider__slider {
   display: flex;
   flex-direction: column;
-  align-items: end;
+
   overflow: hidden;
+
+  @media screen and (min-width: 750px) {
+   align-items: end;
+  }
 }
 
 .image-slider__slider button {
