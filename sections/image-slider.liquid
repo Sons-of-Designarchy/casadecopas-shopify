@@ -25,7 +25,6 @@
 
   <div class="image-slider__slider">
     {% for block in section.blocks %}
-     <script>console.log({{block}});</script>
       {% if block.type == 'image_slider' %}
         <div class="slide">
           {% if block.settings.image1 %}
