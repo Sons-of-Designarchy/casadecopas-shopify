@@ -64,7 +64,7 @@
  console.log(sliderImages[0].children[0].src);
 
  const addFocus = (active) => {
-  slideMainBox.
+  slideMainBox.src = sliderImages[0].children[active].src;
  };
  const removeFocus = (active) => sliderImages[0].children[active].classList.remove('focus');
 
