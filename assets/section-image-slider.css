@@ -1,5 +1,5 @@
 .image-slider__main p:first-of-type {
-  font-weight: 500;
+  font-weight: var(--body-font-500);
 }
 
 .slide {
