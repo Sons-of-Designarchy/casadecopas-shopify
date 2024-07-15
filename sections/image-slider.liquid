@@ -95,7 +95,6 @@
    let backwardBtn = document.querySelector('.image-slider__back');
 
    let active = 0;
-   const activeChild = sliderImages[0].children[active];
    console.log(active);
 
    const addFocus = (active) => {
@@ -105,6 +104,7 @@
    
    const removeFocus = (active) => {
   sliderImages[0].children[active].classList.remove('hidden');
+  const activeChild = sliderImages[0].children[active];
   sliderImages[0].appendChild(activeChild);
    };
 
