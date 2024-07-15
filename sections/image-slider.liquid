@@ -46,6 +46,7 @@
 
   <div class="image-slider__slider">
    <button class="image-slider__forw"><p>Forw</p></button>
+   <button class="image-slider__back"><p>Back</p></button>
     {% for block in section.blocks %}
       {% if block.type == 'image_slider' %}
        <img class="slide__main" width="200px" height="200px"/>
@@ -79,11 +80,13 @@
   slideMainBox.src = sliderImages[0].children[active].src;
   sliderImages[0].children[active].classList.add('hidden');
  };
-
+ 
  const removeFocus = (active) => {
   sliderImages[0].children[active].classList.remove('hidden');
   const activeChild = sliderImages[0].children[active];
   sliderImages[0].appendChild(activeChild);
+
+  active = sliderImages.length - 1;
  };
 
  // initialize focus on first image
@@ -94,6 +97,14 @@
   removeFocus(active);
   addFocus(active);
  }})
+
+ backwardBtn?.addEventListener('click', () => {
+  if (active > 0) {  
+  removeFocus(active);
+  active--;
+  addFocus(active);
+ }
+ })
 </script>
 
 {% schema %}
