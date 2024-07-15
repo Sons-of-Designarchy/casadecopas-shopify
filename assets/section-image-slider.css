@@ -32,8 +32,12 @@
   background-color: transparent;
   border: none;
 
+  padding: 9;
+
   height: fit-content;
   width: fit-content;
+
+  border-radius: 1000px;
 }
 
 .image-slider__slider svg {
