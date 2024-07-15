@@ -1,5 +1,5 @@
-.image-slider__main p:first-of-type {
-  line-height: 0;
+.image-slider__main p {
+  line-height: 1rem;
 }
 
 .slide {
