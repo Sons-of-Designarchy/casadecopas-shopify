@@ -27,6 +27,8 @@
 }
 
 .image-slider__slider button {
+  display: flex;
+
   width: fit-content;
   background-color: transparent;
   border: solid 1px #d9c8b8;
