@@ -97,7 +97,7 @@
  }})
 
  backwardBtn?.addEventListener('click', () => {
-  if (active > 0) {  
+  if (active >= 0) {  
   removeFocus(active);
   active = sliderImages[0].children.length - 1;
   addFocus(active);
