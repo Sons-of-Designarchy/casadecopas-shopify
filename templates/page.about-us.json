@@ -27,14 +27,6 @@
             "image2": "shopify:\/\/shop_images\/Shp-tote-frase-1-min.jpg",
             "image3": "shopify:\/\/shop_images\/Shp-taza-fraseArt-1-min.jpg"
           }
-        },
-        "image_slider_2": {
-          "type": "image_slider",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/Shp-tote-frase-viva-min.jpg",
-            "image2": "shopify:\/\/shop_images\/Shp-tote-frase-1-min.jpg",
-            "image3": "shopify:\/\/shop_images\/Shp-taza-fraseArt-1-min.jpg"
-          }
         }
       },
       "block_order": [
