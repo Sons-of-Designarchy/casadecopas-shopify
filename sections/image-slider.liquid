@@ -31,7 +31,8 @@
     {% for block in section.blocks %}
       {% if block.type == 'image_slider' %}
         <div class="slide">
-         <button><p>></p></button>
+         <button class="image-slider__forw"><p>></p></button>
+         <button class="image-slider__back"><p><</p></button>
           {% if block.settings.image1 %}
             <img src="{{ block.settings.image1 | image_url }}" width="100px" height="100px" alt="Slider Image 1">
           {% endif %}
