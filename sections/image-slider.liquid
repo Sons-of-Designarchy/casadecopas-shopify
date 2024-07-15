@@ -78,9 +78,10 @@
 
  const addFocus = (active) => {
   slideMainBox.src = sliderImages[0].children[active].src;
-  sliderImages[0].children[active].classList.add('hidden');
+  // sliderImages[0].children[active].classList.add('hidden');
  };
  const removeFocus = (active) => {
+  sliderImages[0].children[active].classList.remove('hidden');
   const activeChild = sliderImages[0].children[active];
   sliderImages[0].appendChild(activeChild);
  };
@@ -95,7 +96,7 @@
  }})
 
  backwardBtn?.addEventListener('click', () => {
-  if (active >= 0) {  
+  if (active > 0) {  
   removeFocus(active);
   active--;
   addFocus(active);
