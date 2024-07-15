@@ -16,7 +16,13 @@
         "color_scheme": "scheme-3",
         "image": "shopify://shop_images/about-bg.png"
       }
+    },
+    "sliders": {
+      "type": "image-slider",
+      "settings": {
+        "color_scheme": "scheme-4"
+      }
     }
   },
-  "order": ["header"]
+  "order": ["header", "sliders"]
 }

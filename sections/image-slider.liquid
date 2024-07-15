@@ -1,0 +1,99 @@
+{%- style -%}
+.section-{{section.id}} { 
+ display: grid;
+
+ padding: 2rem;
+ }
+
+ .section-{{section.id}} section {
+ display: grid;
+ grid-template-columns: 20% 20% 1fr;
+
+ border-top: 1px solid {{section.settings.color_scheme.settings.text}};
+ max-width: var(--page-width);
+ width: 100%;
+
+ margin: auto;
+ }
+
+ .slide {
+  border: solid 2px red;
+ }
+{% endstyle %}
+
+<div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}" >
+ <section>
+  <p class="text-body">{{ section.settings.title }}</p>
+  <p class="text-body">{{ section.settings.description }}</p>
+
+
+  <div class="image-slider__slider">
+    {% for block in section.blocks %}
+      {% if block.type == 'image_slider' %}
+        <div class="slide">
+          {% if block.settings.image1 %}
+            <img src="{{ block.settings.image1 | image_url }}" width="100px" height="100px" alt="Slider Image 1">
+          {% endif %}
+          {% if block.settings.image2 %}
+            <img src="{{ block.settings.image2 | image_url }}" width="100px" height="100px" alt="Slider Image 2">
+          {% endif %}
+          {% if block.settings.image3 %}
+            <img src="{{ block.settings.image3 | image_url }}" width="100px" height="100px" alt="Slider Image 3">
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div></section>
+
+</div>
+
+{% schema %}
+{
+  "name": "Image Slider",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Header"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Default description text."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_slider",
+      "name": "Images",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image 3"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
