@@ -99,7 +99,7 @@
  backwardBtn?.addEventListener('click', () => {
   if (active > 0) {  
   removeFocus(active);
-  active--;
+  active = sliderImages.length;
   addFocus(active);
  }
  })
