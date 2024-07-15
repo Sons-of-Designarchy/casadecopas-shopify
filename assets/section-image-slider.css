@@ -31,11 +31,7 @@
 
   width: fit-content;
   background-color: transparent;
-  height: 3rem;
-  width: 3rem;
-}
-
-.image-slider__slider button svg {
+  border: none;
   height: 3rem;
   width: 3rem;
 }
