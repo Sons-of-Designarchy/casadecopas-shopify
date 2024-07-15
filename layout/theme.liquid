@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
-  <head>
+  <head>{
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -50,6 +50,7 @@
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+      assign body_font_500 = settings.type_body_font | font_modify: 'weight', '500' ;
     %}
 
     {% style %}
@@ -107,7 +108,7 @@
           --color-secondary-button-text: {{ scheme.settings.secondary_button_label.red }}, 
           {{ scheme.settings.secondary_button_label.green }}, 
           {{ scheme.settings.secondary_button_label.blue }};
-          --color-link: {{ scheme.settings.secondary_button_label.red }}, 
+          --color-link: {{ scheme.settings.sec ondary_button_label.red }}, 
           {{ scheme.settings.secondary_button_label.green }}, 
           {{ scheme.settings.secondary_button_label.blue }};
           --color-badge-foreground: {{ scheme.settings.text.red }}, 
@@ -142,8 +143,6 @@
 
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
-
-        assign --body-font-500: {{ settings.type_body_font |  font_modify: 'weight', '500' }}
 
         --media-padding: {{ settings.media_padding }}px;
         --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
