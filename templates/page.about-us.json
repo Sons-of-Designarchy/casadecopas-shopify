@@ -35,7 +35,15 @@
         "description": "32 Channel <br>\n16 Channel <br>\nSumming mixing board",
         "color_scheme": "scheme-4"
       }
+    },
+    "image_slider_L67rjc": {
+      "type": "image-slider",
+      "settings": {
+        "title": "Default Header",
+        "description": "Default description text.",
+        "color_scheme": "scheme-4"
+      }
     }
   },
-  "order": ["header", "sliders"]
+  "order": ["header", "sliders", "image_slider_L67rjc"]
 }
