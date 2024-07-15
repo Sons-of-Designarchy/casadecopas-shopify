@@ -60,20 +60,24 @@
 
  let active = 0;
 
-  sliderImages[0].children[active].classList.add('focus')
+ // initialize focus on first image
+  sliderImages[0].children[active].classList.add('focus');
+
+  const addFocus = (active: number) =>   sliderImages[0].children[active].classList.add('focus');
+  const removeFocus = (active: number) =>   sliderImages[0].children[active].classList.add('focus');
 
  forwardBtn?.addEventListener('click', () => {
   if (active <= sliderImages.length) {
-  sliderImages[0].children[active].classList.remove('focus');
+  removeFocus(active);
   active++;
-  sliderImages[0].children[active].classList.add('focus');}
- })
+ addFocus(active);
+ }})
 
  backwardBtn?.addEventListener('click', () => {
   if (active > 0) {  
-  sliderImages[0].children[active].classList.remove('focus');
+  removeFocus(active);
   active--;
-  sliderImages[0].children[active].classList.add('focus');
+  addFocus(active);
  }
  })
 </script>
