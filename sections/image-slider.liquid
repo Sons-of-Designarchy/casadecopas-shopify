@@ -31,13 +31,12 @@
 
 
     <div class="image-slider__slider">
-
-      <div class="image-slider__container">
         {% for block in section.blocks %}
           {% if block.type == 'image_slider' %}
             <button class="image-slider__forw">
               {% render 'icon-arrow-right' %}
             </button>
+            <div class="image-slider__container">
             <img
               class="slide__main"
               width="400px"
@@ -64,6 +63,7 @@
                   height="100%"
                   alt="Slider Image 3">
               {% endif %}
+            </div>
             </div>
           {% endif %}
         {% endfor %}
