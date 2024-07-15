@@ -17,21 +17,15 @@
     margin: auto;
   }
 
-  .slide {
-    border: solid 2px red;
-  }
-
-  .focus {
-    transform: scale(2);
-  }
-
   .hidden {
     display: none;
   }
 
   .slide {
     display: grid;
-    grid-template-columns: repeat(3, 20px);
+    grid-template-columns: repeat(3, 1fr);
+
+    border: solid 2px red;
   }
 {% endstyle %}
 
