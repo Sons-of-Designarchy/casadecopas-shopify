@@ -43,6 +43,7 @@
   width: fit-content;
 
   border-radius: 1000px;
+  align-self: end;
 }
 
 .image-slider__slider svg {
@@ -53,5 +54,4 @@
 .image-slider__slider button:hover {
   background-color: rgba(var(--color-foreground), 0.3);
   cursor: pointer;
-  align-self: end;
 }
