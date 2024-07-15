@@ -1,13 +1,16 @@
 <div id="subheader" class="subheader-icon color-{{ section.settings.color_scheme }} section-{{ section.id }}">
-  <h1>{{ section.settings.title }}</h1>
-  <p class="text-body">{{ section.settings.description }}</p>
-  {% if section.settings.image %}
-    <img
-      src="{{ section.settings.image | image_url }}"
-      height="50px"
-      width="50px"
-      alt="background image">
-  {% endif %}
+  <div class="page-width">
+    <h1>{{ section.settings.title }}</h1>
+    <p class="text-body">{{ section.settings.description }}</p>
+    {% if section.settings.image %}
+      <img
+        src="{{ section.settings.image | image_url }}"
+        height="50px"
+        width="50px"
+        alt="background image">
+    {% endif %}
+  </div>
+
 </div>
 
 {% style %}
