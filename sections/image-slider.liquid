@@ -1,153 +1,172 @@
 {%- style -%}
-.section-{{section.id}} { 
- display: grid;
+  .section-{{ section.id }} {
+    display: grid;
 
- padding: 2rem;
- }
+    padding: 2rem;
+  }
 
- .section-{{section.id}} section {
- display: grid;
- grid-template-columns: 20% 20% 1fr;
+  .section-{{ section.id }}
+  section {
+    display: grid;
+    grid-template-columns: 20% 20% 1fr;
 
- border-top: 1px solid {{section.settings.color_scheme.settings.text}};
- max-width: var(--page-width);
- width: 100%;
+    border-top: 1px solid{{section.settings.color_scheme.settings.text}};
+    max-width: var(--page-width);
+    width: 100%;
 
- margin: auto;
- }
+    margin: auto;
+  }
 
- .slide {
-  border: solid 2px red;
- }
+  .slide {
+    border: solid 2px red;
+  }
 
- .focus {
-  transform: scale(2);
- }
+  .focus {
+    transform: scale(2);
+  }
 
- .hidden {
-  display: none;
- }
+  .hidden {
+    display: none;
+  }
 
- .block {
-  display: block;
- }
+  .block {
+    display: block;
+  }
 
- .image-slider__slider {
-  display: flex;
-  width: 100vw;
- }
+  .image-slider__slider {
+    display: flex;
+    width: 100vw;
+  }
 {% endstyle %}
 
-<div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}" >
- <section>
-  <p class="text-body">{{ section.settings.title }}</p>
-  <p class="text-body">{{ section.settings.description }}</p>
+<div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
+  <section>
+    <p class="text-body">{{ section.settings.title }}</p>
+    <p class="text-body">{{ section.settings.description }}</p>
 
 
-  <div class="image-slider__slider">
-   <button class="image-slider__forw"><p>Forw</p></button>
-   <button class="image-slider__back"><p>Back</p></button>
-    {% for block in section.blocks %}
-      {% if block.type == 'image_slider' %}
-       <img class="slide__main" width="200px" height="200px"/>
-        <div class="slide">
-          {% if block.settings.image1 %}
-            <img src="{{ block.settings.image1 | image_url }}" width="200px" height="150px" alt="Slider Image 1">
-          {% endif %}
-          {% if block.settings.image2 %}
-            <img src="{{ block.settings.image2 | image_url }}" width="200px" height="150px" alt="Slider Image 2">
-          {% endif %}
-          {% if block.settings.image3 %}
-            <img src="{{ block.settings.image3 | image_url }}" width="200px" height="150px" alt="Slider Image 3">
-          {% endif %}
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div></section>
+    <div class="image-slider__slider">
+      <button class="image-slider__forw">
+        <p>Forw</p>
+      </button>
+      <button class="image-slider__back">
+        <p>Back</p>
+      </button>
+      {% for block in section.blocks %}
+        {% if block.type == 'image_slider' %}
+          <img
+            class="slide__main"
+            width="200px"
+            height="200px" />
+          <div class="slide">
+            {% if block.settings.image1 %}
+              <img
+                src="{{ block.settings.image1 | image_url }}"
+                width="200px"
+                height="150px"
+                alt="Slider Image 1">
+            {% endif %}
+            {% if block.settings.image2 %}
+              <img
+                src="{{ block.settings.image2 | image_url }}"
+                width="200px"
+                height="150px"
+                alt="Slider Image 2">
+            {% endif %}
+            {% if block.settings.image3 %}
+              <img
+                src="{{ block.settings.image3 | image_url }}"
+                width="200px"
+                height="150px"
+                alt="Slider Image 3">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
 
 </div>
 
 <script>
- let sliderImages = document.getElementsByClassName('slide');
- let slideMainBox = document.querySelector('.slide__main');
- let forwardBtn = document.querySelector('.image-slider__forw');
- let backwardBtn = document.querySelector('.image-slider__back');
+   let sliderImages = document.getElementsByClassName('slide');
+   let slideMainBox = document.querySelector('.slide__main');
+   let forwardBtn = document.querySelector('.image-slider__forw');
+   let backwardBtn = document.querySelector('.image-slider__back');
 
- let active = 0;
- const activeChild = sliderImages[0].children[active];
- console.log(active);
+   let active = 0;
+   const activeChild = sliderImages[0].children[active];
+   console.log(active);
 
- const addFocus = (active) => {
+   const addFocus = (active) => {
   slideMainBox.src = sliderImages[0].children[active].src;
   sliderImages[0].children[active].classList.add('hidden');
- };
- 
- const removeFocus = (active) => {
+   };
+   
+   const removeFocus = (active) => {
   sliderImages[0].children[active].classList.remove('hidden');
   sliderImages[0].appendChild(activeChild);
- };
+   };
 
- // initialize focus on first image
+   // initialize focus on first image
   addFocus(0);
 
- forwardBtn?.addEventListener('click', () => {
+   forwardBtn?.addEventListener('click', () => {
   if (active <= sliderImages[0].children.length) {
   removeFocus(active);
   addFocus(active);
- }})
+   }})
 
- backwardBtn?.addEventListener('click', () => {
-
- })
+   backwardBtn?.addEventListener('click', () => {
+   active = sliderImages[0].children.length - 1;
+   removeFocus(0);
+   addFocus(active);
+   })
 </script>
 
 {% schema %}
-{
-  "name": "Image Slider",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Default Header"
-    },
-    {
-      "type": "textarea",
-      "id": "description",
-      "label": "Description",
-      "default": "Default description text."
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-3"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "image_slider",
-      "name": "Images",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image1",
-          "label": "Image 1"
-        },
-        {
-          "type": "image_picker",
-          "id": "image2",
-          "label": "Image 2"
-        },
-        {
-          "type": "image_picker",
-          "id": "image3",
-          "label": "Image 3"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Image Slider",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Default Header"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "Default description text."
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-3"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_slider",
+        "name": "Images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image 1"
+          }, {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Image 2"
+          }, {
+            "type": "image_picker",
+            "id": "image3",
+            "label": "Image 3"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
