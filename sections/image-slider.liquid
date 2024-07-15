@@ -61,10 +61,9 @@
  let backwardBtn = document.querySelector('.image-slider__back');
 
  let active = 0;
- console.log(sliderImages[0].children[0]);
+ console.log(sliderImages[0].children[0].src);
 
  const addFocus = (active) => {
-  console.log(sliderImages[0].children[0]);
  };
  const removeFocus = (active) => sliderImages[0].children[active].classList.remove('focus');
 
