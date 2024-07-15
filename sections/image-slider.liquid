@@ -25,8 +25,9 @@
 
   <div class="image-slider__slider">
     {% for block in section.blocks %}
-     
+
       {% if block.type == 'image_slider' %}
+       <script>console.log({{block|json}});</script>
         <div class="slide">
           {% if block.settings.image1 %}
             <img src="{{ block.settings.image1 | image_url }}" width="100px" height="100px" alt="Slider Image 1">
