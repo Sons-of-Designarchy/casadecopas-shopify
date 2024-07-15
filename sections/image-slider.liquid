@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="{{ 'section-image-slider.css' | asset_url }}">
-{% section 'image-slider' %}
 
 {%- style -%}
   .section-{{ section.id }} {
@@ -122,6 +121,11 @@
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Image Slider"
       }
     ],
     "blocks": [
