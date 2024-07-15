@@ -38,3 +38,7 @@
 
   cursor: pointer:
 }
+
+.image-slider__slider button::hover {
+ background-color: gray;
+}
