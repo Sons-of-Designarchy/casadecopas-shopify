@@ -64,7 +64,7 @@
   sliderImages[0].children[active].classList.add('focus');
 
   const addFocus = (active) => sliderImages[0].children[active].classList.add('focus');
-  const removeFocus = (active) => sliderImages[0].children[active].classList.add('focus');
+  const removeFocus = (active) => sliderImages[0].children[active].classList.remove('focus');
 
  forwardBtn?.addEventListener('click', () => {
   if (active <= sliderImages.length) {
