@@ -63,8 +63,8 @@
  // initialize focus on first image
   sliderImages[0].children[active].classList.add('focus');
 
-  const addFocus = (active: number) => sliderImages[0].children[active].classList.add('focus');
-  const removeFocus = (active: number) => sliderImages[0].children[active].classList.add('focus');
+  const addFocus = (active) => sliderImages[0].children[active].classList.add('focus');
+  const removeFocus = (active) => sliderImages[0].children[active].classList.add('focus');
 
  forwardBtn?.addEventListener('click', () => {
   if (active <= sliderImages.length) {
