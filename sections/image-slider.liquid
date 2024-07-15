@@ -67,40 +67,36 @@
 </div>
 
 <script>
- let sliderImages = document.getElementsByClassName('slide');
- let slideMainBox = document.querySelector('.slide__main');
- let forwardBtn = document.querySelector('.image-slider__forw');
- let backwardBtn = document.querySelector('.image-slider__back');
+let sliderImages = document.getElementsByClassName('slide');
+    let slideMainBox = document.querySelector('.slide__main');
+    let forwardBtn = document.querySelector('.image-slider__forw');
+    let backwardBtn = document.querySelector('.image-slider__back');
+    
+    let active = 0;
 
- let active = 0;
+    const addFocus = (index) => {
+      slideMainBox.src = sliderImages[0].children[index].src;
+      sliderImages[0].children[index].classList.add('hidden');
+    };
 
- const addFocus = (active) => {
-  slideMainBox.src = sliderImages[0].children[active].src;
-  sliderImages[0].children[active].classList.add('hidden');
- };
- const removeFocus = (active) => {
-  sliderImages[0].children[active].classList.remove('hidden');
-  const activeChild = sliderImages[0].children[active];
-  sliderImages[0].appendChild(activeChild);
- };
+    const removeFocus = (index) => {
+      sliderImages[0].children[index].classList.remove('hidden');
+    };
 
- // initialize focus on first image
-  addFocus(0);
+    // Initialize focus on first image
+    addFocus(active);
 
- forwardBtn?.addEventListener('click', () => {
-  if (active <= sliderImages.length) {
-  removeFocus(active);
-  active++;
-  addFocus(active);
- }})
+    forwardBtn.addEventListener('click', () => {
+      removeFocus(active);
+      active = (active + 1) % sliderImages[0].children.length;
+      addFocus(active);
+    });
 
- backwardBtn?.addEventListener('click', () => {
-  if (active > 0) {  
-  removeFocus(active);
-  active--;
-  addFocus(active);
- }
- })
+    backwardBtn.addEventListener('click', () => {
+      removeFocus(active);
+      active = (active - 1 + sliderImages[0].children.length) % sliderImages[0].children.length;
+      addFocus(active);
+    });
 </script>
 
 {% schema %}
