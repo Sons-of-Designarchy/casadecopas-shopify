@@ -1,32 +1,48 @@
-<div class="subheader-icon section">
-  <h2>{{ settings.section_title }}</h2>
+<div id="subheader" class="subheader-icon section page-width">
+  <h2>{{ settings.title }}</h2>
+  <p class="t{ext-body">{{ settings.description }}</p>
   {% if section.settings.image %}
     <img
       src="{{ section.settings.image | image_url }}"
-      height="100%"
-      width="90%"
+      height="50px"
+      width="50px"
       alt="background image">
   {% endif %}
 </div>
 
+{% style %}
+
+{% endstyle %}
+
+
 {% schema %}
   {
-    "name": "Custom Section with Icon",
+    "name": "Custom Subheading Icon",
     "settings": [
       {
         "type": "text",
-        "id": "section_title",
-        "label": "Section Title",
+        "id": "title",
+        "label": "Title",
         "default": "Default Title"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Default Description"
       }, {
         "type": "image_picker",
         "id": "icon_image",
         "label": "Icon Image"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-4"
       }
     ],
     "presets": [
       {
-        "name": "Custom Section with Icon",
+        "name": "Custom Subheading with Icon",
         "category": "Custom"
       }
     ]
