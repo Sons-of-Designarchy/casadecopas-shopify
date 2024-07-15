@@ -50,7 +50,7 @@
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-      assign body_font_500 = settings.type_body_font | font_modify: 'weight', '500' ;
+      assign body_font_500 = settings.type_body_font | font_modify: 'weight', '500'
     %}
 
     {% style %}
@@ -58,7 +58,7 @@
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
-      {{ body_font_500 |  font_face: font_display: 'swap'}}
+      {{ body_font_500 | font_face: font_display: 'swap'}}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
       {% for scheme in settings.color_schemes -%}
