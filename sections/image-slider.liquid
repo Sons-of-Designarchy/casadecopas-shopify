@@ -21,14 +21,6 @@
  }
 {% endstyle %}
 
-<script>
- let sliderImages = document.getElementsByClassName('slide');
-
- for (let i = 0; i < sliderImages.length; i++) {
-  console.log(sliderImages[i]);
- }
-</script>
-
 <div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}" >
  <section>
   <p class="text-body">{{ section.settings.title }}</p>
@@ -54,6 +46,14 @@
   </div></section>
 
 </div>
+
+<script>
+ let sliderImages = document.getElementsByClassName('slide');
+
+ for (let i = 0; i < sliderImages.length; i++) {
+  console.log(sliderImages[i]);
+ }
+</script>
 
 {% schema %}
 {
