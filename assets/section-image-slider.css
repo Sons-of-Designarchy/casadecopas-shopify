@@ -29,5 +29,6 @@
 .image-slider__slider button {
   width: fit-content;
   background-color: transparent;
-  border: ;
+  border: solid 1px #d9c8b8;
+  border-radius: 1000px;
 }
