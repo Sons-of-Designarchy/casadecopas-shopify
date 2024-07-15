@@ -35,10 +35,9 @@
 
   height: 3rem;
   width: 3rem;
-
-  cursor: pointer:
 }
 
-.image-slider__slider button::hover {
+.image-slider__slider button:hover {
  background-color: gray;
+ cursor: pointer:
 }
