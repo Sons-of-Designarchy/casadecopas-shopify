@@ -29,7 +29,7 @@
     display: none;
   }
 
-  .image-slider__slider {
+  .image-slider__container {
     display: grid;
     grid-auto-flow: columns;
     grid-template-rows: repeat(3, 1fr);
@@ -47,7 +47,7 @@
       <button class="image-slider__forw">
         <p>Forw</p>
       </button>
-      <div>
+      <div class="image-slider__container">
         {% for block in section.blocks %}
           {% if block.type == 'image_slider' %}
             <img
