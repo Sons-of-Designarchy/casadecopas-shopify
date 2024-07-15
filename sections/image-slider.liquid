@@ -56,7 +56,7 @@
 <script>
  let sliderImages = document.getElementsByClassName('slide');
  let forwardBtn = document.querySelector('.image-slider__forw');
- let backwardBtn = document.querySelector('.image-slide__back');
+ let backwardBtn = document.querySelector('.image-slider__back');
 
  let active = 0;
 
@@ -64,7 +64,7 @@
   sliderImages[0].children[active].classList.add('focus')
  }
 
- forwardBtn.addEventListener('click', () => {
+ forwardBtn?.addEventListener('click', () => {
   if (active <= sliderImages.length) {
   sliderImages[0].children[active].classList.remove('focus');
   active++;
