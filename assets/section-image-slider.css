@@ -59,3 +59,7 @@
 .slide__main {
   transition: opacity 0.5s ease-in-out;
 }
+
+.fade-in {
+  opacity: 1 !important;
+}
