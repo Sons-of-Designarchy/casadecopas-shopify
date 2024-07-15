@@ -55,3 +55,7 @@
   background-color: rgba(var(--color-foreground), 0.3);
   cursor: pointer;
 }
+
+.slide__main {
+  transition: opacity 0.5s ease-in-out;
+}
