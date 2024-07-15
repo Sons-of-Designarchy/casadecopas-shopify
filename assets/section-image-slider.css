@@ -32,6 +32,8 @@
   width: fit-content;
   background-color: transparent;
   border: none;
+  padding: none;
+
   height: 3rem;
   width: 3rem;
 }
