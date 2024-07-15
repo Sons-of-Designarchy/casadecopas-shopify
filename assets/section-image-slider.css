@@ -1,4 +1,5 @@
 .image-slider__main p:first-of-type {
+  padding: 0;
 }
 
 .slide {
