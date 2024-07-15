@@ -57,9 +57,10 @@
  let active = 0;
 
  forwardBtn.addEventListener('click', () => {
+  if (active <= sliderImages.length) {
   sliderImages[0].children[active].classList.remove('focus');
   active++;
-  sliderImages[0].children[active].classList.add('focus');
+  sliderImages[0].children[active].classList.add('focus');}
  })
 
  backwardBtn.addEventListener('click', () => {
