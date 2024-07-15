@@ -10,6 +10,7 @@
   section {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 0.5rem;
 
     border-top: 1px solid{{section.settings.color_scheme.settings.text}};
     max-width: calc(var(--page-width) - 15rem);
@@ -80,13 +81,8 @@
    let active = 0;
 
    const addFocus = (active) => {
-    slideMainBox.classList.remove('fade-in');
-    setTimeout(() => {
-     slideMainBox.src = sliderImages[0].children[active].src;
-     slideMainBox.classList.add('fade-in');
-     sliderImages[0].children[active].classList.add('hidden');
-    }, 0)
-
+  slideMainBox.src = sliderImages[0].children[active].src;
+  sliderImages[0].children[active].classList.add('hidden');
    };
    
    const removeFocus = (active) => {
