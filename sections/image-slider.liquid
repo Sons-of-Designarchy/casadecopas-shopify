@@ -80,8 +80,12 @@
    let active = 0;
 
    const addFocus = (active) => {
-  slideMainBox.src = sliderImages[0].children[active].src;
-  sliderImages[0].children[active].classList.add('hidden');
+    slideMainBox.classList.remove('fade-in');
+    setTimeout(() => {
+     slideMainBox.src = sliderImages[0].children[active].src;
+     sliderImages[0].children[active].classList.add('hidden');
+    }, 0)
+   
    };
    
    const removeFocus = (active) => {
