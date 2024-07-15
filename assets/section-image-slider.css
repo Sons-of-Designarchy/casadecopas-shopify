@@ -37,6 +37,10 @@
   width: 3rem;
 }
 
+.image-slider__slider svg {
+ height: 100px;
+}
+
 .image-slider__slider button:hover {
  background-color: gray;
  cursor: pointer:
