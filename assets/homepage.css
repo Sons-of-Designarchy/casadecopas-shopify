@@ -1,25 +1,36 @@
 @font-face {
-  font-family: "t-Dahlia";
-  src: url("https://cdn.shopify.com/s/files/1/0637/4699/8410/files/dahlia.otf?v=1707335260") format("opentype");
+  font-family: 't-Dahlia';
+  src: url('https://cdn.shopify.com/s/files/1/0637/4699/8410/files/dahlia.otf?v=1707335260')
+    format('opentype');
 }
 
 @font-face {
-  font-family: "t-Carola";
-  src: url("https://cdn.shopify.com/s/files/1/0637/4699/8410/files/carola.otf?v=1707335260") format("opentype");
+  font-family: 't-Carola';
+  src: url('https://cdn.shopify.com/s/files/1/0637/4699/8410/files/carola.otf?v=1707335260')
+    format('opentype');
 }
 
 html,
-body, h2, h3, h4, h5 .h2, .h3, .h4, .h5 {
-  font-family: "t-Dahlia", serif!important;
+body,
+h2,
+h3,
+h4,
+h5 .h2,
+.h3,
+.h4,
+.h5 {
+  font-family: 't-Dahlia', serif !important;
 }
 
-h1, .h0, .h1 {
-  font-family: "t-Carola", serif!important;
+h1,
+.h0,
+.h1 {
+  font-family: 't-Carola', serif !important;
   text-align: center;
 }
 
 .homepage .header-wrapper {
-  background: #D9C8B8;
+  background: #d9c8b8;
 }
 
 .t-display-xl {
@@ -41,7 +52,7 @@ h1, .h0, .h1 {
   margin: 0;
 }
 
-p {
+.t-about p {
   font-size: 20px !important;
   line-height: 120%;
 }
@@ -89,7 +100,8 @@ p {
   background: #fd7d54;
 }
 
-.t-about .t-container, .t-welcome .t-container {
+.t-about .t-container,
+.t-welcome .t-container {
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -100,7 +112,9 @@ p {
 }
 
 .t-about {
-  background: #000 url("https://cdn.shopify.com/s/files/1/0637/4699/8410/files/about-bg.png?v=1707343952") no-repeat;
+  background: #000
+    url('https://cdn.shopify.com/s/files/1/0637/4699/8410/files/about-bg.png?v=1707343952')
+    no-repeat;
   background-size: auto 100%;
   background-position: top right;
   color: #ffff;
@@ -111,10 +125,11 @@ p {
 }
 
 .t-text-center {
-  text-align:  center;
+  text-align: center;
 }
 
-.t-text-orange a, .t-text-orange .t-display-xl {
+.t-text-orange a,
+.t-text-orange .t-display-xl {
   color: #fd7d54;
 }
 
@@ -158,8 +173,8 @@ p {
 }
 
 .t-welcome-floated img {
-  box-shadow: 0 30px 30px rgba(0,0,0,.15);
-  position: absolute; 
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.15);
+  position: absolute;
 }
 
 .t-welcome-footer {
@@ -202,8 +217,8 @@ p {
 }
 
 .t-gold {
-left: 10rem;
-bottom: 2rem;
+  left: 10rem;
+  bottom: 2rem;
 }
 
 .footer img {
@@ -228,7 +243,7 @@ bottom: 2rem;
     line-height: 100px;
   }
 
-  p {
+  .t-about p {
     font-size: 60px !important;
     line-height: 120%;
   }
@@ -237,7 +252,6 @@ bottom: 2rem;
 /* Mobile */
 
 @media (max-width: 768px) {
-
   .t-section {
     min-height: 80vh;
   }
