@@ -28,4 +28,6 @@
 
 .image-slider__slider button {
   width: fit-content;
+  background-color: transparent;
+  border: ;
 }
