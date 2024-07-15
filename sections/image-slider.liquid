@@ -91,7 +91,7 @@
   addFocus(0);
 
  forwardBtn?.addEventListener('click', () => {
-  if (active <= sliderImages[0].length) {
+  if (active <= sliderImages[0].children.length) {
   removeFocus(active);
   addFocus(active);
  }})
@@ -99,7 +99,7 @@
  backwardBtn?.addEventListener('click', () => {
   if (active > 0) {  
   removeFocus(active);
-  active = sliderImages[0].length - 1;
+  active = sliderImages[0].children.length - 1;
   addFocus(active);
  }
  })
