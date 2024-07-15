@@ -1,1 +1,25 @@
 <div class="subheader-icon section"></div>
+
+{% schema %}
+  {
+    "name": "Custom Section with Icon",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Default Title"
+      }, {
+        "type": "image_picker",
+        "id": "icon_image",
+        "label": "Icon Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Section with Icon",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
