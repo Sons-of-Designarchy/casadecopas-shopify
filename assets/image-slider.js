@@ -14,12 +14,12 @@ if (!customElements.get('image-slider-section')) {
 
       console.log('initialization');
 
-      this.active = 0;
+    //   this.active = 0;
 
-      this.addFocus(this.active);
-      this.counter.innerHTML = `${this.active + 1} / ${
-        this.sliderImages[0].children.length
-      }`;
+    //   this.addFocus(this.active);
+    //   this.counter.innerHTML = `${this.active + 1} / ${
+    //     this.sliderImages[0].children.length
+    //   }`;
 
     //   this.forwardBtn.addEventListener('click', () => {
     //     this.active++;
