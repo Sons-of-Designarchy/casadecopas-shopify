@@ -7,9 +7,9 @@ class ImageSliderSection extends HTMLElement {
     this.sectionId = `image_slider_${title.replace(/\s+/g, '_').toLowerCase()}`;
 
     // Scoped queries within this custom element instance
-    this.sliderImages = this.querySelectorAll(`.slide-${sectionId}`);
-    this.slideMainBox = this.querySelector(`.slide__main-${sectionId}`);
-    this.forwardBtn = this.querySelector('.image-slider__forw');
+    this.sliderImages = this.querySelectorAll(`.slide-${this.sectionId}`);
+    this.slideMainBox = this.querySelector(`.slide__main-${this.sectionId}`);
+    this.forwardBtn = this.querySelector('.image-slider__forw-}');
     this.backwardsBtn = this.querySelector('.image-slider__back');
     this.counter = this.querySelector('.image-slider__counter');
 
