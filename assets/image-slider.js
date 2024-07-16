@@ -3,7 +3,7 @@ class ImageSliderSection extends HTMLElement {
     super();
 
     // Generate section ID based on component title (assuming title attribute exists)
-    const title = this.getAttribute('title');
+    const sectionId = this.getAttribute('title');
 
     // Scoped queries within this custom element instance
     this.sliderImages = this.querySelectorAll(`.slide-${this.sectionId}`);
