@@ -41,6 +41,7 @@
 .image-slider__buttons {
   display: flex;
   border: solid 2px red;
+  justify-items: end;
 }
 
 .image-slider__buttons button {
