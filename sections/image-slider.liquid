@@ -33,13 +33,18 @@
     <div class="image-slider__slider">
       {% for block in section.blocks %}
         {% if block.type == 'image_slider' %}
-          <div class="image-slider__buttons">
-            <button class="image-slider__back">
-              {% render 'icon-arrow-left' %}
-            </button>
-            <button class="image-slider__forw">
-              {% render 'icon-arrow-right' %}
-            </button>
+          <div class="image-slider__controls">
+            <p class="text-body">IMG
+              <span class="image-slider__counter"></span>
+            </p>
+            <div class="image-slider__buttons">
+              <button class="image-slider__back">
+                {% render 'icon-arrow-left' %}
+              </button>
+              <button class="image-slider__forw">
+                {% render 'icon-arrow-right' %}
+              </button>
+            </div>
           </div>
           <div class="image-slider__container">
             <img
@@ -52,7 +57,6 @@
                   src="{{ block.settings.image1 | image_url }}"
                   width="100%"
                   height="100%"
-                  class="slide_thumbnail"
                   alt="Slider Image 1">
               {% endif %}
               {% if block.settings.image2 %}
@@ -81,8 +85,11 @@
 <script>
    let sliderImages = document.getElementsByClassName('slide');
    let slideMainBox = document.querySelector('.slide__main');
+
    let forwardBtn = document.querySelector('.image-slider__forw');
    let backwardsBtn = document.querySelector('.image-slider__back');
+
+   let counter = document.querySelector('.image-slider__counter');
 
    let active = 0;
    
@@ -100,19 +107,22 @@
   sliderImages[0].children[nextIndex].style.display = 'block';
    };
 
-   // initialize focus on first image
+   // initialize focus on first image & counter
    addFocus(0);
+   counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
 
   forwardBtn?.addEventListener('click', () => {
    active++;
    if (active >= sliderImages[0].children?.length) active = 0;
   addFocus(active);
+  counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
    })
 
    backwardsBtn?.addEventListener('click', () => {
     active--;
     if (active < 0) active = sliderImages[0].children?.length - 1;
     addFocus(active);
+    counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
    });
 </script>
 

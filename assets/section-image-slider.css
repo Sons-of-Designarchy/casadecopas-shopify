@@ -1,7 +1,3 @@
-.image-slider__main p:first-of-type {
-  font-weight: 600;
-}
-
 .image-slider__main p {
   margin-block-end: 0;
 }
@@ -9,20 +5,30 @@
 .slide {
   display: none;
 
-  height: 5rem;
   width: 100%;
-
-  padding: 0 1rem;
 
   @media screen and (min-width: 850px) {
     display: grid;
+    margin: 0 1rem;
   }
+}
+
+img.slide__main {
+  width: 100%;
+}
+
+.slide img {
+  height: 60%;
 }
 
 .image-slider__container {
   display: grid;
   grid-auto-flow: column;
   width: 100%;
+
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 1fr 40%;
+  }
 }
 
 .image-slider__container img {
@@ -38,6 +44,13 @@
   @media screen and (min-width: 750px) {
     align-items: end;
   }
+}
+
+.image-slider__controls {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
 }
 
 .image-slider__buttons {
