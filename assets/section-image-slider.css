@@ -40,6 +40,12 @@
   }
 }
 
+.image-slider__controls {
+  display: flex;
+  border: solid 2px red;
+  width: 100%;
+}
+
 .image-slider__buttons {
   display: flex;
   gap: 1rem;
