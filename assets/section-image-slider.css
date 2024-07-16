@@ -12,6 +12,7 @@
 
   @media screen and (min-width: 850px) {
     display: grid;
+    grid-template-columns: 20rem;
   }
 }
 
