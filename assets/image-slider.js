@@ -14,8 +14,6 @@ if (!customElements.get('image-slider-section')) {
 
       this.active = 0;
 
-      console.log(this.active);
-
       //   this.addFocus(this.active);
       //   this.counter.innerHTML = `${this.active + 1} / ${
       //     this.sliderImages[0].children.length
