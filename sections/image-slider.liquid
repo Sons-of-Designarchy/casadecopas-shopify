@@ -83,9 +83,9 @@
    let active = 0;
 
    const addFocus = (active) => {
-    if (sliderImages[0].children?.length >= active) {
+
      slideMainBox.src = sliderImages[0].children[active].src;
-    }
+   
    };
    
    const removeFocus = (active) => {
@@ -95,8 +95,9 @@
   addFocus(0);
 
   forwardBtn?.addEventListener('click', () => {
-  active++;
-  addFocus(active);
+   if (active < sliderImages[0].children?.length) {  active++;
+  addFocus(active);}
+
    })
 </script>
 
