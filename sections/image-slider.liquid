@@ -26,65 +26,65 @@
 
 {% assign custom_id = section.settings.title | downcase | replace: " ", "-" %}
 
-<div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
-  <section>
-    <p class="text-body">{{ section.settings.title }}</p>
-    <p class="text-body">{{ section.settings.description }}</p>
-
-
-    <div class="image-slider__slider">
-      {% for block in section.blocks %}
-        {% if block.type == 'image_slider' %}
-          <div class="image-slider__controls">
-            <p class="text-body">IMG
-              <span class="image-slider__counter"></span>
-            </p>
-            <div class="image-slider__buttons">
-              <button class="image-slider__back">
-                {% render 'icon-arrow-left' %}
-              </button>
-              <button class="image-slider__forw">
-                {% render 'icon-arrow-right' %}
-              </button>
-            </div>
+<div
+  class="image-slider-section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  title="{{ section.settings.title }}">
+  <div class="slide__main-{{ section.id }}">
+    <img src="" alt="Main Image">
+  </div>
+  <div class="slide-{{ section.id }}">
+    {% for block in section.blocks %}
+      {% if block.type == 'image_slider' %}
+        <div class="image-slider__controls">
+          <p class="text-body">IMG
+            <span class="image-slider__counter-{{ section.id }}"></span>
+          </p>
+          <div class="image-slider__buttons">
+            <button class="image-slider__back-{{ section.id }}">
+              {% render 'icon-arrow-left' %}
+            </button>
+            <button class="image-slider__forw-{{ section.id }}">
+              {% render 'icon-arrow-right' %}
+            </button>
           </div>
-          <div class="image-slider__container">
-            <img
-              class="slide__main-{{custom_id}}"
-              width="400px"
-              height="250px" />
-            <div class="slide-{{custom_id}}">
-              {% if block.settings.image1 %}
-                <img
-                  src="{{ block.settings.image1 | image_url }}"
-                  width="100%"
-                  height="100%"
-                  alt="Slider Image 1">
-              {% endif %}
-              {% if block.settings.image2 %}
-                <img
-                  src="{{ block.settings.image2 | image_url }}"
-                  width="100%"
-                  height="100%"
-                  alt="Slider Image 2">
-              {% endif %}
-              {% if block.settings.image3 %}
-                <img
-                  src="{{ block.settings.image3 | image_url }}"
-                  width="100%"
-                  height="100%"
-                  alt="Slider Image 3">
-              {% endif %}
-            </div>
+        </div>
+        <div class="image-slider__container">
+          <img
+            class="slide__main-{{ section.id }}"
+            width="400px"
+            height="250px" />
+          <div class="slide-{{ section.id }}">
+            {% if block.settings.image1 %}
+              <img
+                src="{{ block.settings.image1 | image_url }}"
+                width="100%"
+                height="100%"
+                alt="Slider Image 1">
+            {% endif %}
+            {% if block.settings.image2 %}
+              <img
+                src="{{ block.settings.image2 | image_url }}"
+                width="100%"
+                height="100%"
+                alt="Slider Image 2">
+            {% endif %}
+            {% if block.settings.image3 %}
+              <img
+                src="{{ block.settings.image3 | image_url }}"
+                width="100%"
+                height="100%"
+                alt="Slider Image 3">
+            {% endif %}
           </div>
-        {% endif %}
-      {% endfor %}
-
-    </div>
-  </section>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 
-<script src="{{ 'image-slider-section.js' | asset_url }}" defer></script>
+
+<script src="{{ 'image-slider.js' | asset_url }}" defer></script>
 
 {% schema %}
   {
