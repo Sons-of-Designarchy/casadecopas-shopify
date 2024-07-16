@@ -108,6 +108,7 @@
 
    // initialize focus on first image
    addFocus(0);
+   counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
 
   forwardBtn?.addEventListener('click', () => {
    active++;
