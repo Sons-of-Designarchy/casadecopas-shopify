@@ -106,6 +106,7 @@
    backwardsBtn?.addEventListener('click', () => {
     console.log(active);
     if (active > 0) active--;
+    if (active = 0) active = sliderImages[0].children?.length - 1;
     addFocus(active);
    });
 </script>
