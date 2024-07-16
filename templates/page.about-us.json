@@ -53,7 +53,8 @@
         "image_slider_9GH7bU": {
           "type": "image_slider",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/img.png"
+            "image1": "shopify:\/\/shop_images\/img.png",
+            "image2": "shopify:\/\/shop_images\/img.png"
           }
         }
       },
