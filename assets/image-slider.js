@@ -6,7 +6,7 @@ class ImageSliderSection extends HTMLElement {
 
     // Scoped queries within this custom element instance
     this.sliderImages = this.querySelectorAll(`.slide-${sectionId}`);
-    this.slideMainBox = this.querySelector(`.slide__main-${sectionId} img`);
+    this.slideMainBox = this.querySelector(`.slide__main-${sectionId}`);
     this.forwardBtn = this.querySelector('.image-slider__forw');
     this.backwardsBtn = this.querySelector('.image-slider__back');
     this.counter = this.querySelector('.image-slider__counter');
