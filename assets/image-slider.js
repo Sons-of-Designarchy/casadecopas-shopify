@@ -43,14 +43,14 @@ if (!customElements.get('image-slider-section')) {
       // addFocus(activeIndex) {
       // Set the source of the main box to the active image
 
-      this.slideMainBox.src = this.sliderImages[0]?.children[activeIndex].src;
+      // this.slideMainBox.src = this.sliderImages[0]?.children[activeIndex].src;
 
       // Hide all images first
       const arr = Array.from(this.sliderImages[0]?.children);
       console.log(this.sliderImages);
 
       // Show the next image in the thumbnails
-      this.sliderImages[0].children[activeIndex].style.display = 'block';
+      // this.sliderImages[0].children[activeIndex].style.display = 'block';
     }
   }
 
