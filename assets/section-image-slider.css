@@ -38,7 +38,7 @@
   }
 }
 
-.image-slider__slider button {
+.image-slider__buttons .image-slider__buttons button {
   display: flex;
 
   background-color: transparent;
@@ -54,12 +54,12 @@
   align-self: end;
 }
 
-.image-slider__slider svg {
+.image-slider__buttons button svg {
   height: 4rem;
   width: 4rem;
 }
 
-.image-slider__slider button:hover {
+.image-slider__buttons button:hover {
   background-color: rgba(var(--color-foreground), 0.3);
   cursor: pointer;
 }
