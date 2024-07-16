@@ -17,6 +17,15 @@
         "image": "shopify://shop_images/about-bg.png"
       }
     },
+    "subheader": {
+      "type": "subheader-icon",
+      "settings": {
+        "title": "Default Title",
+        "description": "Default Description",
+        "icon_image": "shopify://shop_images/02.svg",
+        "color_scheme": ""
+      }
+    },
     "sliders": {
       "type": "image-slider",
       "blocks": {
@@ -43,8 +52,7 @@
         "description": "Default description text.",
         "color_scheme": "scheme-4"
       }
-    },
-    "subheader": { "type": "subheader-icon" }
+    }
   },
   "order": ["header", "subheader", "sliders", "image_slider_L67rjc"]
 }
