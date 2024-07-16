@@ -104,7 +104,7 @@
 
    backwardsBtn?.addEventListener('click', () => {
    active--;
-  addFocus(active);
+   if (active > 0) addFocus(active);
    })
 </script>
 
