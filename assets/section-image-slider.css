@@ -85,6 +85,6 @@ img.slide__main {
 }
 
 .image-slider__buttons button:disabled {
-  background-color: yellow;
-  cursor: pointer;
+  opacity: 0.5;
+  pointer-events: none;
 }
