@@ -45,9 +45,11 @@ if (!customElements.get('image-slider-section')) {
       this.slideMainBox.src = this.sliderImages.children[activeIndex].src;
 
       // Hide all images first
-      Array.from(this.sliderImages?.children).forEach((child) => {
-        child.style.display = 'none';
-      });
+      if (this.sliderImages.children.length) {
+        Array.from(this.sliderImages.children).forEach((child) => {
+          child.style.display = 'none';
+        });
+      }
 
       // Show the next image in the thumbnails
       this.sliderImages.children[activeIndex + 1].style.display = 'block';
