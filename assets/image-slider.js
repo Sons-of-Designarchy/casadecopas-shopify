@@ -1,3 +1,5 @@
+if ()
+
 class ImageSliderSection extends HTMLElement {
   constructor() {
     super();
@@ -54,6 +56,4 @@ class ImageSliderSection extends HTMLElement {
   }
 }
 
-if (!customElements.get('image-slider-section')) {
-  customElements.define('image-slider-section', ImageSliderSection);
-}
+customElements.define('image-slider-section', ImageSliderSection);
