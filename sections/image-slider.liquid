@@ -33,7 +33,9 @@
     <div class="image-slider__slider">
       {% for block in section.blocks %}
         {% if block.type == 'image_slider' %}
-          <p class="image-slider__counter"></p>
+          <p>Img
+            <span class="image-slider__counter"></span>
+          </p>
           <div class="image-slider__buttons">
             <button class="image-slider__back">
               {% render 'icon-arrow-left' %}
