@@ -15,7 +15,7 @@
 
   padding: 0 1rem;
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 850px) {
     display: grid;
   }
 }
