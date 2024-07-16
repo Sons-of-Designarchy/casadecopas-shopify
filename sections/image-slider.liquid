@@ -33,16 +33,18 @@
     <div class="image-slider__slider">
       {% for block in section.blocks %}
         {% if block.type == 'image_slider' %}
-          <p>Img
-            <span class="image-slider__counter"></span>
-          </p>
-          <div class="image-slider__buttons">
-            <button class="image-slider__back">
-              {% render 'icon-arrow-left' %}
-            </button>
-            <button class="image-slider__forw">
-              {% render 'icon-arrow-right' %}
-            </button>
+          <div class="image-slider__controls">
+            <p>Img
+              <span class="image-slider__counter"></span>
+            </p>
+            <div class="image-slider__buttons">
+              <button class="image-slider__back">
+                {% render 'icon-arrow-left' %}
+              </button>
+              <button class="image-slider__forw">
+                {% render 'icon-arrow-right' %}
+              </button>
+            </div>
           </div>
           <div class="image-slider__container">
             <img
