@@ -93,7 +93,7 @@
   addFocus(0);
 
   forwardBtn?.addEventListener('click', () => {
-   if (active < sliderImages[0].children?.length) {
+   if (active <= sliderImages[0].children?.length) {
    active++;
   addFocus(active);}
    })
