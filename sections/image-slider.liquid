@@ -83,7 +83,9 @@
    let active = 0;
 
    const addFocus = (active) => {
-  slideMainBox.src = sliderImages[0].children[active].src;
+    if (sliderImages[0].children.length) {
+     slideMainBox.src = sliderImages[0].children[active].src;
+    }
    };
    
    const removeFocus = (active) => {
