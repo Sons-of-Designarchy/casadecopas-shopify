@@ -96,10 +96,6 @@
 
   // Show the next image in the thumbnails
   let nextIndex = (active + 1) % sliderImages[0].children.length;
-
-  if (active == sliderImages[0].children.length - 1) {
-   sliderImages[0].children[0].style.display = 'block';
-  } 
   sliderImages[0].children[nextIndex].style.display = 'block';
    };
    
