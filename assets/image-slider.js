@@ -15,8 +15,8 @@ if (!customElements.get('image-slider-section')) {
       this.active = 0;
 
       if (this.sliderImages.children.length === 1) {
-        this.forwardBtn.style.position.display = none;
-        this.backwardsBtn.style.position.display = none;
+        this.forwardBtn.disabled = true;
+        this.backwardsBtn.disabled = true;
       }
 
       this.addFocus(this.active);
