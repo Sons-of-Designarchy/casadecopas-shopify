@@ -13,6 +13,10 @@
   }
 }
 
+.slide-main {
+  width: 100%;
+}
+
 .slide img {
   height: 60%;
 }
