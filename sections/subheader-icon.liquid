@@ -29,10 +29,14 @@
     align-items: center;
 
     margin: auto;
-    padding: 2rem 2rem 0;
+    padding: 2rem 0;
     width: 100%;
 
     max-width: calc(var(--page-width) - 15rem);
+
+    @media screen and (min-width: 750px) {
+      padding-left: 0;
+    }
   }
 
   .subheader-icon__inner h1 {
