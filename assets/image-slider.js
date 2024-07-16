@@ -53,7 +53,7 @@ if (!customElements.get('image-slider-section')) {
         this.sliderImages[0].children[activeIndex].style.display = 'block';
        }
   }
- }
 
   customElements.define('image-slider-section', ImageSliderSection);
+}
 }
