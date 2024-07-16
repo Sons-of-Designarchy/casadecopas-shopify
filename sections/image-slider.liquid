@@ -24,11 +24,12 @@
   }
 {% endstyle %}
 
+<script src="{{ 'image-slider.js' | asset_url }}" defer="defer"></script>
+
 <div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <section>
     <p class="text-body">{{ section.settings.title }}</p>
     <p class="text-body">{{ section.settings.description }}</p>
-
 
     <div class="image-slider__slider">
       {% for block in section.blocks %}
@@ -81,8 +82,6 @@
     </div>
   </section>
 </div>
-
-<script></script>
 
 {% schema %}
   {
