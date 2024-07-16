@@ -38,6 +38,11 @@
   }
 }
 
+.image-slider__buttons {
+  display: flex;
+  border: solid 2px red;
+}
+
 .image-slider__buttons button {
   display: flex;
 
