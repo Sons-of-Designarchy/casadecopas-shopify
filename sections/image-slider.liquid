@@ -83,7 +83,7 @@
    let active = 0;
 
    const addFocus = (active) => {
-  slideMainBox.src = sliderImages[0].children[0].src;
+  slideMainBox.src = sliderImages[0].children[active].src;
   sliderImages[0].children[active + 1].classList.add('block');
    };
    
