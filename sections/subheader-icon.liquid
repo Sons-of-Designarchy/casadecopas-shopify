@@ -1,7 +1,10 @@
 <div id="subheader" class="subheader-icon color-{{ section.settings.color_scheme }} section-{{ section.id }}">
   <div class="subheader-icon__inner page-width">
-    <h1>{{ section.settings.title }}</h1>
-    <p class="text-body">{{ section.settings.description }}</p>
+    <section>
+      <h1>{{ section.settings.title }}</h1>
+      <p class="text-body">{{ section.settings.description }}</p>
+    </section>
+
     {% if section.settings.icon_image %}
       <img
         src="{{ section.settings.icon_image | image_url }}"
@@ -18,8 +21,6 @@
     display: flex;
     justify-content: start;
     height: fit-content;
-
-
   }
 
   .subheader-icon__inner {
