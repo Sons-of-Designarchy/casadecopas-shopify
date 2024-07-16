@@ -101,6 +101,13 @@
    if (active >= sliderImages[0].children?.length) active = 0;
   addFocus(active);
    })
+
+   backwardsBtn?.addEventListener('click', () => {
+   active--;
+   if (active >= sliderImages[0].children?.length) active--;
+   else active = 0;
+  addFocus(active);
+   })
 </script>
 
 {% schema %}
