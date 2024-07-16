@@ -54,4 +54,4 @@ class ImageSliderSection extends HTMLElement {
   }
 }
 
-customElements.define('image-slider__main', ImageSliderSection);
+customElements.define('image-slider-section', ImageSliderSection);
