@@ -28,6 +28,7 @@
 .image-slider__slider {
   display: flex;
   flex-direction: column;
+  grid-template-columns: 10px;
 
   overflow: hidden;
 
