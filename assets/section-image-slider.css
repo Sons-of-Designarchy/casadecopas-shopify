@@ -40,7 +40,8 @@
 
 .image-slider__buttons {
   display: flex;
-  border: solid 2px red;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
 .image-slider__buttons button {
