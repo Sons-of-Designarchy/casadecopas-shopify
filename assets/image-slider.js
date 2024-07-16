@@ -16,6 +16,7 @@ if (!customElements.get('image-slider-section')) {
 
       if (this.sliderImages.children.length == 1)
         this.forwardBtn.disabled = true;
+      this.backwardsBtn.disabled = true;
 
       this.addFocus(this.active);
       this.counter.innerHTML = `${this.active + 1} / ${
