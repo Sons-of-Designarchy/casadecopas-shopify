@@ -12,9 +12,9 @@ if (!customElements.get('image-slider-section')) {
       this.backwardsBtn = this.querySelector('.image-slider__back');
       this.counter = this.querySelector('.image-slider__counter');
 
-      console.log(this.counter);
+      this.active = 0;
 
-      //   this.active = 0;
+      console.log(this.active);
 
       //   this.addFocus(this.active);
       //   this.counter.innerHTML = `${this.active + 1} / ${
