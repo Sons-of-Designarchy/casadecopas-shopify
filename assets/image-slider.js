@@ -51,9 +51,8 @@ if (!customElements.get('image-slider-section')) {
 
         // Show the next image in the thumbnails
         this.sliderImages[0].children[activeIndex].style.display = 'block';
-       }
-  }
+    }
+  
 
   customElements.define('image-slider-section', ImageSliderSection);
-}
 }
