@@ -45,7 +45,7 @@ if (!customElements.get('image-slider-section')) {
       this.slideMainBox.src = this.sliderImages.children[activeIndex].src;
 
       // Hide all images first
-      Array.from(this.sliderImages.children).forEach((child) => {
+      Array.from(this.sliderImages?.children).forEach((child) => {
         child.style.display = 'none';
       });
 
