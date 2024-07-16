@@ -14,6 +14,11 @@ if (!customElements.get('image-slider-section')) {
 
       this.active = 0;
 
+      if (this.sliderImages.children.length === 1) {
+        this.forwardBtn.style.display = none;
+        this.backwardsBtn.style.display = none;
+      }
+
       this.addFocus(this.active);
       this.counter.innerHTML = `${this.active + 1} / ${
         this.sliderImages.children.length
