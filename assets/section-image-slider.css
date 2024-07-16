@@ -38,7 +38,6 @@
 
 .image-slider__controls {
   display: flex;
-  border: solid 2px red;
   width: 100%;
 
   justify-content: space-between;
