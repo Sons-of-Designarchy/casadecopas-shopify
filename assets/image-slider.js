@@ -11,6 +11,8 @@ class ImageSliderSection extends HTMLElement {
     this.backwardsBtn = this.querySelector('.image-slider__back');
     this.counter = this.querySelector('.image-slider__counter');
 
+    console.log(this.slideMainBox);
+
     this.active = 0;
 
     this.addFocus(this.active);
