@@ -84,7 +84,7 @@
    let backwardsBtn = document.querySelector('.image-slider__back');
 
    let active = 0;
-
+   
    const addFocus = (active) => {
     // Set the source of the main box to the active image
   slideMainBox.src = sliderImages[0].children[active].src;
@@ -100,8 +100,7 @@
    };
 
    // initialize focus on first image
-  addFocus(0);
-  console.log(active);
+   addFocus(0);
 
   forwardBtn?.addEventListener('click', () => {
    active++;
