@@ -89,7 +89,7 @@
    
    const removeFocus = (active) => {
     const activeChild = sliderImages[0].children[active];
-    sliderImages[0].appendChild(activeChild);
+    sliderImages[0].classList.add('hidden').appendChild(activeChild);
    };
 
    // initialize focus on first image
