@@ -25,6 +25,8 @@ img.slide__main {
   display: grid;
   grid-auto-flow: column;
   width: 100%;
+
+  grid-template-columns: 1fr 30%;
 }
 
 .image-slider__container img {
