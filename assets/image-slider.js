@@ -31,7 +31,7 @@ if (!customElements.get('image-slider-section')) {
       this.backwardsBtn.addEventListener('click', () => {
         this.active--;
         if (this.active < 0) {
-          this.active = this.sliderImages.children.length - 1;
+          this.active = this.sliderImages.children.length;
         }
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active + 1} / ${
