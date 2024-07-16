@@ -88,6 +88,15 @@
 
    const addFocus = (active) => {
      slideMainBox.src = sliderImages[0].children[active].src;
+
+     // Show the active image and hide the rest
+  for (let i = 0; i < sliderImages[0].children.length; i++) {
+    if (i === active) {
+      sliderImages[0].children[i].style.display = 'block';
+    } else {
+      sliderImages[0].children[i].style.display = 'none';
+    }
+  }
    };
    
    const removeFocus = (active) => {
