@@ -47,7 +47,6 @@
                   src="{{ block.settings.image1 | image_url }}"
                   width="100%"
                   height="100%"
-                  class="hidden"
                   alt="Slider Image 1">
               {% endif %}
               {% if block.settings.image2 %}
@@ -97,7 +96,7 @@
   addFocus(0);
 
   forwardBtn?.addEventListener('click', () => {
-  removeFocus(active + 1);
+  removeFocus(active);
   addFocus(active);
    })
 </script>
