@@ -26,7 +26,9 @@ img.slide__main {
   grid-auto-flow: column;
   width: 100%;
 
-  grid-template-columns: 1fr 40%;
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 1fr 40%;
+  }
 }
 
 .image-slider__container img {
