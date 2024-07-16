@@ -2,6 +2,8 @@ class ImageSliderSection extends HTMLElement {
   constructor() {
     super();
 
+    this.sectionId = this.getAttribute('title');
+
     // Scoped queries within this custom element instance
     this.sliderImages = this.querySelector(`.slide`);
     this.slideMainBox = this.querySelector(`.slide__main`);
