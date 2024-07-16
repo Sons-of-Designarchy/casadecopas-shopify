@@ -85,11 +85,9 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
     // Select all slider sections and initialize each one
     document.querySelectorAll('#slider-{{section.id}}').forEach(section => {
       initializeSlider(section);
-    });
   });
 
   function initializeSlider(section) {
