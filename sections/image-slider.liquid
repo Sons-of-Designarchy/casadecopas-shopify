@@ -26,7 +26,7 @@
 
 {% assign section_id = section.settings.title | downcase | replace: " ", '-' %}
 
-<div id="slider-{{section.id}} slider-{{section_id}}" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
+<div id="slider-{{section_id}}" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <section>
     <p class="text-body">{{ section.settings.title }}</p>
     <p class="text-body">{{ section.settings.description }}</p>
@@ -85,57 +85,48 @@
 </div>
 
 <script>
-    // Select all slider sections and initialize each one
-    document.querySelectorAll('#slider-{{section.id}}').forEach(section => {
-      initializeSlider(section);
-  });
+   let sliderImages = document.getElementsByClassName('slide-{{section_id}}');
+   let slideMainBox = document.querySelector('.slide__main-{{section_id}}');
 
-  function initializeSlider(section) {
-    let sliderImages = section.querySelectorAll('.slide-{{ section_id }}');
-    let slideMainBox = section.querySelector('.slide__main-{{ section_id }}');
-    let forwardBtn = section.querySelector('.image-slider__forw-{{ section_id }}');
-    let backwardsBtn = section.querySelector('.image-slider__back-{{ section_id }}');
-    let counter = section.querySelector('.image-slider__counter-{{ section_id }}');
+   let forwardBtn = document.querySelector('.image-slider__forw');
+   let backwardsBtn = document.querySelector('.image-slider__back');
 
-    let active = 0;
+   let counter = document.querySelector('.image-slider__counter');
 
-    const addFocus = (active) => {
-      slideMainBox.src = sliderImages[active].src;
+   let active = 0;
+   
+   const addFocus = (active) => {
+    // Set the source of the main box to the active image
+  slideMainBox.src = sliderImages[0].children[active].src;
 
-      // Hide all images
-      sliderImages.forEach(image => {
-        image.style.display = 'none';
-      });
-
-      // Show the next image in the thumbnails
-      let nextIndex = (active + 1) % sliderImages.length;
-      sliderImages[nextIndex].style.display = 'block';
-    };
-
-    // Initialize focus on first image & counter
-    addFocus(0);
-    updateCounter();
-
-    function updateCounter() {
-      counter.innerHTML = `${active + 1} / ${sliderImages.length}`;
-    }
-
-    forwardBtn?.addEventListener('click', () => {
-      active++;
-      if (active >= sliderImages.length) active = 0;
-      addFocus(active);
-      updateCounter();
-    });
-
-    backwardsBtn?.addEventListener('click', () => {
-      active--;
-      if (active < 0) active = sliderImages.length - 1;
-      addFocus(active);
-      updateCounter();
-    });
+  // Hide all images first
+  for (let i = 0; i < sliderImages[0].children.length; i++) {
+  sliderImages[0].children[i].style.display = 'none';
   }
-</script>
 
+  // Show the next image in the thumbnails
+  let nextIndex = (active + 1) % sliderImages[0].children.length;
+  sliderImages[0].children[nextIndex].style.display = 'block';
+   };
+
+   // initialize focus on first image & counter
+   addFocus(0);
+   counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
+
+  forwardBtn?.addEventListener('click', () => {
+   active++;
+   if (active >= sliderImages[0].children?.length) active = 0;
+  addFocus(active);
+  counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
+   })
+
+   backwardsBtn?.addEventListener('click', () => {
+    active--;
+    if (active < 0) active = sliderImages[0].children?.length - 1;
+    addFocus(active);
+    counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
+   });
+</script>
 
 {% schema %}
   {
