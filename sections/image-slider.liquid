@@ -48,7 +48,7 @@
           </div>
           <div class="image-slider__container">
             <img
-              class="slide__main {{section.id}}"
+              class="slide__main-{{section.id}}"
               width="400px"
               height="250px" />
             <div class="slide-{{section.id}}">
@@ -84,7 +84,7 @@
 
 <script>
    let sliderImages = document.getElementsByClassName('slide-{{section.id}}');
-   let slideMainBox = document.querySelector('.slide__main');
+   let slideMainBox = document.querySelector('.slide__main-{{section.id}}');
 
    let forwardBtn = document.querySelector('.image-slider__forw');
    let backwardsBtn = document.querySelector('.image-slider__back');
