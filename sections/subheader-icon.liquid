@@ -7,8 +7,8 @@
     {% if section.settings.icon_image %}
       <img
         src="{{ section.settings.icon_image | image_url }}"
-        height="50px"
-        width="50px"
+        height="100%"
+        width="100%"
         alt="background image">
     {% endif %}
   </div>
@@ -23,15 +23,20 @@
   }
 
   .subheader-icon__inner {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    margin: auto;
+    padding: 2rem;
     width: 100%;
 
     max-width: calc(var(--page-width) - 15rem);
+
+    @media screen and (min-width: 750px) {
+      padding-top: 6rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .subheader-icon__inner h1 {
@@ -42,6 +47,10 @@
   .subheader-icon__inner p {
     margin-block-end: 0;
     margin-block-start: 0;
+  }
+
+  .subheader-icon__inner img {
+    width: 3.5rem;
   }
 {% endstyle %}
 
