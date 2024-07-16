@@ -38,7 +38,7 @@
   }
 }
 
-.image-slider__buttons .image-slider__buttons button {
+.image-slider__buttons button {
   display: flex;
 
   background-color: transparent;
