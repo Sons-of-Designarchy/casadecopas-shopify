@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "header": {
@@ -14,15 +14,15 @@
       "settings": {
         "subheading": "Our studio gear is second to none with the only large format APIs in Mexico. Our in-house engineers have worked together for 15 years and boast an armful of Grammys between them",
         "color_scheme": "scheme-3",
-        "image": "shopify://shop_images/about-bg.png"
+        "image": "shopify:\/\/shop_images\/about-bg.png"
       }
     },
     "subheader": {
       "type": "subheader-icon",
       "settings": {
-        "title": "Default Title",
-        "description": "Default Description",
-        "icon_image": "shopify://shop_images/02.svg",
+        "title": "Our Gear",
+        "description": "*Full gear & instrument list available upon request",
+        "icon_image": "shopify:\/\/shop_images\/02.svg",
         "color_scheme": ""
       }
     },
@@ -32,13 +32,15 @@
         "image_slider_4GrCP4": {
           "type": "image_slider",
           "settings": {
-            "image1": "shopify://shop_images/Shp-tote-frase-viva-min.jpg",
-            "image2": "shopify://shop_images/Shp-tote-frase-1-min.jpg",
-            "image3": "shopify://shop_images/Shp-taza-fraseArt-1-min.jpg"
+            "image1": "shopify:\/\/shop_images\/Shp-tote-frase-viva-min.jpg",
+            "image2": "shopify:\/\/shop_images\/Shp-tote-frase-1-min.jpg",
+            "image3": "shopify:\/\/shop_images\/Shp-taza-fraseArt-1-min.jpg"
           }
         }
       },
-      "block_order": ["image_slider_4GrCP4"],
+      "block_order": [
+        "image_slider_4GrCP4"
+      ],
       "settings": {
         "title": "API Boards",
         "description": "32 Channel <br>\n16 Channel <br>\nSumming mixing board",
@@ -54,5 +56,10 @@
       }
     }
   },
-  "order": ["header", "subheader", "sliders", "image_slider_L67rjc"]
+  "order": [
+    "header",
+    "subheader",
+    "sliders",
+    "image_slider_L67rjc"
+  ]
 }
