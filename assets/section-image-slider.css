@@ -13,13 +13,6 @@
   }
 }
 
-.slide__main {
-  width: 100%;
-  @media screen and (min-width: 850px) {
-    width: 80%;
-  }
-}
-
 .slide img {
   height: 60%;
 }
