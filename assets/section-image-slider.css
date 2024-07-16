@@ -60,8 +60,8 @@
 }
 
 .image-slider__buttons button svg {
-  height: 4rem;
-  width: 4rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .image-slider__buttons button:hover {
