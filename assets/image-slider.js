@@ -52,7 +52,8 @@ if (!customElements.get('image-slider-section')) {
       }
 
       // Show the next image in the thumbnails
-      this.sliderImages.children[activeIndex + 1].style.display = 'block';
+      if (this.sliderImages?.children > 0)
+        this.sliderImages.children[activeIndex + 1].style.display = 'block';
     }
   }
 
