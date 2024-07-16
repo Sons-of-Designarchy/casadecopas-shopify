@@ -84,7 +84,7 @@ img.slide__main {
   cursor: pointer;
 }
 
-.image-slider__buttons button::disabled {
+.image-slider__buttons button:disabled {
   background-color: yellow;
   cursor: pointer;
 }
