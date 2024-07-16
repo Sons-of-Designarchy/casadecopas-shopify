@@ -4,7 +4,6 @@
       <h1>{{ section.settings.title }}</h1>
       <p class="text-body">{{ section.settings.description }}</p>
     </section>
-
     {% if section.settings.icon_image %}
       <img
         src="{{ section.settings.icon_image | image_url }}"
@@ -24,6 +23,9 @@
   }
 
   .subheader-icon__inner {
+
+    display: flex;
+
     margin: auto;
     width: 100%;
     padding: 0;
