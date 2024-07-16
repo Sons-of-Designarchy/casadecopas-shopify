@@ -24,11 +24,13 @@
   }
 {% endstyle %}
 
-<div id="sliders" class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
+<image-slider-section
+  section-id={{section.settings.title | downcase | replace: " ", "-" }}
+  id="sliders"
+  class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <section>
     <p class="text-body">{{ section.settings.title }}</p>
     <p class="text-body">{{ section.settings.description }}</p>
-
 
     <div class="image-slider__slider">
       {% for block in section.blocks %}
@@ -77,54 +79,11 @@
           </div>
         {% endif %}
       {% endfor %}
-
     </div>
   </section>
-</div>
+</image-slider-section>
 
-<script>
-   let sliderImages = document.getElementsByClassName('slide');
-   let slideMainBox = document.querySelector('.slide__main');
-
-   let forwardBtn = document.querySelector('.image-slider__forw');
-   let backwardsBtn = document.querySelector('.image-slider__back');
-
-   let counter = document.querySelector('.image-slider__counter');
-
-   let active = 0;
-   
-   const addFocus = (active) => {
-    // Set the source of the main box to the active image
-  slideMainBox.src = sliderImages[0].children[active].src;
-
-  // Hide all images first
-  for (let i = 0; i < sliderImages[0].children.length; i++) {
-  sliderImages[0].children[i].style.display = 'none';
-  }
-
-  // Show the next image in the thumbnails
-  let nextIndex = (active + 1) % sliderImages[0].children.length;
-  sliderImages[0].children[nextIndex].style.display = 'block';
-   };
-
-   // initialize focus on first image & counter
-   addFocus(0);
-   counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
-
-  forwardBtn?.addEventListener('click', () => {
-   active++;
-   if (active >= sliderImages[0].children?.length) active = 0;
-  addFocus(active);
-  counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
-   })
-
-   backwardsBtn?.addEventListener('click', () => {
-    active--;
-    if (active < 0) active = sliderImages[0].children?.length - 1;
-    addFocus(active);
-    counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
-   });
-</script>
+<script src="/assets/image-slider.js" defer></script>
 
 {% schema %}
   {
