@@ -6,6 +6,7 @@
   display: none;
 
   height: 5rem;
+  border: solid 2px red;
   width: 100%;
 
   padding: 0 1rem;
@@ -28,7 +29,6 @@
 .image-slider__slider {
   display: flex;
   flex-direction: column;
-  grid-template-columns: 10px;
 
   overflow: hidden;
 
