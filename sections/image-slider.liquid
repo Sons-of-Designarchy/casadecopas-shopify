@@ -91,14 +91,16 @@
     // Set the source of the main box to the active image
   slideMainBox.src = sliderImages[0].children[active].src;
 
+    // Show the next image in the thumbnails
+    let nextIndex = (active + 1) % sliderImages[0].children.length;
+  sliderImages[0].children[nextIndex].style.display = 'block';
+
   // Hide all images first
   for (let i = 0; i < sliderImages[0].children.length; i++) {
   sliderImages[0].children[i].style.display = 'none';
   }
 
-  // Show the next image in the thumbnails
-  let nextIndex = (active + 1) % sliderImages[0].children.length;
-  sliderImages[0].children[nextIndex].style.display = 'block';
+
    };
 
    // initialize focus on first image
