@@ -97,7 +97,7 @@
   }
 
   // Show the next image in the thumbnails
-  let nextIndex = active + 1;
+  let nextIndex = (active + 1) % sliderImages[0].children.length;
   sliderImages[0].children[nextIndex].style.display = 'block';
    };
 
@@ -106,7 +106,7 @@
 
   forwardBtn?.addEventListener('click', () => {
    active++;
-   if (active >= sliderImages[0].children?.length) active = 0;
+   if (active > sliderImages[0].children?.length) active = 0;
   addFocus(active);
    })
 
