@@ -51,3 +51,5 @@ class ImageSliderSection extends HTMLElement {
     this.sliderImages[0].children[activeIndex].style.display = 'block';
   }
 }
+
+customElements.define('image-slider-section', ImageSliderSection);
