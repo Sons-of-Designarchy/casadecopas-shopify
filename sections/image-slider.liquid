@@ -51,7 +51,7 @@
               class="slide__main {{section.id}}"
               width="400px"
               height="250px" />
-            <div class="slide">
+            <div class="slide-{{section.id}}">
               {% if block.settings.image1 %}
                 <img
                   src="{{ block.settings.image1 | image_url }}"
@@ -83,7 +83,7 @@
 </div>
 
 <script>
-   let sliderImages = document.getElementsByClassName('slide');
+   let sliderImages = document.getElementsByClassName('slide-{{section.id}}');
    let slideMainBox = document.querySelector('.slide__main');
 
    let forwardBtn = document.querySelector('.image-slider__forw');
