@@ -96,11 +96,9 @@
   sliderImages[0].children[nextIndex].style.display = 'block';
 
   // Hide all images first
-  for (let i = 0; i < sliderImages[0].children.length; i++) {
+  for (let i = nextIndex; i < sliderImages[0].children.length; i++) {
   sliderImages[0].children[i].style.display = 'none';
   }
-
-
    };
 
    // initialize focus on first image
