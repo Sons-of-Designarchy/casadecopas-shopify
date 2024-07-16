@@ -1,0 +1,53 @@
+class ImageSliderSection extends HTMLElement {
+  constructor() {
+    super();
+
+    const sectionId = this.dataset.sectionId;
+
+    // Scoped queries within this custom element instance
+    this.sliderImages = this.querySelectorAll(`.slide-${sectionId}`);
+    this.slideMainBox = this.querySelector(`.slide__main-${sectionId} img`);
+    this.forwardBtn = this.querySelector('.image-slider__forw');
+    this.backwardsBtn = this.querySelector('.image-slider__back');
+    this.counter = this.querySelector('.image-slider__counter');
+
+    this.active = 0;
+
+    this.addFocus(this.active);
+    this.counter.innerHTML = `${this.active + 1} / ${
+      this.sliderImages[0].children.length
+    }`;
+
+    this.forwardBtn.addEventListener('click', () => {
+      this.active++;
+      if (this.active >= this.sliderImages[0].children.length) this.active = 0;
+      this.addFocus(this.active);
+      this.counter.innerHTML = `${this.active + 1} / ${
+        this.sliderImages[0].children.length
+      }`;
+    });
+
+    this.backwardsBtn.addEventListener('click', () => {
+      this.active--;
+      if (this.active < 0)
+        this.active = this.sliderImages[0].children.length - 1;
+      this.addFocus(this.active);
+      this.counter.innerHTML = `${this.active + 1} / ${
+        this.sliderImages[0].children.length
+      }`;
+    });
+  }
+
+  addFocus(activeIndex) {
+    // Set the source of the main box to the active image
+    this.slideMainBox.src = this.sliderImages[0].children[activeIndex].src;
+
+    // Hide all images first
+    Array.from(this.sliderImages[0].children).forEach((child) => {
+      child.style.display = 'none';
+    });
+
+    // Show the next image in the thumbnails
+    this.sliderImages[0].children[activeIndex].style.display = 'block';
+  }
+}
