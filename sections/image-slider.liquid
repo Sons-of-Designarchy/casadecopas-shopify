@@ -83,47 +83,52 @@
 </div>
 
 <script>
-   let sliderImages = document.getElementsByClassName('slide');
-   let slideMainBox = document.querySelector('.slide__main');
+  if (!customElements.get('image-slider-section')) {
+    customElements.define('image-slider-section', class ImageSliderSection extends HTMLElement {
+      constructor() {
+        super();
+        
+        // Scoped queries within this custom element instance
+        this.sliderImages = this.querySelector('.slide');
+        this.slideMainBox = this.querySelector('.slide__main img');
+        this.forwardBtn = this.querySelector('.image-slider__forw');
+        this.backwardsBtn = this.querySelector('.image-slider__back');
+        this.counter = this.querySelector('.image-slider__counter');
 
-   let forwardBtn = document.querySelector('.image-slider__forw');
-   let backwardsBtn = document.querySelector('.image-slider__back');
+        this.active = 0;
 
-   let counter = document.querySelector('.image-slider__counter');
+        this.addFocus(this.active);
+        this.counter.innerHTML = `${this.active + 1} / ${this.sliderImages.children.length}`;
 
-   let active = 0;
-   
-   const addFocus = (active) => {
-    // Set the source of the main box to the active image
-  slideMainBox.src = sliderImages[0].children[active].src;
+        this.forwardBtn.addEventListener('click', () => {
+          this.active++;
+          if (this.active >= this.sliderImages.children.length) this.active = 0;
+          this.addFocus(this.active);
+          this.counter.innerHTML = `${this.active + 1} / ${this.sliderImages.children.length}`;
+        });
 
-  // Hide all images first
-  for (let i = 0; i < sliderImages[0].children.length; i++) {
-  sliderImages[0].children[i].style.display = 'none';
+        this.backwardsBtn.addEventListener('click', () => {
+          this.active--;
+          if (this.active < 0) this.active = this.sliderImages.children.length - 1;
+          this.addFocus(this.active);
+          this.counter.innerHTML = `${this.active + 1} / ${this.sliderImages.children.length}`;
+        });
+      }
+
+      addFocus(activeIndex) {
+        // Set the source of the main box to the active image
+        this.slideMainBox.src = this.sliderImages.children[activeIndex].src;
+    
+        // Hide all images first
+        Array.from(this.sliderImages.children).forEach(child => {
+          child.style.display = 'none';
+        });
+    
+        // Show the next image in the thumbnails
+        this.sliderImages.children[activeIndex].style.display = 'block';
+      }
+    });
   }
-
-  // Show the next image in the thumbnails
-  let nextIndex = (active + 1) % sliderImages[0].children.length;
-  sliderImages[0].children[nextIndex].style.display = 'block';
-   };
-
-   // initialize focus on first image & counter
-   addFocus(0);
-   counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
-
-  forwardBtn?.addEventListener('click', () => {
-   active++;
-   if (active >= sliderImages[0].children?.length) active = 0;
-  addFocus(active);
-  counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
-   })
-
-   backwardsBtn?.addEventListener('click', () => {
-    active--;
-    if (active < 0) active = sliderImages[0].children?.length - 1;
-    addFocus(active);
-    counter.innerHTML = `${active + 1} / ${sliderImages[0].children?.length}`;
-   });
 </script>
 
 {% schema %}
