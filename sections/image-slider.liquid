@@ -26,7 +26,7 @@
 
 {% assign custom_id = section.settings.title | downcase | replace: " ", "-" %}
 
-<image-slider
+<image-slider-section
   id="sliders"
   title={{custom_id}}
   class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
@@ -84,9 +84,7 @@
 
     </div>
   </section>
-</image-slider>
-
-<script src="{{ 'image-slider.js' | asset_url }}" defer></script>
+</image-slider-section>
 
 {% schema %}
   {
