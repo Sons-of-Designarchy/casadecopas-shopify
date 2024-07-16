@@ -111,6 +111,7 @@
    active++;
    if (active >= sliderImages[0].children?.length) active = 0;
   addFocus(active);
+  counter.innerHTML = `${active} / ${sliderImages[0].children?.length}`;
    })
 
    backwardsBtn?.addEventListener('click', () => {
