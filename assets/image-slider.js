@@ -7,7 +7,7 @@ if (!customElements.get('image-slider__main')) {
 
         // Scoped queries within this custom element instance
         this.sliderImages = this.querySelector('.slide');
-        this.slideMainBox = this.querySelector('.slide__main img');
+        this.slideMainBox = this.querySelector('.slide__main');
         this.forwardBtn = this.querySelector('.image-slider__forw');
         this.backwardsBtn = this.querySelector('.image-slider__back');
         this.counter = this.querySelector('.image-slider__counter');
