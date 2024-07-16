@@ -92,7 +92,7 @@
   slideMainBox.src = sliderImages[0].children[active].src;
 
   // Hide all images first
-  for (let i = 0; i < sliderImages[0].children.length; i++) {
+  for (let i = active + 1; i < sliderImages[0].children.length; i++) {
   sliderImages[0].children[i].style.display = 'none';
   }
 
