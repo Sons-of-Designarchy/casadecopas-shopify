@@ -32,7 +32,7 @@
     <p class="text-body">{{ section.settings.description }}</p>
 
 
-    <div class="image-slider__slider section-{{section.id}}">
+    <div class="image-slider__slider section-{{section_id}}">
       {% for block in section.blocks %}
         {% if block.type == 'image_slider' %}
           <div class="image-slider__controls">
@@ -50,10 +50,10 @@
           </div>
           <div class="image-slider__container">
             <img
-              class="slide__main-{{section.id}}"
+              class="slide__main-{{section_id}}"
               width="400px"
               height="250px" />
-            <div class="slide-{{section.id}}">
+            <div class="slide-{{section_id}}">
               {% if block.settings.image1 %}
                 <img
                   src="{{ block.settings.image1 | image_url }}"
@@ -85,8 +85,8 @@
 </div>
 
 <script>
-   let sliderImages = document.getElementsByClassName('slide-{{section.id}}');
-   let slideMainBox = document.querySelector('.slide__main-{{section.id}}');
+   let sliderImages = document.getElementsByClassName('slide-{{section_id}}');
+   let slideMainBox = document.querySelector('.slide__main-{{section_id}}');
 
    let forwardBtn = document.querySelector('.image-slider__forw');
    let backwardsBtn = document.querySelector('.image-slider__back');
