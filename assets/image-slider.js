@@ -47,7 +47,7 @@ if (!customElements.get('image-slider-section')) {
       // Hide all images first
       if (this.sliderImages.children.length) {
         Array.from(this.sliderImages.children).forEach((child) => {
-          child.style.display = 'none';
+          child.style?.display = 'none';
         });
       }
 
