@@ -83,7 +83,7 @@
    let active = 0;
 
    const addFocus = (active) => {
-    if (sliderImages[0].children.length > 0) {
+    if (sliderImages[0].children?.length > 0) {
      slideMainBox.src = sliderImages[0].children[active].src;
     }
     console.log(sliderImages[0].children?.length);
