@@ -44,10 +44,10 @@ if (!customElements.get('image-slider-section')) {
 
     addFocus(activeIndex) {
       // Set the source of the main box to the active image
-      this.slideMainBox.src = this.sliderImages[0].children[activeIndex].src;
+      this.slideMainBox.src = this.sliderImages[0]?.children[activeIndex].src;
 
       // Hide all images first
-      Array.from(this.sliderImages[0].children).forEach((child) => {
+      Array.from(this.sliderImages[0]?.children).forEach((child) => {
         child.style.display = 'none';
       });
 
