@@ -47,7 +47,7 @@ if (!customElements.get('image-slider-section')) {
 
       // Hide all images first
       const arr = Array.from(this.sliderImages[0]?.children);
-      console.log(arr);
+      console.log(this.sliderImages);
 
       // Show the next image in the thumbnails
       this.sliderImages[0].children[activeIndex].style.display = 'block';
