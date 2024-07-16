@@ -15,9 +15,9 @@ if (!customElements.get('image-slider-section')) {
       this.active = 0;
 
       this.addFocus(this.active);
-      //   this.counter.innerHTML = `${this.active + 1} / ${
-      //     this.sliderImages[0].children.length
-      //   }`;
+      this.counter.innerHTML = `${this.active + 1} / ${
+        this.sliderImages.children.length
+      }`;
 
       //   this.forwardBtn.addEventListener('click', () => {
       //     this.active++;
