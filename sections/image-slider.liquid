@@ -26,34 +26,37 @@
 
 {% assign custom_id = section.settings.title | downcase | replace: " ", "-" %}
 
-<div id="sliders" class="image-slider-section-{{section.id}} image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
+<div
+  id="sliders"
+  title="{{section.settings.title | downcase |  replace: ' ', "-" }}"
+  class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <section>
     <p class="text-body">{{ section.settings.title }}</p>
     <p class="text-body">{{ section.settings.description }}</p>
 
 
-    <div class="image-slider__slider-{{ section.id }}">
+    <div class="image-slider__slider">
       {% for block in section.blocks %}
         {% if block.type == 'image_slider' %}
-          <div class="image-slider__controls-{{ section.id }}">
+          <div class="image-slider__controls">
             <p class="text-body">IMG
-              <span class="image-slider__counter-{{ section.id }}"></span>
+              <span class="image-slider__counter"></span>
             </p>
-            <div class="image-slider__buttons-{{ section.id }}">
-              <button class="image-slider__back-{{ section.id }}">
+            <div class="image-slider__buttons">
+              <button class="image-slider__back">
                 {% render 'icon-arrow-left' %}
               </button>
-              <button class="image-slider__forw-{{ section.id }}">
+              <button class="image-slider__forw">
                 {% render 'icon-arrow-right' %}
               </button>
             </div>
           </div>
-          <div class="image-slider__container-{{ section.id }}">
+          <div class="image-slider__container">
             <img
-              class="slide__main-{{ section.id }}"
+              class="slide__main-{{custom_id}}"
               width="400px"
               height="250px" />
-            <div class="slide-{{ section.id }}">
+            <div class="slide-{{custom_id}}">
               {% if block.settings.image1 %}
                 <img
                   src="{{ block.settings.image1 | image_url }}"
