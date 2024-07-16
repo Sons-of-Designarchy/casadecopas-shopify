@@ -32,28 +32,28 @@
     <p class="text-body">{{ section.settings.description }}</p>
 
 
-    <div class="image-slider__slider">
+    <div class="image-slider__slider-{{ section.id }}">
       {% for block in section.blocks %}
         {% if block.type == 'image_slider' %}
-          <div class="image-slider__controls">
+          <div class="image-slider__controls-{{ section.id }}">
             <p class="text-body">IMG
-              <span class="image-slider__counter"></span>
+              <span class="image-slider__counter-{{ section.id }}"></span>
             </p>
-            <div class="image-slider__buttons">
-              <button class="image-slider__back">
+            <div class="image-slider__buttons-{{ section.id }}">
+              <button class="image-slider__back-{{ section.id }}">
                 {% render 'icon-arrow-left' %}
               </button>
-              <button class="image-slider__forw">
+              <button class="image-slider__forw-{{ section.id }}">
                 {% render 'icon-arrow-right' %}
               </button>
             </div>
           </div>
-          <div class="image-slider__container">
+          <div class="image-slider__container-{{ section.id }}">
             <img
-              class="slide__main-{{custom_id}}"
+              class="slide__main-{{ section.id }}"
               width="400px"
               height="250px" />
-            <div class="slide-{{custom_id}}">
+            <div class="slide-{{ section.id }}">
               {% if block.settings.image1 %}
                 <img
                   src="{{ block.settings.image1 | image_url }}"
