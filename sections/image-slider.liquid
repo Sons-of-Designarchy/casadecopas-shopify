@@ -97,16 +97,16 @@
    
    const addFocus = (active) => {
     // Set the source of the main box to the active image
-  slideMainBox.src = sliderImages[0].children[active].src;
+  slideMainBox.src = document.getElementsByClassName('slide-{{custom_id}}')[0].children[active].src;
 
   // Hide all images first
-  for (let i = 0; i < sliderImages[0].children.length; i++) {
+  for (let i = 0; i < document.getElementsByClassName('slide-{{custom_id}}')[0].children.length; i++) {
   sliderImages[0].children[i].style.display = 'none';
   }
 
   // Show the next image in the thumbnails
-  let nextIndex = (active + 1) % sliderImages[0].children.length;
-  sliderImages[0].children[nextIndex].style.display = 'block';
+  let nextIndex = (active + 1) % document.getElementsByClassName('slide-{{custom_id}}').[0].children.length;
+  document.getElementsByClassName('slide-{{custom_id}}')[0].children[nextIndex].style.display = 'block';
    };
 
    // initialize focus on first image & counter
