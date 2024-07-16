@@ -10,7 +10,7 @@
 
   @media screen and (min-width: 850px) {
     display: grid;
-    gap: 1rem;
+    margin: 0 1rem;
   }
 }
 
