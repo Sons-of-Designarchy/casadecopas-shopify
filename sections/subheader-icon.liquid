@@ -1,0 +1,81 @@
+<div id="subheader" class="subheader-icon color-{{ section.settings.color_scheme }} section-{{ section.id }}">
+  <div class="subheader-icon__inner page-width">
+    <section>
+      <h1>{{ section.settings.title }}</h1>
+      <p class="text-body">{{ section.settings.description }}</p>
+    </section>
+    {% if section.settings.icon_image %}
+      <img
+        src="{{ section.settings.icon_image | image_url }}"
+        height="50px"
+        width="50px"
+        alt="background image">
+    {% endif %}
+  </div>
+
+</div>
+
+{% style %}
+  .section-{{ section.id }} {
+    display: flex;
+    justify-content: start;
+    height: fit-content;
+  }
+
+  .subheader-icon__inner {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+    width: 100%;
+
+    max-width: calc(var(--page-width) - 15rem);
+  }
+
+  .subheader-icon__inner h1 {
+    text-align: start !important;
+  }
+
+  .subheader-icon__inner h1,
+  .subheader-icon__inner p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Custom Subheading Icon",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Default Title"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Default Description"
+      }, {
+        "type": "image_picker",
+        "id": "icon_image",
+        "label": "Icon Image"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-4"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Subheading with Icon",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

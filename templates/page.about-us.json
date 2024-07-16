@@ -43,7 +43,8 @@
         "description": "Default description text.",
         "color_scheme": "scheme-4"
       }
-    }
+    },
+    "subheader": { "type": "subheader-icon" }
   },
-  "order": ["header", "sliders", "image_slider_L67rjc"]
+  "order": ["header", "subheader", "sliders", "image_slider_L67rjc"]
 }
