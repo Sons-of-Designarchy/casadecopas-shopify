@@ -37,9 +37,10 @@ if (!customElements.get('image-slider-section')) {
       });
 
       this.backwardsBtn?.addEventListener('click', () => {
-        this.active--;
         if (this.active < 0) {
           this.active = this.sliderImages.children.length;
+        } else {
+          this.active--;
         }
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active} / ${this.sliderImages.children.length}`;
@@ -48,9 +49,7 @@ if (!customElements.get('image-slider-section')) {
 
     addFocus(activeIndex) {
       // Set the source of the main box to the active image
-      if (this.active >= 0) {
-        this.slideMainBox.src = this.sliderImages.children[activeIndex]?.src;
-      }
+      this.slideMainBox.src = this.sliderImages.children[activeIndex]?.src;
 
       // Hide all images first
       if (this.sliderImages?.children.length) {
