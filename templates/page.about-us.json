@@ -81,10 +81,17 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img.png"
           }
+        },
+        "image_slide_mfaMgH": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-taza-fraseArt-min.jpg"
+          }
         }
       },
       "block_order": [
-        "image_slide_YPHrbU"
+        "image_slide_YPHrbU",
+        "image_slide_mfaMgH"
       ],
       "settings": {
         "title": "Elite outboard gear",
