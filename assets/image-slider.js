@@ -54,6 +54,7 @@ if (!customElements.get('image-slider-section')) {
       if (this.sliderImages?.children.length) {
         Array.from(this.sliderImages?.children).forEach((child) => {
           child.style.display = 'none';
+          console.log(child);
         });
       }
 
