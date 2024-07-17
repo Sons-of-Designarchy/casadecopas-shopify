@@ -72,6 +72,8 @@ img.slide__main {
   width: fit-content;
 
   border-radius: 1000px;
+
+  font-size: 16px;
 }
 
 .image-slider__buttons button svg {
