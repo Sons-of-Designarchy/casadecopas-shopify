@@ -29,17 +29,29 @@
     "sliders": {
       "type": "image-slider",
       "blocks": {
-        "image_slider_4GrCP4": {
-          "type": "image_slider",
+        "image_slide_A7WeCA": {
+          "type": "image_slide",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/Shp-tote-frase-viva-min.jpg",
-            "image2": "shopify:\/\/shop_images\/Shp-tote-frase-1-min.jpg",
-            "image3": "shopify:\/\/shop_images\/Shp-taza-fraseArt-1-min.jpg"
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
+        },
+        "image_slide_h3W9jT": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-tote-frase-min.jpg"
+          }
+        },
+        "image_slide_AXYkqm": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-lonSleeve-back-min.jpg"
           }
         }
       },
       "block_order": [
-        "image_slider_4GrCP4"
+        "image_slide_A7WeCA",
+        "image_slide_h3W9jT",
+        "image_slide_AXYkqm"
       ],
       "settings": {
         "title": "API Boards",
@@ -49,18 +61,6 @@
     },
     "image_slider_L67rjc": {
       "type": "image-slider",
-      "blocks": {
-        "image_slider_9GH7bU": {
-          "type": "image_slider",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/img.png",
-            "image2": "shopify:\/\/shop_images\/img.png"
-          }
-        }
-      },
-      "block_order": [
-        "image_slider_9GH7bU"
-      ],
       "settings": {
         "title": "Elite outboard gear",
         "description": "Universal Audio & Burl Converters",

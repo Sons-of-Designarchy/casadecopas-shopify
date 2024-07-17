@@ -5,7 +5,6 @@ if (!customElements.get('image-slider-section')) {
 
       this.sectionId = this.getAttribute('title');
 
-      // Scoped queries within this custom element instance
       this.sliderImages = this.querySelector(`.slide`);
       this.slideMainBox = this.querySelector(`.slide__main`);
       this.forwardBtn = this.querySelector('.image-slider__forw');
@@ -19,12 +18,11 @@ if (!customElements.get('image-slider-section')) {
         this.counter.innerHTML = `${this.active + 1} / ${
           this.sliderImages.children.length
         }`;
-
-        console.log(this.active);
       }
 
       this.forwardBtn?.addEventListener('click', () => {
-        this.active++;
+        this.active = this.active + 1;
+        console.log(this.active, 'this active');
 
         if (this.active > this.sliderImages.children.length - 1) {
           this.active = 0;
@@ -37,7 +35,7 @@ if (!customElements.get('image-slider-section')) {
       });
 
       this.backwardsBtn?.addEventListener('click', () => {
-        this.active--;
+        this.active = this.active - 1;
         if (this.active < 0) {
           this.active = this.sliderImages.children.length - 1;
         }
@@ -56,7 +54,6 @@ if (!customElements.get('image-slider-section')) {
       if (this.sliderImages?.children.length) {
         Array.from(this.sliderImages?.children).forEach((child) => {
           child.style.display = 'none';
-          console.log(child);
         });
       }
 
