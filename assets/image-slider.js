@@ -26,9 +26,13 @@ if (!customElements.get('image-slider-section')) {
       this.forwardBtn?.addEventListener('click', () => {
         this.active++;
 
+        console.log(this.active, 'before');
+
         if (this.active > this.sliderImages.children.length) {
           this.active = 0;
         }
+
+        console.log(this.active, 'after');
 
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active + 1} / ${
