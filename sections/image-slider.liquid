@@ -1,7 +1,12 @@
 <link rel="stylesheet" href="{{ 'section-image-slider.css' | asset_url }}">
 
 {%- style -%}
-  .section-{{ section.id }}section {
+  .section-{{ section.id }} {
+    display: block;
+  }
+
+  .section-{{ section.id }}
+  section {
     display: grid;
     grid-template-columns: 1fr;
 
