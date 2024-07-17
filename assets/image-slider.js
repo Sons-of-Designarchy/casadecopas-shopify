@@ -50,17 +50,15 @@ if (!customElements.get('image-slider-section')) {
       // Set the source of the main box to the active image
       this.slideMainBox.src = this.sliderImages.children[activeIndex].src;
 
-      console.log(this.sliderImages.children.length !== 0);
-
       // Hide all images first
-      if (this.sliderImages?.children) {
+      if (this.sliderImages?.children.length) {
         Array.from(this.sliderImages?.children).forEach((child) => {
           child.style.display = 'none';
         });
       }
 
       // Show the next image in the thumbnails
-      if (this.sliderImages?.children?.length > 1)
+      if (this.sliderImages?.children?.length)
         this.sliderImages.children[activeIndex + 1].style.display = 'block';
     }
   }
