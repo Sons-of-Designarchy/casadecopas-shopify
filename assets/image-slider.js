@@ -25,7 +25,7 @@ if (!customElements.get('image-slider-section')) {
 
       this.forwardBtn?.addEventListener('click', () => {
         this.active++;
-        if (this.active == this.sliderImages.children.length) {
+        if (this.active == this.sliderImages.children.length - 1) {
           this.active = 0;
           console.log('i am the same length');
         }
