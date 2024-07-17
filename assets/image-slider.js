@@ -28,7 +28,7 @@ if (!customElements.get('image-slider-section')) {
 
         console.log(this.active, 'before');
 
-        if (this.active > this.sliderImages.children.length) {
+        if (this.active > this.sliderImages.children.length - 1) {
           this.active = 0;
         }
 
