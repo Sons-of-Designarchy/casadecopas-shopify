@@ -14,14 +14,14 @@ if (!customElements.get('image-slider-section')) {
 
       this.active = 0;
 
-      if (this.sliderImages?.children.length > 0) {
+      if (this.sliderImages?.children) {
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active + 1} / ${
           this.sliderImages.children.length
         }`;
       }
 
-      this.forwardBtn.addEventListener('click', () => {
+      this.forwardBtn?.addEventListener('click', () => {
         this.active++;
         if (this.active >= this.sliderImages.children.length) this.active = 0;
         this.addFocus(this.active);
@@ -30,7 +30,7 @@ if (!customElements.get('image-slider-section')) {
         }`;
       });
 
-      this.backwardsBtn.addEventListener('click', () => {
+      this.backwardsBtn?.addEventListener('click', () => {
         this.active--;
         if (this.active < 0) {
           this.active = this.sliderImages.children.length;
