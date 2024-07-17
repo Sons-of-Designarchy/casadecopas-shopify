@@ -25,8 +25,9 @@
 {% endstyle %}
 
 {% assign image_slider_blocks = section.blocks | where: 'type', 'image_slider' %}
-
-console.log(image_slider_blocks);
+<script>
+  console.log('{{image_slider_blocks}}')
+</script>
 
 <image-slider-section
   section-id={{section.settings.title | downcase | replace: " ", "-" }}
