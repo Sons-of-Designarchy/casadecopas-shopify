@@ -38,6 +38,7 @@ img.slide__main {
 .image-slider__slider {
   display: flex;
   flex-direction: column;
+  max-height: 30rem;
 
   overflow: hidden;
 
