@@ -25,7 +25,7 @@ if (!customElements.get('image-slider-section')) {
 
       this.forwardBtn?.addEventListener('click', () => {
         this.active++;
-        if (this.active == this.sliderImages.children.length + 1) {
+        if (this.active == this.sliderImages.children.length) {
           this.active = 0;
           console.log('i am the same length');
         }
@@ -34,7 +34,7 @@ if (!customElements.get('image-slider-section')) {
           this.sliderImages.children.length
         }`;
 
-        console.log(this.active);
+        console.log(this.active, 'active');
         console.log(this.sliderImages.children.length, 'length');
       });
 
