@@ -946,7 +946,7 @@ summary::-webkit-details-marker {
 }
 
 .grid--auto .grid__item {
-  width: 100%;
+  max-width: fit-content;
 }
 
 .grid--1-col .grid__item {
