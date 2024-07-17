@@ -24,7 +24,7 @@ if (!customElements.get('image-slider-section')) {
       }
 
       this.forwardBtn?.addEventListener('click', () => {
-        this.active++;
+        this.active = this.active + 1;
 
         if (this.active > this.sliderImages.children.length - 1) {
           this.active = 0;
