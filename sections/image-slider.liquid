@@ -24,6 +24,8 @@
   }
 {% endstyle %}
 
+{% assign block_count = section.blocks.size %}
+
 <image-slider-section
   section-id={{section.settings.title | downcase | replace: " ", "-" }}
   id="sliders"
@@ -32,54 +34,40 @@
     <p class="text-body">{{ section.settings.title }}</p>
     <p class="text-body">{{ section.settings.description }}</p>
 
-    <div class="image-slider__slider">
-      {% for block in section.blocks %}
-        {% if block.type == 'image_slider' %}
-          <div class="image-slider__controls">
-            <p class="text-body">IMG
-              <span class="image-slider__counter"></span>
-            </p>
-            <div class="image-slider__buttons">
-              <button class="image-slider__back">
-                {% render 'icon-arrow-left' %}
-              </button>
-              <button class="image-slider__forw">
-                {% render 'icon-arrow-right' %}
-              </button>
-            </div>
+    {% if block_count > 0 %}
+      <div class="image-slider__slider">
+        <div class="image-slider__controls">
+          <p class="text-body">IMG
+            <span class="image-slider__counter"></span>
+          </p>
+          <div class="image-slider__buttons">
+            <button class="image-slider__back">
+              {% render 'icon-arrow-left' %}
+            </button>
+            <button class="image-slider__forw">
+              {% render 'icon-arrow-right' %}
+            </button>
           </div>
-          <div class="image-slider__container">
-            <img
-              class="slide__main"
-              width="400px"
-              height="250px" />
-            <div class="slide">
-              {% if block.settings.image1 %}
+        </div>
+        <div class="image-slider__container">
+          <img
+            class="slide__main"
+            width="400px"
+            height="250px" />
+          <div class="slide">
+            {% for block in section.blocks %}
+              {% if block.type == 'image_slide' %}
                 <img
-                  src="{{ block.settings.image1 | image_url }}"
+                  src="{{ block.settings.image | image_url }}"
                   width="100%"
                   height="100%"
                   alt="Slider Image 1">
               {% endif %}
-              {% if block.settings.image2 %}
-                <img
-                  src="{{ block.settings.image2 | image_url }}"
-                  width="100%"
-                  height="100%"
-                  alt="Slider Image 2">
-              {% endif %}
-              {% if block.settings.image3 %}
-                <img
-                  src="{{ block.settings.image3 | image_url }}"
-                  width="100%"
-                  height="100%"
-                  alt="Slider Image 3">
-              {% endif %}
-            </div>
+            {% endfor %}
           </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+        </div>
+      </div>
+    {% endif %}
   </section>
 </image-slider-section>
 
@@ -115,24 +103,17 @@
     ],
     "blocks": [
       {
-        "type": "image_slider",
-        "name": "Images",
+        "type": "image_slide",
+        "name": "Image Slide",
         "settings": [
           {
             "type": "image_picker",
-            "id": "image1",
-            "label": "Image 1"
-          }, {
-            "type": "image_picker",
-            "id": "image2",
-            "label": "Image 2"
-          }, {
-            "type": "image_picker",
-            "id": "image3",
-            "label": "Image 3"
+            "id": "image",
+            "label": "Image"
           }
         ]
       }
-    ]
+    ],
+    "max_blocks": 10
   }
 {% endschema %}
