@@ -20,7 +20,7 @@ if (!customElements.get('image-slider-section')) {
           this.sliderImages.children.length
         }`;
 
-        console.log(this.active);
+        console.log(this.active, 'this active');
       }
 
       this.forwardBtn?.addEventListener('click', () => {
