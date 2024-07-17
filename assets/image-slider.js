@@ -14,6 +14,8 @@ if (!customElements.get('image-slider-section')) {
 
       this.active = 0;
 
+      console.log(this.sliderImages.children);
+
       if (this.sliderImages?.children) {
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active + 1} / ${
