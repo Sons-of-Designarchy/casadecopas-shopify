@@ -51,14 +51,14 @@ if (!customElements.get('image-slider-section')) {
       console.log(this.sliderImages?.children?.length, 'children');
 
       // Hide all images first
-      if (this.sliderImages?.children.length > 0) {
+      if (this.sliderImages?.children.length > 1) {
         Array.from(this.sliderImages?.children).forEach((child) => {
           child.style.display = 'none';
         });
       }
 
       // Show the next image in the thumbnails
-      if (activeIndex <= this.sliderImages.children.length) {
+      if (this.sliderImages?.children?.length > 1) {
         this.sliderImages.children[activeIndex + 1].style.display = 'block';
       }
     }
