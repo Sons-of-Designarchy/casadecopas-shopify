@@ -14,12 +14,14 @@ if (!customElements.get('image-slider-section')) {
 
       this.active = 0;
 
-      this.addFocus(this.active);
-      this.counter.innerHTML = `${this.active + 1} / ${
-        this.sliderImages.children.length
-      }`;
+      if (this.sliderImages?.children) {
+        this.addFocus(this.active);
+        this.counter.innerHTML = `${this.active + 1} / ${
+          this.sliderImages.children.length
+        }`;
 
-      console.log(this.active);
+        console.log(this.active);
+      }
 
       this.forwardBtn?.addEventListener('click', () => {
         this.active++;
