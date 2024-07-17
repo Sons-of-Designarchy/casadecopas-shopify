@@ -6,10 +6,6 @@
   margin-block-start: 0;
 }
 
-.image-slider__main p:first-of-type {
-  font-weight: 400;
-}
-
 .slide {
   display: none;
 
@@ -63,7 +59,7 @@ img.slide__main {
 }
 
 .image-slider__controls p {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .image-slider__buttons {
