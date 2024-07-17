@@ -101,7 +101,7 @@
 }
 
 .footer-block {
-  border-bottom: solid 1px red;
+  border-bottom: solid 1px var(--color-foreground);
 }
 
 .footer-block:first-of-type {
