@@ -45,6 +45,7 @@ if (!customElements.get('image-slider-section')) {
           console.log('top');
         }
         this.addFocus(this.active);
+        console.log('active', 'top', this.active);
         this.counter.innerHTML = `${this.active} / ${this.sliderImages.children.length}`;
       });
     }
