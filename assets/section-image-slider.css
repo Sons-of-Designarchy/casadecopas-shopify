@@ -58,6 +58,10 @@ img.slide__main {
   align-items: center;
 }
 
+.image-slider__controls p {
+  font-size: 1.25rem;
+}
+
 .image-slider__buttons {
   display: flex;
   gap: 1.5rem;
