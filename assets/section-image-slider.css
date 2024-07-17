@@ -1,5 +1,9 @@
+.image-slider__main {
+}
+
 .image-slider__main p {
   margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .slide {
@@ -51,12 +55,21 @@ img.slide__main {
   width: 100%;
 
   justify-content: space-between;
+  align-items: center;
+}
+
+.image-slider__controls p {
+  font-size: 1.25rem;
 }
 
 .image-slider__buttons {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem 0;
+
+  @media screen and (min-width: 750px) {
+    gap: 1.25rem;
+  }
 }
 
 .image-slider__buttons button {
@@ -74,11 +87,19 @@ img.slide__main {
   border-radius: 1000px;
 
   font-size: 16px;
+
+  height: 3.25rem;
+  width: 3.25rem;
+
+  @media screen and (min-width: 750px) {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 
 .image-slider__buttons button svg {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 100%;
+  width: 100%;
 }
 
 .image-slider__buttons button:hover {
