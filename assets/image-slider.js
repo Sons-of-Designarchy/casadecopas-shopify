@@ -50,13 +50,12 @@ if (!customElements.get('image-slider-section')) {
       // Set the source of the main box to the active image
       this.slideMainBox.src = this.sliderImages.children[activeIndex].src;
 
-      console.log(this.sliderImages.children.length);
+      console.log(this.sliderImages.children.length !== 0);
 
       // Hide all images first
       if (this.sliderImages?.children) {
         Array.from(this.sliderImages?.children).forEach((child) => {
           child.style.display = 'none';
-          console.log(child);
         });
       }
 
