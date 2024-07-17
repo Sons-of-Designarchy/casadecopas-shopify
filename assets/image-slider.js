@@ -14,45 +14,54 @@ if (!customElements.get('image-slider-section')) {
 
       this.active = 0;
 
-      this.addFocus(this.active);
-      this.counter.innerHTML = `${this.active + 1} / ${
-        this.sliderImages.children.length
-      }`;
+      if (this.sliderImages?.children) {
+        this.addFocus(this.active);
+        this.counter.innerHTML = `${this.active + 1} / ${
+          this.sliderImages.children.length
+        }`;
 
-      this.forwardBtn.addEventListener('click', () => {
+        console.log(this.active);
+      }
+
+      this.forwardBtn?.addEventListener('click', () => {
         this.active++;
-        if (this.active >= this.sliderImages.children.length) this.active = 0;
+
+        if (this.active > this.sliderImages.children.length - 1) {
+          this.active = 0;
+        }
+
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active + 1} / ${
           this.sliderImages.children.length
         }`;
       });
 
-      this.backwardsBtn.addEventListener('click', () => {
+      this.backwardsBtn?.addEventListener('click', () => {
         this.active--;
         if (this.active < 0) {
-          this.active = this.sliderImages.children.length;
+          this.active = this.sliderImages.children.length - 1;
         }
         this.addFocus(this.active);
-        this.counter.innerHTML = `${this.active + 1} / ${
-          this.sliderImages.children.length
-        }`;
+        this.counter.innerHTML = `${this.active} / ${this.sliderImages.children.length}`;
       });
     }
 
     addFocus(activeIndex) {
       // Set the source of the main box to the active image
-      this.slideMainBox.src = this.sliderImages.children[activeIndex].src;
+      this.slideMainBox.src = this.sliderImages.children[activeIndex]?.src;
+
+      console.log(this.sliderImages?.children?.length, 'children');
 
       // Hide all images first
-      if (this.sliderImages.children.length > 0) {
-        Array.from(this.sliderImages.children).forEach((child) => {
+      if (this.sliderImages?.children.length) {
+        Array.from(this.sliderImages?.children).forEach((child) => {
           child.style.display = 'none';
+          console.log(child);
         });
       }
 
       // Show the next image in the thumbnails
-      if (this.sliderImages?.children.length > 1)
+      if (this.sliderImages?.children?.length > 1)
         this.sliderImages.children[activeIndex + 1].style.display = 'block';
     }
   }
