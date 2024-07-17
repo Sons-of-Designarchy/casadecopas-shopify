@@ -73,12 +73,13 @@
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
-                   <div class="text-body grid__item">
+                   <div><div class="text-body grid__item">
                     {{ block.settings.heading }}
                   </div>
                     <div class="text-body grid__item">
                       {{ block.settings.subtext }}
-                    </div>
+                    </div></div>
+                   
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
                       <ul class="footer-block__details-content list-unstyled">
