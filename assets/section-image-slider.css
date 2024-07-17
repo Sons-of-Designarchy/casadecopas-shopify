@@ -59,7 +59,7 @@ img.slide__main {
 
 .image-slider__buttons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1rem 0;
 }
 
