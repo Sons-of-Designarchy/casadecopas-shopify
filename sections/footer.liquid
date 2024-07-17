@@ -65,9 +65,9 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {%- if block.settings.heading != blank -%}
+                {% comment %} {%- if block.settings.heading != blank -%}
                   <p class="text-body grid__item">{{- block.settings.heading -}}</p>
-                {%- endif -%}
+                {%- endif -%} {% endcomment %}
 
                 {%- case block.type -%}
                   {%- when '@app' -%}
