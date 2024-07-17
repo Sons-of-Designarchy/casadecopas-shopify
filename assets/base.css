@@ -945,6 +945,10 @@ summary::-webkit-details-marker {
   }
 }
 
+.grid--auto .grid__item {
+  width: auto;
+}
+
 .grid--1-col .grid__item {
   max-width: 100%;
   width: 100%;
