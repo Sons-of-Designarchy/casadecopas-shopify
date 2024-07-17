@@ -1,5 +1,4 @@
-.image-slider__main p {
-  font-family: 't-Carola', serif !important;
+.image-slider__main {
 }
 
 .image-slider__main p {
@@ -60,7 +59,7 @@ img.slide__main {
 }
 
 .image-slider__controls p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .image-slider__buttons {
