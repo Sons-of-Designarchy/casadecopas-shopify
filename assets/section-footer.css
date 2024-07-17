@@ -108,6 +108,10 @@
   border-top: solid 1px red;
 }
 
+.footer-block:last-of-type {
+  border-bottom: none;
+}
+
 @media screen and (min-width: 750px) {
   .footer__column--info {
     padding-left: 0;
