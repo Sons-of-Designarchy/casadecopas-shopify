@@ -30,6 +30,8 @@ if (!customElements.get('image-slider-section')) {
         this.counter.innerHTML = `${this.active + 1} / ${
           this.sliderImages.children.length
         }`;
+
+        console.log(active);
       });
 
       this.backwardsBtn?.addEventListener('click', () => {
