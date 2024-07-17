@@ -42,6 +42,7 @@ if (!customElements.get('image-slider-section')) {
         this.active--;
         if (this.active < 0) {
           this.active = this.sliderImages.children.length;
+          console.log('top');
         }
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active} / ${this.sliderImages.children.length}`;
