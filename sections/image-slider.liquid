@@ -2,7 +2,8 @@
 
 {%- style -%}
   .section-{{ section.id }} {
-    display: block;
+    display: grid;
+    padding: 2rem;
   }
 
   .section-{{ section.id }}
@@ -15,9 +16,7 @@
     width: 100%;
 
     margin: auto;
-    padding-top: 1rem;
-
-    @media screen and (min-width: 750px) {
+    padding-top:@media screen and (min-width: 750px) {
       grid-template-columns: 20% 20% 1fr;
     };
   }
