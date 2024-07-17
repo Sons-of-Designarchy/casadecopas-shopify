@@ -40,7 +40,7 @@ if (!customElements.get('image-slider-section')) {
         this.active--;
         console.log(this.active, 'before');
         if (this.active < 0) {
-          this.active = this.sliderImages.children.length;
+          this.active = this.sliderImages.children.length - 1;
         }
         console.log(this.active, 'after');
         this.addFocus(this.active);
