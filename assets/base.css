@@ -945,6 +945,10 @@ summary::-webkit-details-marker {
   }
 }
 
+.grid--auto {
+  flex-wrap: nowrap;
+}
+
 .grid--auto .grid__item {
   @media screen and (min-width: 750px) {
     max-width: fit-content;
