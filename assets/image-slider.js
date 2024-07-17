@@ -58,7 +58,7 @@ if (!customElements.get('image-slider-section')) {
       }
 
       // Show the next image in the thumbnails
-      if (this.sliderImages?.children?.length)
+      if (this.sliderImages?.children?.length > 1)
         this.sliderImages.children[activeIndex + 1].style.display = 'block';
     }
   }
