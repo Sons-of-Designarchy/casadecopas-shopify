@@ -14,17 +14,24 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_WCtb7G": {
-          "type": "image",
+        "text_D6CnBh": {
+          "type": "text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test2.svg",
-            "image_width": 455,
-            "alignment": "center"
+            "heading": "About Casa de Copas",
+            "subtext": "<p>Casa de Copas is a world-class recording studio located at the former Sony Studio compound in Mexico City. With six studio spaces situated over three stories and a rooftop terrace that opens up to a view full of fruit trees, Casa de Copas boasts one of the most beautiful and inspiring spaces to write and record.<\/p>"
+          }
+        },
+        "text_jyGqiw": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p>mmxxiv CDC 333  <\/p>"
           }
         }
       },
       "block_order": [
-        "image_WCtb7G"
+        "text_D6CnBh",
+        "text_jyGqiw"
       ],
       "settings": {
         "color_scheme": "scheme-4",
