@@ -946,7 +946,7 @@ summary::-webkit-details-marker {
 }
 
 .grid--auto {
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
 }
 
 .grid--auto .grid__item {
