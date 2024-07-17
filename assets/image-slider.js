@@ -38,9 +38,7 @@ if (!customElements.get('image-slider-section')) {
           this.active = this.sliderImages.children.length;
         }
         this.addFocus(this.active);
-        this.counter.innerHTML = `${this.active + 1} / ${
-          this.sliderImages.children.length
-        }`;
+        this.counter.innerHTML = `${this.active} / ${this.sliderImages.children.length}`;
       });
     }
 
