@@ -59,11 +59,11 @@ img.slide__main {
 
 .image-slider__buttons {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem 0;
 
   @media screen and (min-width: 750px) {
-    gap: 2rem;
+    gap: 1.25rem;
   }
 }
 
