@@ -27,6 +27,7 @@ if (!customElements.get('image-slider-section')) {
         this.active++;
         if (this.active == this.sliderImages.children.length) {
           this.active = 0;
+          console.log('i am the same length');
         }
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active + 1} / ${
