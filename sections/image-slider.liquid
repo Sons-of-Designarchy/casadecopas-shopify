@@ -36,19 +36,21 @@
 
     {% if block_count > 0 %}
       <div class="image-slider__slider">
-        <div class="image-slider__controls">
-          <p class="text-body">IMG
-            <span class="image-slider__counter"></span>
-          </p>
-          <div class="image-slider__buttons">
-            <button class="image-slider__back">
-              {% render 'icon-arrow-left' %}
-            </button>
-            <button class="image-slider__forw">
-              {% render 'icon-arrow-right' %}
-            </button>
+        {% if block_count > 1 %}
+          <div class="image-slider__controls">
+            <p class="text-body">IMG
+              <span class="image-slider__counter"></span>
+            </p>
+            <div class="image-slider__buttons">
+              <button class="image-slider__back">
+                {% render 'icon-arrow-left' %}
+              </button>
+              <button class="image-slider__forw">
+                {% render 'icon-arrow-right' %}
+              </button>
+            </div>
           </div>
-        </div>
+        {% endif %}
         <div class="image-slider__container">
           <img
             class="slide__main"
