@@ -946,7 +946,7 @@ summary::-webkit-details-marker {
 }
 
 .grid--auto .grid__item {
-  width: auto;
+  width: 100%;
 }
 
 .grid--1-col .grid__item {
