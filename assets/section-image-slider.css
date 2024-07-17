@@ -83,3 +83,8 @@ img.slide__main {
   background-color: rgba(var(--color-foreground), 0.3);
   cursor: pointer;
 }
+
+.image-slider__buttons button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
