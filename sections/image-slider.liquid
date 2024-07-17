@@ -32,39 +32,43 @@
     <p class="text-body">{{ section.settings.title }}</p>
     <p class="text-body">{{ section.settings.description }}</p>
 
-    <div class="image-slider__slider">
-      <div class="image-slider__controls">
-        <p class="text-body">IMG
-          <span class="image-slider__counter"></span>
-        </p>
-        <div class="image-slider__buttons">
-          <button class="image-slider__back">
-            {% render 'icon-arrow-left' %}
-          </button>
-          <button class="image-slider__forw">
-            {% render 'icon-arrow-right' %}
-          </button>
-        </div>
-      </div>
-      <div class="image-slider__container">
-        <img
-          class="slide__main"
-          width="400px"
-          height="250px" />
-        <div class="slide">
-          {% for block in section.blocks %}
-            {% if block.type == 'image_slide' %}
-              <img
-                src="{{ block.settings.image | image_url }}"
-                width="100%"
-                height="100%"
-                alt="Slider Image 1">
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
+    {% for block in section.blocks %}
+      {% if block.type == 'image_slide' %}
+        <div class="image-slider__slider">
+          <div class="image-slider__controls">
+            <p class="text-body">IMG
+              <span class="image-slider__counter"></span>
+            </p>
+            <div class="image-slider__buttons">
+              <button class="image-slider__back">
+                {% render 'icon-arrow-left' %}
+              </button>
+              <button class="image-slider__forw">
+                {% render 'icon-arrow-right' %}
+              </button>
+            </div>
+          </div>
+          <div class="image-slider__container">
+            <img
+              class="slide__main"
+              width="400px"
+              height="250px" />
+            <div class="slide">
+              {% for block in section.blocks %}
+                {% if block.type == 'image_slide' %}
+                  <img
+                    src="{{ block.settings.image | image_url }}"
+                    width="100%"
+                    height="100%"
+                    alt="Slider Image 1">
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
 
-    </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </section>
 </image-slider-section>
 
