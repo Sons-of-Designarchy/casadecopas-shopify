@@ -11,10 +11,6 @@
   display: block;
 }
 
-.footer__blocks-wrapper {
-  border-bottom: 1px red solid;
-}
-
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
