@@ -3,6 +3,10 @@
   margin-block-start: 0;
 }
 
+.image-slider__slider {
+  border: solid 2px red;
+}
+
 .slide {
   display: none;
 
