@@ -5,7 +5,6 @@ if (!customElements.get('image-slider-section')) {
 
       this.sectionId = this.getAttribute('title');
 
-      // Scoped queries within this custom element instance
       this.sliderImages = this.querySelector(`.slide`);
       this.slideMainBox = this.querySelector(`.slide__main`);
       this.forwardBtn = this.querySelector('.image-slider__forw');
