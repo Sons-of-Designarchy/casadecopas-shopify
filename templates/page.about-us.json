@@ -46,12 +46,26 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Shp-lonSleeve-back-min.jpg"
           }
+        },
+        "image_slide_NefeCp": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-tote-frase-1-min.jpg"
+          }
+        },
+        "image_slide_Mz3apH": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-bg.png"
+          }
         }
       },
       "block_order": [
         "image_slide_A7WeCA",
         "image_slide_h3W9jT",
-        "image_slide_AXYkqm"
+        "image_slide_AXYkqm",
+        "image_slide_NefeCp",
+        "image_slide_Mz3apH"
       ],
       "settings": {
         "title": "API Boards",
