@@ -26,6 +26,8 @@
 
 {% assign image_slider_blocks = section.blocks | where: 'type', 'image_slider' %}
 
+console.log(image_slider_blocks);
+
 <image-slider-section
   section-id={{section.settings.title | downcase | replace: " ", "-" }}
   id="sliders"
