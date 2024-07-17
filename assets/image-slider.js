@@ -48,7 +48,7 @@ if (!customElements.get('image-slider-section')) {
 
     addFocus(activeIndex) {
       // Set the source of the main box to the active image
-      if (this.active) {
+      if (this.active >= 0) {
         this.slideMainBox.src = this.sliderImages.children[activeIndex]?.src;
       }
 
