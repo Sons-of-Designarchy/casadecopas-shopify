@@ -154,12 +154,21 @@
         "description": "Universal Audio & Burl Converters",
         "color_scheme": "scheme-4"
       }
+    },
+    "image_slider_ixAnic": {
+      "type": "image-slider",
+      "settings": {
+        "title": "Neumann monitoring systems",
+        "description": "",
+        "color_scheme": "scheme-4"
+      }
     }
   },
   "order": [
     "header",
     "subheader",
     "sliders",
-    "image_slider_L67rjc"
+    "image_slider_L67rjc",
+    "image_slider_ixAnic"
   ]
 }
