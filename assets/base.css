@@ -942,10 +942,6 @@ summary::-webkit-details-marker {
   flex-wrap: nowrap;
 }
 
-.grid-center {
-  align-items: center;
-}
-
 @media screen and (max-width: 749px) {
   .grid__item.slider__slide--full-width {
     width: 100%;
