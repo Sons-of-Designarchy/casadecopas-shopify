@@ -51,7 +51,7 @@
       <div class="footer__content-top page-width">
         {%- if section.blocks.size > 0 -%}
           <div
-            class="footer__blocks-wrapper grid {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="footer__blocks-wrapper {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
