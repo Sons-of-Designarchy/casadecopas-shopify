@@ -36,7 +36,7 @@ if (!customElements.get('image-slider-section')) {
       });
 
       this.backwardsBtn?.addEventListener('click', () => {
-        this.active--;
+        this.active = this.active - 1;
         if (this.active < 0) {
           this.active = this.sliderImages.children.length - 1;
         }
