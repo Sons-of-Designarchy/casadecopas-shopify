@@ -81,14 +81,118 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img.png"
           }
+        },
+        "image_slide_mfaMgH": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-taza-fraseArt-min.jpg"
+          }
+        },
+        "image_slide_NaPhKL": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
+        },
+        "image_slide_7zDCrE": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-tote-frase-viva-1-min.jpg"
+          }
+        },
+        "image_slide_jJxQhe": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-tote-frase-viva-1-min.jpg"
+          }
+        },
+        "image_slide_gXnqyk": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
+        },
+        "image_slide_At97Yz": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
+        },
+        "image_slide_bYTMJV": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-tote-frase-min.jpg"
+          }
+        },
+        "image_slide_VCMi4n": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
+        },
+        "image_slide_4JM4LC": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
         }
       },
       "block_order": [
-        "image_slide_YPHrbU"
+        "image_slide_YPHrbU",
+        "image_slide_mfaMgH",
+        "image_slide_NaPhKL",
+        "image_slide_7zDCrE",
+        "image_slide_jJxQhe",
+        "image_slide_gXnqyk",
+        "image_slide_At97Yz",
+        "image_slide_bYTMJV",
+        "image_slide_VCMi4n",
+        "image_slide_4JM4LC"
       ],
       "settings": {
         "title": "Elite outboard gear",
         "description": "Universal Audio & Burl Converters",
+        "color_scheme": "scheme-4"
+      }
+    },
+    "image_slider_ixAnic": {
+      "type": "image-slider",
+      "settings": {
+        "title": "Neumann monitoring systems",
+        "description": "",
+        "color_scheme": "scheme-4"
+      }
+    },
+    "image_slider_e6CTU7": {
+      "type": "image-slider",
+      "blocks": {
+        "image_slide_XkMQHC": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
+        },
+        "image_slide_gxC33q": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-tote-frase-min.jpg"
+          }
+        },
+        "image_slide_J6pXCh": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shp-taza-fraseArt-min.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_XkMQHC",
+        "image_slide_gxC33q",
+        "image_slide_J6pXCh"
+      ],
+      "settings": {
+        "title": "Class-A mic locker",
+        "description": "Neumann, Soyuz, AEA",
         "color_scheme": "scheme-4"
       }
     }
@@ -97,6 +201,8 @@
     "header",
     "subheader",
     "sliders",
-    "image_slider_L67rjc"
+    "image_slider_L67rjc",
+    "image_slider_ixAnic",
+    "image_slider_e6CTU7"
   ]
 }
