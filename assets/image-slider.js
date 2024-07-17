@@ -40,7 +40,9 @@ if (!customElements.get('image-slider-section')) {
           this.active = this.sliderImages.children.length - 1;
         }
         this.addFocus(this.active);
-        this.counter.innerHTML = `${this.active} / ${this.sliderImages.children.length}`;
+        this.counter.innerHTML = `${this.active + 1} / ${
+          this.sliderImages.children.length
+        }`;
       });
     }
 
@@ -58,8 +60,13 @@ if (!customElements.get('image-slider-section')) {
       }
 
       // Show the next image in the thumbnails
-      if (this.sliderImages?.children?.length > 1)
+      if (this.sliderImages?.children?.length > 1) {
+        if (activeIndex >= this.sliderImages.children.length - 1) {
+          return;
+        }
+
         this.sliderImages.children[activeIndex + 1].style.display = 'block';
+      }
     }
   }
 
