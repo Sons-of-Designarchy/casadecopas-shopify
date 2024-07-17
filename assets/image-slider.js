@@ -51,7 +51,7 @@ if (!customElements.get('image-slider-section')) {
       console.log(this.sliderImages?.children?.length, 'children');
 
       // Hide all images first
-      if (this.sliderImages?.children.length > 1) {
+      if (this.sliderImages?.children.length) {
         Array.from(this.sliderImages?.children).forEach((child) => {
           child.style.display = 'none';
         });
