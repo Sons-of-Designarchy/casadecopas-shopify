@@ -50,6 +50,8 @@ if (!customElements.get('image-slider-section')) {
       // Set the source of the main box to the active image
       this.slideMainBox.src = this.sliderImages.children[activeIndex].src;
 
+      console.log(this.sliderImages.children.length);
+
       // Hide all images first
       if (this.sliderImages?.children) {
         Array.from(this.sliderImages?.children).forEach((child) => {
