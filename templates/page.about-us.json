@@ -75,6 +75,17 @@
     },
     "image_slider_L67rjc": {
       "type": "image-slider",
+      "blocks": {
+        "image_slide_YPHrbU": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_YPHrbU"
+      ],
       "settings": {
         "title": "Elite outboard gear",
         "description": "Universal Audio & Burl Converters",
