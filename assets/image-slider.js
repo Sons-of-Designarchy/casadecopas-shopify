@@ -25,27 +25,21 @@ if (!customElements.get('image-slider-section')) {
 
       this.forwardBtn?.addEventListener('click', () => {
         this.active++;
-        if (this.active == this.sliderImages.children.length) {
+        if (this.active < this.sliderImages.children.length) {
           this.active = 0;
-          console.log('i am the same length');
         }
         this.addFocus(this.active);
         this.counter.innerHTML = `${this.active + 1} / ${
           this.sliderImages.children.length
         }`;
-
-        console.log(this.active, 'active');
-        console.log(this.sliderImages.children.length, 'length');
       });
 
       this.backwardsBtn?.addEventListener('click', () => {
         this.active--;
         if (this.active < 0) {
           this.active = this.sliderImages.children.length;
-          console.log('top');
         }
         this.addFocus(this.active);
-        console.log('active', 'top', this.active);
         this.counter.innerHTML = `${this.active} / ${this.sliderImages.children.length}`;
       });
     }
