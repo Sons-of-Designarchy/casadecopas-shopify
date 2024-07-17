@@ -24,11 +24,6 @@
   }
 {% endstyle %}
 
-{% assign image_slider_blocks = section.blocks | where: 'type', 'image_slider' %}
-<script>
-  console.log('{{image_slider_blocks}}')
-</script>
-
 <image-slider-section
   section-id={{section.settings.title | downcase | replace: " ", "-" }}
   id="sliders"
@@ -39,8 +34,8 @@
 
     <div class="image-slider__slider">
       {% for block in section.blocks %}
-        {% if image_slider_blocks.size > 1 %}
-          {% if block.type.image_slider.settings %}
+        {% if block.type == 'image_slider' %}
+          {% if block.type.image_slider.size > 1 %}
             <div class="image-slider__controls">
               <p class="text-body">IMG
                 <span class="image-slider__counter"></span>
@@ -55,6 +50,8 @@
               </div>
             </div>
           {% endif %}
+
+
           <div class="image-slider__container">
             <img
               class="slide__main"
