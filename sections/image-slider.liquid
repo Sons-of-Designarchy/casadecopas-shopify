@@ -24,6 +24,8 @@
   }
 {% endstyle %}
 
+{% assign block_count = section.blocks.size %}
+
 <image-slider-section
   section-id={{section.settings.title | downcase | replace: " ", "-" }}
   id="sliders"
