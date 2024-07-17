@@ -34,6 +34,7 @@ if (!customElements.get('image-slider-section')) {
         }`;
 
         console.log(this.active);
+        console.log(this.sliderImages.children.length, 'length');
       });
 
       this.backwardsBtn?.addEventListener('click', () => {
