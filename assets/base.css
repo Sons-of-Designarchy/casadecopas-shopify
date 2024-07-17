@@ -947,8 +947,10 @@ summary::-webkit-details-marker {
 
 .grid--auto .grid__item {
   max-width: 100%;
+  width: 100%;
   @media screen and (min-width: 750px) {
     max-width: fit-content;
+    width: fit-content;
   }
 }
 
