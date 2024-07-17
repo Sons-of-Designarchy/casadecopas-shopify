@@ -78,11 +78,14 @@ img.slide__main {
   border-radius: 1000px;
 
   font-size: 16px;
+
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .image-slider__buttons button svg {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 100%;
+  width: 100%;
 }
 
 .image-slider__buttons button:hover {
