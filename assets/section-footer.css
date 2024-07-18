@@ -118,7 +118,7 @@
 }
 
 .footer-block__noborder {
-  border-top: none;
+  border: none;
 }
 
 .footer-block-grid {
