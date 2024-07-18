@@ -128,10 +128,10 @@
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                       {%- endif -%}
                       {%- if block.settings.show_social -%}
-                       %- if settings.social_facebook_link != blank -%}
-    <li class="list-social__item">
+                       {%- if settings.social_facebook_link != blank -%}
       <a href="{{ settings.social_facebook_link }}" class="link list-social__link">Facebook</a>
                       {% endif %}
+                     {% endif %}
                     </div>
                   {%- when 'image' -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
