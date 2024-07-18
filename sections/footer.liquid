@@ -71,7 +71,6 @@
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
-                    <div class="">
                      {%if block.settings.heading %}
                       <div class="text-body">
                         <p>{{ block.settings.heading }}</p>
@@ -80,7 +79,6 @@
                       <div class="text-body">
                         {{ block.settings.subtext }}
                       </div>
-                    </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
                       <p class="text-body">{{block.settings.heading}}</p>
