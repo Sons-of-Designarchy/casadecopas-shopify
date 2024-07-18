@@ -112,6 +112,11 @@
   border-bottom: none;
 }
 
+.footer-block-grid {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
 @media screen and (min-width: 750px) {
   .footer__column--info {
     padding-left: 0;
