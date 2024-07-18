@@ -126,10 +126,13 @@
 }
 
 .footer-block__links {
-  margin-top: 1.5rem;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   line-height: 2rem;
+
+  @media screen and (min-width: 750px) {
+    margin-top: 1.5rem;
+  }
 }
 
 .footer-block__links a {
