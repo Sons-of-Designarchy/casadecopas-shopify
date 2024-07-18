@@ -2870,6 +2870,7 @@ details[open] > .header__submenu {
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
   font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .header__menu-item:hover {
