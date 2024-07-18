@@ -69,7 +69,7 @@
                     {% render block %}
                   {%- when 'text' -%}
                      {%- if block.settings.heading != blank -%}
-                      <div class="text-body footer-block-heading">
+                      <div class="text-body">
                         <p>{{ block.settings.heading }}</p>
                       </div>
                      {% endif %}
@@ -78,7 +78,7 @@
                       </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <p class="text-body footer-block-heading">{{block.settings.heading}}</p>
+                      <p class="text-body">{{block.settings.heading}}</p>
                       <ul class="footer-block__links list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
