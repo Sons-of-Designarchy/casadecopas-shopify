@@ -81,17 +81,18 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                     <div> <p class="text-body grid__item">{{block.settings.heading}}</p>
+                     <div>
+                      <p class="text-body grid__item">{{block.settings.heading}}</p>
                       <ul class="footer-block__details-content list-unstyled grid__item">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a href="{{ link.url }}" class="link no-decoration-link link--text{% if link.active %} list-menu__item--active{% endif %}">
                               <p class="text-body">{{ link.title }}</p>
                             </a>
-                          </li></div>
-                    
+                          </li>
                         {%- endfor -%}
                       </ul>
+                     </div>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
