@@ -562,6 +562,10 @@ hr {
   }
 }
 
+.no-decoration-link {
+  text-decoration: none;
+}
+
 .full-unstyled-link {
   text-decoration: none;
   color: currentColor;

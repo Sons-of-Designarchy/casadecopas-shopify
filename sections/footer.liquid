@@ -85,7 +85,7 @@
                       <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
-                            <a href="{{ link.url }}" class="link link--text{% if link.active %} list-menu__item--active{% endif %}">
+                            <a href="{{ link.url }}" class="link no-decoration-link link--text{% if link.active %} list-menu__item--active{% endif %}">
                               {{ link.title }}
                             </a>
                           </li>
