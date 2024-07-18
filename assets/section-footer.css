@@ -107,6 +107,7 @@
 
 .footer-block:first-of-type:has(img) {
   border-top: none;
+  padding: 0;
 }
 
 .footer-block:last-of-type {
