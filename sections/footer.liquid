@@ -72,9 +72,11 @@
                     {% render block %}
                   {%- when 'text' -%}
                     <div class="grid grid--nowrap">
+                     {%if block.settins.heading%}
                       <div class="text-body grid__item">
                         <p>{{ block.settings.heading }}</p>
                       </div>
+                     {%endif%}
                       <div class="text-body grid__item">
                         {{ block.settings.subtext }}
                       </div>
