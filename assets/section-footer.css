@@ -24,8 +24,6 @@
 
   .footer__content-top {
     padding-bottom: 3rem;
-    padding-left: calc(4rem / var(--font-body-scale));
-    padding-right: calc(4rem / var(--font-body-scale));
   }
 }
 
@@ -109,6 +107,7 @@
 
 .footer-block:first-of-type:has(img) {
   border-top: none;
+  padding: 0;
 }
 
 .footer-block:last-of-type {
@@ -436,18 +435,12 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 749px) {
-  .footer-block-image,
-  .footer-block-image.left,
-  .footer-block-image.center,
-  .footer-block-image.right {
-    justify-content: center;
-  }
-}
-
 .footer-block__image-wrapper {
-  margin-bottom: 2rem;
   overflow: hidden !important;
+
+  @media screen and (min-width: 750px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .footer-block__image-wrapper img {
