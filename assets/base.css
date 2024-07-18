@@ -287,8 +287,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-family: 't-America-Light';
 }
 
-.text-body-bold {
-  font-family: 't-America-Regular';
+.text-body--bold {
+  font-family: 't-America-Medium';
 }
 
 h1,
