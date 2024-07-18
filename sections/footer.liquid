@@ -130,8 +130,6 @@
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
-                    {% when 'show_social' %}
-                    "Hello"
                 {%- endcase -%}
               </div>
             {%- endfor -%}
@@ -447,12 +445,6 @@
             ],
             "default": "center"
           },
-          {
-        "type": "checkbox",
-        "id": "show_social",
-        "default": true,
-        "label": "t:sections.footer.settings.show_social.label"
-      }
         ]
       }
     ],
