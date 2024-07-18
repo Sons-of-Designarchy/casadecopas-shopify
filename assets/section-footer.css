@@ -113,7 +113,7 @@
   border-bottom: none;
 }
 
-.footer-block div:has(p):first-child {
+.footer-block-heading {
   color: red;
 }
 
