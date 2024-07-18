@@ -81,7 +81,7 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                     <div class="grid">
+                     <div class="grid grid--nowrap">
                       <p class="text-body grid__item">{{block.settings.heading}}</p>
                       <ul class="footer-block__details-content list-unstyled grid__item">
                         {%- for link in block.settings.menu.links -%}
