@@ -86,7 +86,7 @@
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a href="{{ link.url }}" class="link no-decoration-link link--text{% if link.active %} list-menu__item--active{% endif %}">
-                              {{ link.title }}
+                              <p class="text-body">{{ link.title }}</p>
                             </a>
                           </li>
                         {%- endfor -%}
