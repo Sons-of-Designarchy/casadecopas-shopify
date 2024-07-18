@@ -101,11 +101,11 @@
 }
 
 .footer-block {
-  border-bottom: solid 1px var(--color-link);
+  border-bottom: solid 1px var(--color-button);
 }
 
 .footer-block:first-of-type {
-  border-top: solid 1px var(--color-link);
+  border-top: solid 1px var(--color-button-text);
 }
 
 .footer-block:last-of-type {
