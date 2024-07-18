@@ -435,15 +435,6 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 749px) {
-  .footer-block-image,
-  .footer-block-image.left,
-  .footer-block-image.center,
-  .footer-block-image.right {
-    justify-content: center;
-  }
-}
-
 .footer-block__image-wrapper {
   overflow: hidden !important;
 }
