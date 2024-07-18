@@ -123,6 +123,8 @@
 
 .footer-block__links {
   border: solid 2px red;
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
 }
 
 @media screen and (min-width: 750px) {
