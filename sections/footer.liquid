@@ -57,16 +57,14 @@
             {% endif %}>
             {%- for block in section.blocks -%}
               <div
-                class="footer-block {% if block.type == 'text' or block.type == 'link_list'%} footer-block-grid {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block {% if block.type == 'text' or block.type == 'link_list'%} footer-block-grid {% endif %}
+                {%if block.type == 'image' %}footer-block__noborder{% endif %}
+                {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                 data-cascade
                 style="--animation-order: {{ forloop.index }};"
                 {% endif %}>
-                {% comment %} {%- if block.settings.heading != blank -%}
-                                    <p class="text-body grid__item">{{- block.settings.heading -}}</p>
-                                {%- endif -%} {% endcomment %}
-
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
