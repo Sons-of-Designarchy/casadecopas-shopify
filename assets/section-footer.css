@@ -117,6 +117,10 @@
   border-bottom: none;
 }
 
+.footer-block:has(img) {
+  border-top: none;
+}
+
 .footer-block-grid {
   display: grid !important;
   grid-template-columns: 100%;
