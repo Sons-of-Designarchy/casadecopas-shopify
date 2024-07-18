@@ -272,7 +272,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   letter-spacing: 0.06rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   font-style: var(--font-body-style);
-  font-weight: ;
+  font-weight: normal;
   font-family: 't-America';
 }
 
