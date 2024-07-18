@@ -71,7 +71,7 @@
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
-                     {% if block.settings.heading != blank %}
+                     {%- if block.settings.heading != blank -%}
                       <div class="text-body">
                         <p>{{ block.settings.heading }}</p>
                       </div>
