@@ -1,4 +1,5 @@
-.image-slider__main {
+.image-slider__main .text-body--bold {
+  margin-bottom: 1em;
 }
 
 .image-slider__main p {
