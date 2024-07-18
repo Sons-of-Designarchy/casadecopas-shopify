@@ -124,7 +124,7 @@
 }
 
 .footer-block__links {
-  font-family: var(--font-body-family);
+  font-family: 't-America-Light';
   font-style: var(--font-body-style);
   line-height: 2rem;
   margin-bottom: 1.5rem;
