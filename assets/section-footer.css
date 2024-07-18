@@ -113,10 +113,13 @@
   border-top: solid 1px rgba(var(--color-foreground), 0.75);
 }
 
+.footer-block:first-of-type:has(img) {
+  border-top: none;
+}
+
 .footer-block:last-of-type {
   border-bottom: none;
 }
-
 .footer-block-grid {
   display: grid !important;
   grid-template-columns: 100%;
