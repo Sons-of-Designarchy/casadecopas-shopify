@@ -129,6 +129,7 @@
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   line-height: 2rem;
+  margin-bottom: 1.5rem;
 
   @media screen and (min-width: 750px) {
     margin: 1.5rem 0;
