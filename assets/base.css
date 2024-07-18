@@ -282,6 +282,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 .text-body {
   font-size: 1.6rem;
   line-height: 2rem;
+  letter-spacing: 0;
 
   font-weight: 200;
   font-family: 't-America-Light';
