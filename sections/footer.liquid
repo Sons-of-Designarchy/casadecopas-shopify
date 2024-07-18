@@ -135,7 +135,8 @@
             {%- endfor -%}
           </div>
         {%- endif -%}
-        {%- if section.settings.show_social and has_social_icons -%}
+
+        <div> {%- if section.settings.show_social and has_social_icons -%}
          {%- if settings.social_instagram_link != blank -%}
            <a class="link link--text full-unstyled-link" href="{{ settings.social_instagram_link }}">
              <p class="text-body">Instagram</p>
@@ -147,7 +148,8 @@
            </a>
          {%- endif -%}
        {%- endif -%}
-
+       </div>
+       
         <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
