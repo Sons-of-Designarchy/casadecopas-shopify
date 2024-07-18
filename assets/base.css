@@ -283,7 +283,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-size: 1.6rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   font-weight: 200;
-  font-family: 't-America-Light';
+  font-family: 't-America-Light' !important;
 }
 
 .text-body--bold {
