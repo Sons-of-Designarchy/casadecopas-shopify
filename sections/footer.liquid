@@ -78,7 +78,7 @@
                       </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <strong class="text-body">{{block.settings.heading}}</strong>
+                      <p class="text-body">{{block.settings.heading}}</p>
                       <ul class="footer-block__links list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
