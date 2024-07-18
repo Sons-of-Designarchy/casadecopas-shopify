@@ -1,5 +1,17 @@
 @font-face {
-  font-family: 't-America';
+  font-family: 't-America-Regular';
+  src: url('https://cdn.shopify.com/s/files/1/0637/4699/8410/files/GT-America-Standard-Regular-Trial.otf?v=1721329537')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 't-America-Medium';
+  src: url('https://cdn.shopify.com/s/files/1/0637/4699/8410/files/GT-America-Standard-Medium-Trial.otf?v=1721330591')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 't-America-Light';
   src: url('https://cdn.shopify.com/s/files/1/0637/4699/8410/files/GT-America-Standard-Regular-Trial.otf?v=1721329537')
     format('opentype');
 }
