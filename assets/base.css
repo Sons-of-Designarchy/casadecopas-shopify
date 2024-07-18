@@ -2871,6 +2871,7 @@ details[open] > .header__submenu {
   color: rgba(var(--color-foreground), 0.75);
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .header__menu-item:hover {
