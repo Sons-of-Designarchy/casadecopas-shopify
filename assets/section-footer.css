@@ -135,8 +135,7 @@
   line-height: 2rem;
 
   @media screen and (min-width: 750px) {
-    margin-top: 1.5rem;
-  }
+    margin: 1.5rem 0;
 }
 
 .footer-block__links a {
