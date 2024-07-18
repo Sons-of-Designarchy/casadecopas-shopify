@@ -124,11 +124,11 @@
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
-                      {%- if block.settings.show_social and has_social_icons -%}
+                      {% comment %} {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
-                      {%- endif -%}
+                      {%- endif -%} {% endcomment %}
                       {%- if block.settings.show_social -%}
-                       {%- if settings.social_facebook_link != blank -%}
+                       {%- if settings.social_instagram_link != blank -%}
       <a href="{{ settings.social_facebook_link }}" class="link list-social__link">Facebook</a>
                       {% endif %}
                      {% endif %}
