@@ -124,9 +124,11 @@
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
-                      {% comment %} {%- if block.settings.show_social and has_social_icons -%}
+                      {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
-                      {%- endif -%} {% endcomment %}
+                      {%- endif -%}
+                      {%- if block.settings.show_social -%}
+                      {% endif %}
                     </div>
                   {%- when 'image' -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
