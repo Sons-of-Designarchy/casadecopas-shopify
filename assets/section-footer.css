@@ -122,7 +122,7 @@
 }
 
 .footer-block__links {
-  border: solid 2px red;
+  margin-top: 2rem;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
 }
