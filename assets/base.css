@@ -2903,7 +2903,7 @@ details[open] > .header__menu-item .icon-caret {
   color: rgb(var(--color-foreground));
   text-underline-offset: 0.3rem;
 
-  transform: rotate(0.25);
+  transform: rotate(85deg);
 }
 
 .header__menu-item:hover .header__active-menu-item {
