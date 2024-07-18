@@ -113,7 +113,7 @@
   border-bottom: none;
 }
 
-.footer-block p:first-child {
+.footer-block div:has(p):first-child {
   color: red;
 }
 
