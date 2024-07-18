@@ -101,7 +101,7 @@
 }
 
 .footer-block {
-  border-bottom: solid 1px var(--color-button-text);
+  border-bottom: solid 1px var(--color-link);
 }
 
 .footer-block:first-of-type {
