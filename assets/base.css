@@ -276,6 +276,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-weight: var(--font-body-weight);
 }
 
+body {
+  font-family: 't-America';
+}
+
 h1,
 h2,
 h3,
