@@ -82,7 +82,7 @@
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
                       <p class="text-body">{{block.settings.heading}}</p>
-                      <ul class="list-unstyled">
+                      <ul class="footer-block__links list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a href="{{ link.url }}" class="link no-decoration-link link--text{% if link.active %} list-menu__item--active{% endif %}">
