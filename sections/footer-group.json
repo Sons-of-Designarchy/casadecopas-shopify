@@ -27,18 +27,25 @@
             "heading": "",
             "subtext": "<p>mmxxiv CDC 333  <\/p>"
           }
+        },
+        "link_list_3TJVqk": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Follow us",
+            "menu": "socials-menu"
+          }
         }
       },
       "block_order": [
         "text_D6CnBh",
-        "text_jyGqiw"
+        "text_jyGqiw",
+        "link_list_3TJVqk"
       ],
       "settings": {
         "color_scheme": "scheme-4",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,
-        "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
