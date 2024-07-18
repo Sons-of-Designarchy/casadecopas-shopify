@@ -112,10 +112,6 @@
 .footer-block:last-of-type {
   border-bottom: none;
 }
-
-.footer-block-heading {
-}
-
 .footer-block-grid {
   display: grid !important;
   grid-template-columns: 100%;
