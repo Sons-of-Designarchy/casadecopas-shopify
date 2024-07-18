@@ -954,7 +954,7 @@ summary::-webkit-details-marker {
   max-width: 100%;
   @media screen and (min-width: 750px) {
     max-width: 80%;
-    width: fit-content;
+    width: inherit;
   }
 }
 
