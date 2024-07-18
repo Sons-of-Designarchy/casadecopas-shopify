@@ -10,7 +10,6 @@
   section {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.5rem;
 
     border-top: 1px solid{{section.settings.color_scheme.settings.text}};
     max-width: calc(var(--page-width) - 15rem);
@@ -21,7 +20,8 @@
     padding-top: 2rem;
 
     @media screen and (min-width: 750px) {
-      grid-template-columns: 20% 20% 1fr;
+      grid-template-columns: 12% 20% 1fr;
+      gap: 2rem;
     };
   }
 {% endstyle %}
@@ -33,7 +33,7 @@
   id="sliders"
   class="image-slider__main section-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <section>
-    <p class="text-body">{{ section.settings.title }}</p>
+    <p class="text-body text-body--bold">{{ section.settings.title }}</p>
     <p class="text-body">{{ section.settings.description }}</p>
 
     {% if block_count > 0 %}

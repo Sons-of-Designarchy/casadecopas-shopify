@@ -99,6 +99,8 @@
 .footer-block {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
   border-bottom: solid 1px rgba(var(--color-foreground), 0.75);
+
+  padding: 1rem 0;
 }
 
 .footer-block:first-of-type {
@@ -122,18 +124,16 @@
 }
 
 .footer-block__links {
-  font-family: var(--font-body-family);
+  font-family: 't-America-Light' !important;
   font-style: var(--font-body-style);
   line-height: 2rem;
   margin-bottom: 1.5rem;
-
-  @media screen and (min-width: 750px) {
-    margin: 1.5rem 0;
-  }
 }
 
 .footer-block__links a {
   color: rgba(var(--color-foreground), 0.75);
+  font-family: 't-America-Light';
+  font-size: inherit;
 }
 
 @media screen and (min-width: 750px) {
