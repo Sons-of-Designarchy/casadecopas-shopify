@@ -57,7 +57,7 @@
             {% endif %}>
             {%- for block in section.blocks -%}
               <div
-                class="footer-block {% if block.type == 'text' %}grid--auto grid--nowrap{% endif %} {% if block.type == 'link_list' %} footer-block--menu grid--auto grid--nowrap{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block {% if block.type == 'text' %}grid--auto grid--nowrap{% endif %} {% if block.type == 'link_list' %} footer-block--menu grid--auto{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                 data-cascade
