@@ -18,7 +18,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo_e1a6224c-8afb-4f71-85c0-f3d70b73a7f2.svg",
-            "image_width": 370,
+            "image_width": 215,
             "alignment": ""
           }
         },
@@ -52,16 +52,9 @@
       ],
       "settings": {
         "color_scheme": "scheme-4",
-        "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": false,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": false,
         "margin_top": 0,
-        "padding_top": 56,
-        "padding_bottom": 56
+        "padding_top": 100,
+        "padding_bottom": 52
       }
     }
   },
