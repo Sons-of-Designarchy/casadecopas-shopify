@@ -73,19 +73,18 @@
                   {%- when 'text' -%}
                     <div class="grid grid--nowrap">
                      {%if block.settings.heading %}
-                      <div class="text-body grid__item">
+                      <div class="text-body">
                         <p>{{ block.settings.heading }}</p>
                       </div>
                      {% endif %}
-                      <div class="text-body grid__item">
+                      <div class="text-body">
                         {{ block.settings.subtext }}
                       </div>
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                     <div class="grid grid--nowrap">
-                      <p class="text-body grid__item">{{block.settings.heading}}</p>
-                      <ul class="footer-block__details-content list-unstyled grid__item">
+                      <p class="text-body">{{block.settings.heading}}</p>
+                      <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a href="{{ link.url }}" class="link no-decoration-link link--text{% if link.active %} list-menu__item--active{% endif %}">
@@ -93,8 +92,7 @@
                             </a>
                           </li>
                         {%- endfor -%}
-                      </ul>
-                     </div>
+                      </ul>>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
