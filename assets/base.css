@@ -938,10 +938,23 @@ summary::-webkit-details-marker {
   row-gap: 0;
 }
 
+.grid--nowrap {
+  flex-wrap: nowrap;
+}
+
 @media screen and (max-width: 749px) {
   .grid__item.slider__slide--full-width {
     width: 100%;
     max-width: none;
+  }
+}
+
+.grid--auto .grid__item {
+  width: 100%;
+  max-width: 100%;
+  @media screen and (min-width: 750px) {
+    max-width: 80%;
+    width: inherit;
   }
 }
 
