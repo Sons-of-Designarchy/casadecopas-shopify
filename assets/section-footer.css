@@ -112,6 +112,11 @@
 .footer-block:last-of-type {
   border-bottom: none;
 }
+
+.footer-block p:first-child {
+  color: red;
+}
+
 .footer-block-grid {
   display: grid !important;
   grid-template-columns: 100%;
