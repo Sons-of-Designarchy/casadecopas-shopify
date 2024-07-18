@@ -113,7 +113,7 @@
 }
 
 .footer-block-grid {
-  display: grid;
+  display: grid !important;
   grid-template-columns: 100rem 1fr;
 }
 
