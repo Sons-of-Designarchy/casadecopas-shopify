@@ -115,6 +115,10 @@
 .footer-block-grid {
   display: grid !important;
   grid-template-columns: 20rem 1fr;
+
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 100%;
+  }
 }
 
 @media screen and (min-width: 750px) {
