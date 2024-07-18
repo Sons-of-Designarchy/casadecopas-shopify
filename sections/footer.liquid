@@ -57,34 +57,33 @@
             {% endif %}>
             {%- for block in section.blocks -%}
               <div
-                class="footer-block {% if block.type == 'text' %}grid--auto grid--nowrap{% endif %} {% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block {% if block.type == 'text' or block.type == 'link_list'%} footer-block-grid {% endif %}
+                {%if block.type == 'image' %}footer-block__noborder{% endif %}
+                {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                 data-cascade
                 style="--animation-order: {{ forloop.index }};"
                 {% endif %}>
-                {% comment %} {%- if block.settings.heading != blank -%}
-                                    <p class="text-body grid__item">{{- block.settings.heading -}}</p>
-                                {%- endif -%} {% endcomment %}
-
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
-                    <div class="grid grid--nowrap">
-                      <div class="text-body grid__item">
+                     {%- if block.settings.heading != blank -%}
+                      <div class="text-body">
                         <p>{{ block.settings.heading }}</p>
                       </div>
-                      <div class="text-body grid__item">
+                     {% endif %}
+                      <div class="text-body">
                         {{ block.settings.subtext }}
                       </div>
-                    </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <p class="text-body">{{block.settings.heading}}</p>
+                      <ul class="footer-block__links list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
-                            <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                            <a href="{{ link.url }}" class="link no-decoration-link link--text{% if link.active %} list-menu__item--active{% endif %}">
                               {{ link.title }}
                             </a>
                           </li>
