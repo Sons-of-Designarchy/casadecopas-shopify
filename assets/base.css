@@ -284,7 +284,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   letter-spacing: 0.06rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   font-weight: 200;
-  font-family: 't-America';
+  font-family: 't-America-Light';
 }
 
 h1,
