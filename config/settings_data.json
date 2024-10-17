@@ -1,17 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/logo.svg",
+    "logo": "shopify://shop_images/logo.svg",
     "logo_width": 200,
-    "favicon": "shopify:\/\/shop_images\/cdc.png",
+    "favicon": "shopify://shop_images/cdc.png",
     "type_header_font": "americana_n4",
     "heading_scale": 150,
     "type_body_font": "helvetica_n3",
@@ -111,8 +111,8 @@
     "brand_description": "",
     "brand_image_width": 100,
     "social_facebook_link": "",
-    "social_instagram_link": "https:\/\/instragram.com",
-    "social_youtube_link": "https:\/\/www.youtube.com",
+    "social_instagram_link": "https://instragram.com",
+    "social_youtube_link": "https://www.youtube.com",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
@@ -164,7 +164,7 @@
           "text": "#ffffff",
           "button": "#fd6854",
           "button_label": "#ffffff",
-          "secondary_button_label": "#fd6854",
+          "secondary_button_label": "#ffffff",
           "shadow": "#fd6854"
         }
       },
