@@ -13,6 +13,10 @@
       "type": "home-top",
       "settings": {}
     },
+    "1661808968f90ffkeofkeu": {
+      "type": "home-footer",
+      "settings": {}
+    },
     "rich_text_ibYcqm": {
       "type": "rich-text",
       "blocks": {
@@ -143,19 +147,15 @@
         "padding_top": 60,
         "padding_bottom": 100
       }
-    },
-    "1661808968f90ffkeofkeu": {
-      "type": "home-footer",
-      "settings": {}
     }
   },
   "order": [
     "1661808968f90ffkeofkeo",
+    "1661808968f90ffkeofkeu",
     "rich_text_ibYcqm",
     "featured_collection_KpfCMy",
     "rich_text",
     "featured_collection_cTyBCf",
-    "featured_collection_ATMdMT",
-    "1661808968f90ffkeofkeu"
+    "featured_collection_ATMdMT"
   ]
 }
