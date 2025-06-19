@@ -11,7 +11,57 @@
   "sections": {
     "1661808968f90ffkeofkeo": {
       "type": "home-top",
+      "settings": {}
+    },
+    "rich_text_ibYcqm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Urnr8K": {
+          "type": "heading",
+          "settings": {
+            "heading": "title",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Urnr8K"
+      ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_KpfCMy": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "studios",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-3",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 100
       }
     },
     "rich_text": {
@@ -96,12 +146,13 @@
     },
     "1661808968f90ffkeofkeu": {
       "type": "home-footer",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
     "1661808968f90ffkeofkeo",
+    "rich_text_ibYcqm",
+    "featured_collection_KpfCMy",
     "rich_text",
     "featured_collection_cTyBCf",
     "featured_collection_ATMdMT",
