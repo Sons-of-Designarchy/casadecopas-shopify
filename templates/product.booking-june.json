@@ -27,17 +27,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -47,8 +36,6 @@
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
         "description"
       ],
       "settings": {
