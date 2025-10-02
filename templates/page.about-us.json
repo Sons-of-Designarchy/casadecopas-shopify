@@ -21,7 +21,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<iframe src=\"https://app.milanote.com/1UQeo11UhuSt9w?p=lGiIUMSsTEs\" width=\"100vw\" height=\"500\" frameborder=\"0\"></iframe>",
+        "custom_liquid": "<iframe src=\"https://app.milanote.com/1UQeo11UhuSt9w?p=lGiIUMSsTEs\" width=\"1200\" height=\"800\" frameborder=\"0\"></iframe>",
         "color_scheme": "scheme-2",
         "padding_top": 40,
         "padding_bottom": 52
