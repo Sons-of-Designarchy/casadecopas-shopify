@@ -2885,6 +2885,7 @@ details[open] > .header__submenu {
 
 .header__menu {
   padding: 0 1rem;
+  white-space: nowrap;
 }
 
 .header__menu-item {
