@@ -11,9 +11,8 @@
   "sections": {
     "header": {
       "type": "hero-text",
-      "disabled": true,
       "settings": {
-        "subheading": "Our studio gear is second to none with the only large format APIs in Mexico. Our in-house engineers have worked together for 15 years and boast an armful of Grammys between them",
+        "subheading": "Title",
         "color_scheme": "scheme-3",
         "image": "shopify://shop_images/about-bg.png"
       }
@@ -36,189 +35,11 @@
         "icon_image": "shopify://shop_images/02.svg",
         "color_scheme": ""
       }
-    },
-    "sliders": {
-      "type": "image-slider",
-      "blocks": {
-        "image_slide_A7WeCA": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        },
-        "image_slide_h3W9jT": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-tote-frase-min.jpg"
-          }
-        },
-        "image_slide_AXYkqm": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-lonSleeve-back-min.jpg"
-          }
-        },
-        "image_slide_NefeCp": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-tote-frase-1-min.jpg"
-          }
-        },
-        "image_slide_Mz3apH": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/about-bg.png"
-          }
-        }
-      },
-      "block_order": [
-        "image_slide_A7WeCA",
-        "image_slide_h3W9jT",
-        "image_slide_AXYkqm",
-        "image_slide_NefeCp",
-        "image_slide_Mz3apH"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "API Boards",
-        "description": "32 Channel <br>\n16 Channel <br>\nSumming mixing board",
-        "color_scheme": "scheme-4"
-      }
-    },
-    "image_slider_L67rjc": {
-      "type": "image-slider",
-      "blocks": {
-        "image_slide_YPHrbU": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        },
-        "image_slide_mfaMgH": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-taza-fraseArt-min.jpg"
-          }
-        },
-        "image_slide_NaPhKL": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        },
-        "image_slide_7zDCrE": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-tote-frase-viva-1-min.jpg"
-          }
-        },
-        "image_slide_jJxQhe": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-tote-frase-viva-1-min.jpg"
-          }
-        },
-        "image_slide_gXnqyk": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        },
-        "image_slide_At97Yz": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        },
-        "image_slide_bYTMJV": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-tote-frase-min.jpg"
-          }
-        },
-        "image_slide_VCMi4n": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        },
-        "image_slide_4JM4LC": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        }
-      },
-      "block_order": [
-        "image_slide_YPHrbU",
-        "image_slide_mfaMgH",
-        "image_slide_NaPhKL",
-        "image_slide_7zDCrE",
-        "image_slide_jJxQhe",
-        "image_slide_gXnqyk",
-        "image_slide_At97Yz",
-        "image_slide_bYTMJV",
-        "image_slide_VCMi4n",
-        "image_slide_4JM4LC"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Elite outboard gear",
-        "description": "Universal Audio & Burl Converters",
-        "color_scheme": "scheme-4"
-      }
-    },
-    "image_slider_ixAnic": {
-      "type": "image-slider",
-      "disabled": true,
-      "settings": {
-        "title": "Neumann monitoring systems",
-        "description": "",
-        "color_scheme": "scheme-4"
-      }
-    },
-    "image_slider_e6CTU7": {
-      "type": "image-slider",
-      "blocks": {
-        "image_slide_XkMQHC": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/img.png"
-          }
-        },
-        "image_slide_gxC33q": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-tote-frase-min.jpg"
-          }
-        },
-        "image_slide_J6pXCh": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Shp-taza-fraseArt-min.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_slide_XkMQHC",
-        "image_slide_gxC33q",
-        "image_slide_J6pXCh"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Class-A mic locker",
-        "description": "Neumann, Soyuz, AEA",
-        "color_scheme": "scheme-4"
-      }
     }
   },
   "order": [
     "header",
     "custom_liquid_gPfxM6",
-    "subheader",
-    "sliders",
-    "image_slider_L67rjc",
-    "image_slider_ixAnic",
-    "image_slider_e6CTU7"
+    "subheader"
   ]
 }
