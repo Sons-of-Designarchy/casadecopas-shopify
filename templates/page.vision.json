@@ -11,6 +11,7 @@
   "sections": {
     "header": {
       "type": "hero-text",
+      "disabled": true,
       "settings": {
         "subheading": "Heading",
         "color_scheme": "scheme-3",
