@@ -78,6 +78,7 @@
         "image_slide_NefeCp",
         "image_slide_Mz3apH"
       ],
+      "disabled": true,
       "settings": {
         "title": "API Boards",
         "description": "32 Channel <br>\n16 Channel <br>\nSumming mixing board",
@@ -160,6 +161,7 @@
         "image_slide_VCMi4n",
         "image_slide_4JM4LC"
       ],
+      "disabled": true,
       "settings": {
         "title": "Elite outboard gear",
         "description": "Universal Audio & Burl Converters",
@@ -168,6 +170,7 @@
     },
     "image_slider_ixAnic": {
       "type": "image-slider",
+      "disabled": true,
       "settings": {
         "title": "Neumann monitoring systems",
         "description": "",
@@ -201,6 +204,7 @@
         "image_slide_gxC33q",
         "image_slide_J6pXCh"
       ],
+      "disabled": true,
       "settings": {
         "title": "Class-A mic locker",
         "description": "Neumann, Soyuz, AEA",
