@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -17,7 +17,7 @@
         "image_gNxKhE": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logo_e1a6224c-8afb-4f71-85c0-f3d70b73a7f2.svg",
+            "image": "shopify://shop_images/logo_e1a6224c-8afb-4f71-85c0-f3d70b73a7f2.svg",
             "image_width": 215,
             "alignment": ""
           }
@@ -26,7 +26,7 @@
           "type": "text",
           "settings": {
             "heading": "About Casa de Copas",
-            "subtext": "<p>Casa de Copas is a world-class recording studio located at the former Sony Studio compound in Mexico City. With six studio spaces situated over three stories and a rooftop terrace that opens up to a view full of fruit trees, Casa de Copas boasts one of the most beautiful and inspiring spaces to write and record.<\/p>"
+            "subtext": "<p>Casa de Copas is a world-class recording studio located at the former Sony Studio compound in Mexico City. With six studio spaces situated over three stories and a rooftop terrace that opens up to a view full of fruit trees, Casa de Copas boasts one of the most beautiful and inspiring spaces to write and record.</p>"
           }
         },
         "link_list_3TJVqk": {
@@ -40,7 +40,7 @@
           "type": "text",
           "settings": {
             "heading": "",
-            "subtext": "<p>MMXXIV CDC 333  <\/p>"
+            "subtext": "<p>MMXXIV CDC 333  </p>"
           }
         }
       },
@@ -50,6 +50,7 @@
         "link_list_3TJVqk",
         "text_jyGqiw"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4",
         "margin_top": 0,

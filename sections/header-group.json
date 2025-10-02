@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -19,13 +19,14 @@
           "disabled": true,
           "settings": {
             "text": "CHECK OUT ANDY WARHOL REVEAL PARTY PHOTO GALLERY",
-            "link": "shopify:\/\/blogs\/news"
+            "link": "shopify://blogs/news"
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4",
         "show_line_separator": false,
@@ -38,9 +39,8 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-
-      ],
+      "disabled": true,
+      "custom_css": [],
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
