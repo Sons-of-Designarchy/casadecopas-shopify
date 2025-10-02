@@ -11,6 +11,7 @@
   "sections": {
     "header": {
       "type": "hero-text",
+      "disabled": true,
       "settings": {
         "subheading": "Our studio gear is second to none with the only large format APIs in Mexico. Our in-house engineers have worked together for 15 years and boast an armful of Grammys between them",
         "color_scheme": "scheme-3",
@@ -19,7 +20,6 @@
     },
     "custom_liquid_gPfxM6": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<iframe class=\"iframe-milanote\" src=\"https://app.milanote.com/1UQeo11UhuSt9w?p=lGiIUMSsTEs\" width=\"1200\" height=\"800\" frameborder=\"0\"></iframe>\n\n<style type=\"text/css\">\n\n.iframe-milanote {\n width: 100vw;\nheight: 90vh;\nmargin: 0;\nposition: relative;\n}\n\n.iframe-milanote:after {\ncontent: ' ';\nwidth: 100vw;\nheight: 200px;\nbackground: orange;\nposition: absolute;\nleft: 0;\ntop: 0;\n}\n\n</style>",
