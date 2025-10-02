@@ -11,21 +11,10 @@
   "sections": {
     "header": {
       "type": "hero-text",
-      "disabled": true,
       "settings": {
         "subheading": "Our studio gear is second to none with the only large format APIs in Mexico. Our in-house engineers have worked together for 15 years and boast an armful of Grammys between them",
         "color_scheme": "scheme-3",
         "image": "shopify://shop_images/about-bg.png"
-      }
-    },
-    "custom_liquid_gPfxM6": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div class=\"iframe-container\">\n\n\n<iframe class=\"iframe-milanote\" src=\"https://app.milanote.com/1UQeo11UhuSt9w?p=lGiIUMSsTEs\" width=\"1200\" height=\"800\" frameborder=\"0\"></iframe>\n\n</div>\n\n<style type=\"text/css\">\n\n.iframe-milanote {\n width: 100%;\nheight: 100%;\nmargin: 0;\nposition: relative;\nmargin-top: -115px;\n}\n\n.iframe-container {\npadding: 2rem;\nwidth: 100vw;\nheight: 90vh;\n}\n\n</style>",
-        "color_scheme": "scheme-2",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "subheader": {
@@ -78,7 +67,6 @@
         "image_slide_NefeCp",
         "image_slide_Mz3apH"
       ],
-      "disabled": true,
       "settings": {
         "title": "API Boards",
         "description": "32 Channel <br>\n16 Channel <br>\nSumming mixing board",
@@ -161,7 +149,6 @@
         "image_slide_VCMi4n",
         "image_slide_4JM4LC"
       ],
-      "disabled": true,
       "settings": {
         "title": "Elite outboard gear",
         "description": "Universal Audio & Burl Converters",
@@ -170,7 +157,6 @@
     },
     "image_slider_ixAnic": {
       "type": "image-slider",
-      "disabled": true,
       "settings": {
         "title": "Neumann monitoring systems",
         "description": "",
@@ -204,7 +190,6 @@
         "image_slide_gxC33q",
         "image_slide_J6pXCh"
       ],
-      "disabled": true,
       "settings": {
         "title": "Class-A mic locker",
         "description": "Neumann, Soyuz, AEA",
@@ -214,7 +199,6 @@
   },
   "order": [
     "header",
-    "custom_liquid_gPfxM6",
     "subheader",
     "sliders",
     "image_slider_L67rjc",
