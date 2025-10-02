@@ -12,18 +12,9 @@
     "header": {
       "type": "hero-text",
       "settings": {
-        "subheading": "Our studio gear is second to none with the only large format APIs in Mexico. Our in-house engineers have worked together for 15 years and boast an armful of Grammys between them",
+        "subheading": "Programs Text",
         "color_scheme": "scheme-3",
         "image": "shopify://shop_images/about-bg.png"
-      }
-    },
-    "subheader": {
-      "type": "subheader-icon",
-      "settings": {
-        "title": "Our Gear",
-        "description": "*Full gear & instrument list available upon request",
-        "icon_image": "shopify://shop_images/02.svg",
-        "color_scheme": ""
       }
     },
     "sliders": {
@@ -195,14 +186,23 @@
         "description": "Neumann, Soyuz, AEA",
         "color_scheme": "scheme-4"
       }
+    },
+    "subheader": {
+      "type": "subheader-icon",
+      "settings": {
+        "title": "Our Gear",
+        "description": "*Full gear & instrument list available upon request",
+        "icon_image": "shopify://shop_images/02.svg",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
     "header",
-    "subheader",
     "sliders",
     "image_slider_L67rjc",
     "image_slider_ixAnic",
-    "image_slider_e6CTU7"
+    "image_slider_e6CTU7",
+    "subheader"
   ]
 }
