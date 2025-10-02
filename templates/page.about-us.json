@@ -21,7 +21,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<iframe class=\"iframe-milanote\" src=\"https://app.milanote.com/1UQeo11UhuSt9w?p=lGiIUMSsTEs\" width=\"1200\" height=\"800\" frameborder=\"0\"></iframe>\n\n<style type=\"text/css\">\n\n.iframe-milanote {\n width: 100vw;\nheight: 100vh;\n}\n\n</style>",
+        "custom_liquid": "<iframe class=\"iframe-milanote\" src=\"https://app.milanote.com/1UQeo11UhuSt9w?p=lGiIUMSsTEs\" width=\"1200\" height=\"800\" frameborder=\"0\"></iframe>\n\n<style type=\"text/css\">\n\n.iframe-milanote {\n width: 100vw;\nheight: 90vh;\n}\n\n</style>",
         "color_scheme": "scheme-2",
         "padding_top": 40,
         "padding_bottom": 52
