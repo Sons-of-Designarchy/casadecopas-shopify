@@ -19,6 +19,7 @@
     },
     "subheader": {
       "type": "subheader-icon",
+      "disabled": true,
       "settings": {
         "title": "Our Gear",
         "description": "*Full gear & instrument list available upon request",
@@ -213,8 +214,8 @@
   },
   "order": [
     "header",
-    "subheader",
     "custom_liquid_gPfxM6",
+    "subheader",
     "sliders",
     "image_slider_L67rjc",
     "image_slider_ixAnic",
