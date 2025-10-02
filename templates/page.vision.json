@@ -12,7 +12,7 @@
     "header": {
       "type": "hero-text",
       "settings": {
-        "subheading": "Title",
+        "subheading": "Heading",
         "color_scheme": "scheme-3",
         "image": "shopify://shop_images/about-bg.png"
       }
