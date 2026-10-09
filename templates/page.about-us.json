@@ -30,6 +30,7 @@
     },
     "subheader": {
       "type": "subheader-icon",
+      "disabled": true,
       "settings": {
         "title": "Our Gear",
         "description": "*Full gear & instrument list available upon request",
