@@ -126,17 +126,11 @@
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
               <a
-                href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+                href="https://copas.app"
                 class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
               >
                 {% render 'icon-account' %}
-                {%- liquid
-                  if customer
-                    echo 'customer.account_fallback' | t
-                  else
-                    echo 'customer.log_in' | t
-                  endif
-                -%}
+                Members
               </a>
             {%- endif -%}
             {%- if localization.available_countries or localization.available_languages -%}
